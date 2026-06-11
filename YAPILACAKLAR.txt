@@ -1,0 +1,15 @@
+1. https://www.iloveimg.com/ bu siteden resimlerin boyutunu küçült. fazla yer kaplamasın ve açılış hızını kötü etkilemesin.
+
+2. Google Ads, Clarity ve benzeri dış servisler işlemciyi (Main Thread) yorabiliyor.
+Çözüm: Bu scriptleri next/script ile strategy="lazyOnload" kullanarak yükle. Sayfa ilk açıldığında değil, mümkünse idle sonrası yüklensinler. (İletişim formu reCAPTCHA v3 için hafif api.js kullanıyor; eski görünür CAPTCHA widget’ı yok.)
+
+3. robots.txt dosyasındaki 29. satırda bulunan 'Content-Signal: search=yes,ai-train=no' kısmını sil. Bu satır standart protokolde olmadığı için PageSpeed testinde hata veriyor. Dosyanın geri kalan standart yapısını bozma.
+
+4. Cache (Önbellekleme) Sorunu
+Sorun: Görsellerinin Cache süresi sadece 4 saat.
+Çözüm: Vercel veya Cloudflare kullanıyorsan, statik varlıkların (images, fonts) cache süresini 1 yıl (Cache-Control: public, max-age=31536000) yapmalısın.
+
+5. SEO ve robots.txt Hatası
+Raporun SEO kısmında kırmızı bir hata var:
+Sorun: robots.txt dosyasındaki Content-Signal: search=yes satırını Google anlamıyor.
+Çözüm: Bu satırı sil veya standart User-agent, Allow, Disallow formatına sadık kal. Ayrıca canonical linkin ana sayfayı işaret ediyor ama şu an /services/kellerraeumung sayfasındayız. Her sayfanın canonical linki kendisini işaret etmeli.
