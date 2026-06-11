@@ -143,6 +143,23 @@ From project root: `npm run build`
 - **SEO**: JSON-LD Local Business, Vienna districts (1.–23. Bezirk), dynamic metadata
 - **Contact**: Form posts to `POST /api/contact` (sanitization, rate limiting, MongoDB)
 - **Floating CTAs**: WhatsApp button and mobile “Call” bar
+- **Partner page**: `/partner` – Kooperationspartner mit Backlink (aktuell: [sofortentrumpelung.at](https://sofortentrumpelung.at))
+
+## Partner-Seite (`/partner`)
+
+Die Seite listet ausgewählte Kooperationspartner mit beschreibendem Text und externem Link (Backlink). Aktuell verlinkt:
+
+| Partner | URL | Dateien |
+|---------|-----|---------|
+| Sofortentrümpelung | https://sofortentrumpelung.at | `client/src/app/[locale]/partner/page.tsx`, Texte in `client/src/messages/de.json` → `partner` |
+
+**Neuen Partner hinzufügen**
+
+1. Texte in `client/src/messages/de.json` unter `partner` ergänzen (und optional `en.json`).
+2. In `client/src/app/[locale]/partner/page.tsx` einen weiteren Abschnitt mit `<a href="…" target="_blank" rel="noopener">` anlegen.
+3. `client/src/app/sitemap.ts` enthält `/partner` bereits.
+
+Die Seite ist im Footer unter „Partner“ verlinkt; Header-Link ist optional.
 
 ## Locations (Standorte) – geçici kapalı
 
@@ -209,6 +226,5 @@ Replace the placeholder number in `client/src/lib/constants.ts`:
     /routes            # /api/contact
     /models            # ContactSubmission (MongoDB)
     /utils             # sanitize
+    /app/[locale]/partner  # Partner-Seite (Backlinks)
 ```
-# objektraeumung
-# objektraeumung

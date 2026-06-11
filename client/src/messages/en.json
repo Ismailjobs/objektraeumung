@@ -11,6 +11,7 @@
     "referenzen": "References",
     "ueberblick": "Overview",
     "impressum": "Impressum",
+    "partner": "Partners",
     "callNow": "Call Now",
     "socialMedia": "Social Media",
     "social": {
@@ -1499,6 +1500,20 @@
     "cert3": "GDPR-compliant destruction of sensitive data & documents",
     "ctaTitle": "Questions? Get in touch anytime.",
     "ctaSubtitle": "We look forward to getting to know your project."
+  },
+  "partner": {
+    "metaTitle": "Partners | Objekträumung",
+    "metaDescription": "Partners and collaborations of Objekträumung: Sofortentrümpelung – professional clearance and removal services in Austria.",
+    "breadcrumb": "Partners",
+    "eyebrow": "Collaborations",
+    "title": "Our partners in clearance & removal",
+    "intro": "Objekträumung works with selected partners who share the same quality standards: transparent pricing, reliable execution and respectful customer service.",
+    "sofortTitle": "Sofortentrümpelung",
+    "sofortText1": "Sofortentrümpelung is a specialised company for fast, professional clearances across Austria. Whether household clearance, cellar or attic clearance, commercial premises or bulky waste collection – the team handles the full process from inspection to broom-clean handover.",
+    "sofortText2": "We recommend Sofortentrümpelung as a reliable partner when you need prompt clearance with fixed-price guarantee and compliant disposal. More information, services and contact options are available on their website.",
+    "sofortLinkLabel": "Visit sofortentrumpelung.at",
+    "whyTitle": "Why partnerships?",
+    "whyText": "Together with strong partners we can support customers across Austria even better. Every partner is carefully selected – based on experience, insurance cover and customer satisfaction."
   },
   "impressum": {
     "title": "Impressum",

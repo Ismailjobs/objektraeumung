@@ -11,6 +11,7 @@ const STATIC_PATHS: { path: string; priority: number; changeFrequency: "weekly" 
   { path: "/referenzen", priority: 0.8, changeFrequency: "monthly" },
   { path: "/ueberblick", priority: 0.8, changeFrequency: "monthly" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/partner", priority: 0.5, changeFrequency: "monthly" },
   { path: "/impressum", priority: 0.3, changeFrequency: "yearly" },
 ];
 

@@ -11,6 +11,7 @@
     "referenzen": "Referenzen",
     "ueberblick": "Überblick",
     "impressum": "Impressum",
+    "partner": "Partner",
     "callNow": "Jetzt anrufen",
     "socialMedia": "Soziale Medien",
     "social": {
@@ -1499,6 +1500,20 @@
     "cert3": "DSGVO-konforme Vernichtung von sensiblen Daten & Akten",
     "ctaTitle": "Fragen? Melden Sie sich jederzeit bei uns.",
     "ctaSubtitle": "Wir freuen uns darauf, Ihr Projekt kennenzulernen."
+  },
+  "partner": {
+    "metaTitle": "Partner | Objekträumung",
+    "metaDescription": "Partner und Kooperationen von Objekträumung: Sofortentrümpelung – professionelle Entrümpelung und Räumung in Österreich.",
+    "breadcrumb": "Partner",
+    "eyebrow": "Kooperationen",
+    "title": "Unsere Partner im Bereich Entrümpelung & Räumung",
+    "intro": "Objekträumung arbeitet mit ausgewählten Partnern zusammen, die dieselben Qualitätsstandards teilen: transparente Preise, zuverlässige Abwicklung und respektvoller Umgang mit Kundinnen und Kunden.",
+    "sofortTitle": "Sofortentrümpelung",
+    "sofortText1": "Sofortentrümpelung ist ein spezialisiertes Unternehmen für schnelle und professionelle Entrümpelungen in Österreich. Ob Wohnungsauflösung, Keller- oder Dachbodenräumung, Gewerbeobjekte oder Sperrmüllabholung – das Team übernimmt die komplette Abwicklung von der Besichtigung bis zur besenreinen Übergabe.",
+    "sofortText2": "Wir empfehlen Sofortentrümpelung als verlässlichen Partner, wenn Sie eine zeitnahe Entrümpelung mit Fixpreis-Garantie und fachgerechter Entsorgung suchen. Mehr Informationen, Leistungen und Kontaktmöglichkeiten finden Sie auf der Website.",
+    "sofortLinkLabel": "sofortentrumpelung.at besuchen",
+    "whyTitle": "Warum Partnerschaften?",
+    "whyText": "Gemeinsam mit starken Partnern können wir Kundinnen und Kunden in ganz Österreich noch besser unterstützen. Jeder Partner wird sorgfältig ausgewählt – nach Erfahrung, Versicherungsschutz und Kundenzufriedenheit."
   },
   "impressum": {
     "title": "Impressum",
