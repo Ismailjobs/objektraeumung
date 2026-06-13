@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { Link } from "@/i18n/navigation";
+import { WIEN_DISTRICT_SLUGS } from "@/lib/locationsData";
 
 const BEZIRKE = [
   "1. Bezirk Innere Stadt",
@@ -59,14 +61,19 @@ export function DistrictsSeo() {
           viewport={{ once: true }}
           className="flex flex-wrap justify-center gap-2"
         >
-          {BEZIRKE.map((bezirk) => (
-            <span
-              key={bezirk}
-              className="px-3 py-1.5 rounded-lg bg-white border border-navy/10 text-sm text-navy/75 shadow-sm"
-            >
-              {bezirk}
-            </span>
-          ))}
+          {BEZIRKE.map((bezirk, index) => {
+            const slug = WIEN_DISTRICT_SLUGS[index];
+            if (!slug) return null;
+            return (
+              <Link
+                key={bezirk}
+                href={`/locations/${slug}`}
+                className="px-3 py-1.5 rounded-lg bg-white border border-navy/10 text-sm text-navy/75 shadow-sm hover:border-accent/40 hover:text-accent transition-colors"
+              >
+                {bezirk}
+              </Link>
+            );
+          })}
         </motion.div>
       </div>
     </section>

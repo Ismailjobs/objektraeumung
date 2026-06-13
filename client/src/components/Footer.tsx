@@ -44,6 +44,10 @@ export function Footer() {
                 <ArrowRight size={14} className="opacity-70" />
                 {tNav("ueberblick")}
               </Link>
+              <Link href="/locations" className="inline-flex items-center gap-2 text-sm text-white/80 hover:text-accent transition-colors">
+                <ArrowRight size={14} className="opacity-70" />
+                {tNav("locations")}
+              </Link>
               <Link href="/prices" className="inline-flex items-center gap-2 text-sm text-white/80 hover:text-accent transition-colors">
                 <ArrowRight size={14} className="opacity-70" />
                 {tNav("prices")}

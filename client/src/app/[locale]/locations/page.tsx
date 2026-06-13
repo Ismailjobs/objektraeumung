@@ -166,44 +166,38 @@ export default async function LocationsPage({ params }: Props) {
                     </Link>
                   </div>
                 </div>
-                <ul className="divide-y divide-navy/5">
-                  {locations
-                    .filter((loc) => loc.slug !== stateKey)
-                    .slice(0, 6)
-                    .map((loc) => {
-                      const name = locale === "at" ? loc.nameDe : loc.nameEn;
-                      const desc = locale === "at" ? loc.shortDescDe : loc.shortDescEn;
-                      return (
-                        <li key={loc.slug}>
+                <div className="p-5 md:p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {locations
+                      .filter((loc) => loc.slug !== stateKey)
+                      .map((loc) => {
+                        const name = locale === "at" ? loc.nameDe : loc.nameEn;
+                        const desc = locale === "at" ? loc.shortDescDe : loc.shortDescEn;
+                        return (
                           <Link
+                            key={loc.slug}
                             href={`/locations/${loc.slug}`}
-                            className="flex items-center gap-3 px-5 md:px-6 py-4 hover:bg-navy/5 transition-colors"
+                            className="group flex items-start gap-3 p-4 rounded-xl border border-navy/10 bg-white hover:border-accent/30 hover:shadow-md transition-all"
                           >
-                            <MapPin size={18} className="text-accent shrink-0" strokeWidth={2} />
-                            <span className="font-medium text-navy flex-1 min-w-0 truncate">
-                              {name}
-                            </span>
-                            {desc && (
-                              <span className="text-sm text-navy/50 hidden sm:block truncate max-w-[140px]">
-                                {desc}
+                            <MapPin size={18} className="text-accent shrink-0 mt-0.5" strokeWidth={2} />
+                            <div className="min-w-0 flex-1">
+                              <span className="font-medium text-navy group-hover:text-accent transition-colors block">
+                                {name}
                               </span>
-                            )}
-                            <ArrowRight size={16} className="text-navy/30 shrink-0" strokeWidth={2} />
+                              {desc && (
+                                <span className="text-sm text-navy/55 block mt-0.5 line-clamp-2">{desc}</span>
+                              )}
+                            </div>
+                            <ArrowRight
+                              size={16}
+                              className="text-navy/30 group-hover:text-accent shrink-0 mt-0.5"
+                              strokeWidth={2}
+                            />
                           </Link>
-                        </li>
-                      );
-                    })}
-                </ul>
-                {locations.filter((l) => l.slug !== stateKey).length > 6 && (
-                  <div className="px-5 md:px-6 py-3 bg-slate-50/50 border-t border-navy/5">
-                    <Link
-                      href={`/locations/${stateSlug}`}
-                      className="text-sm font-medium text-accent hover:underline"
-                    >
-                      {t("moreLocations", { n: locations.filter((l) => l.slug !== stateKey).length - 6 })}
-                    </Link>
+                        );
+                      })}
                   </div>
-                )}
+                </div>
               </div>
             );
           })}

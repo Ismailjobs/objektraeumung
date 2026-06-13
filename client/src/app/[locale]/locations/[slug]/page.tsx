@@ -36,8 +36,59 @@ import { LocationWien1230Content } from "@/components/location-pages/LocationWie
 import { LocationKlosterneuburgContent } from "@/components/location-pages/LocationKlosterneuburgContent";
 import { LocationWienStateContent } from "@/components/location-pages/LocationWienStateContent";
 import { routing } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/constants";
 
 type Props = { params: { locale: string; slug: string } };
+
+/** Bezirksspezifische Meta Descriptions (23 Wiener Bezirke). Fallback: generisches Template in generateMetadata. */
+const UNIQUE_LOCATION_DESCRIPTIONS: Record<string, string> = {
+  "wien-1010":
+    "Diskrete Entrümpelung in der Inneren Stadt (1010 Wien). Profi-Räumung für Altbauwohnungen & Kanzleien. Festpreis, Wertausgleich & besenrein.",
+  "wien-1020":
+    "Haushaltsauflösung in der Leopoldstadt (1020 Wien). Vom Karmeliterviertel bis zum Prater: Schnelle Räumung mit Wertanrechnung & Fixpreis-Garantie.",
+  "wien-1030":
+    "Wohnungsräumung im 3. Bezirk (Landstraße). Stressfreie Entrümpelung von Altbauten & Diplomatenwohnungen. Kostenlose Erstbesichtigung vor Ort!",
+  "wien-1040":
+    "Zuverlässige Entrümpelung in Wieden (1040 Wien). Wir räumen Wohnungen & Lofts besenrein. Transparente Kosten dank Fixpreis & Wertausgleich.",
+  "wien-1050":
+    "Haushaltsauflösung in Margareten (1050). Ihr Wiener Team für schnelle Wohnungsräumungen, Kellerentrümpelung und fairen Ankauf von Altwaren.",
+  "wien-1060":
+    "Räumungsfirma in Mariahilf (1060 Wien). Ob Dachboden oder Naschmarkt-Wohnung: Wir entrümpeln diskret, umweltgerecht und zum garantierten Festpreis.",
+  "wien-1070":
+    "Entrümpelung im 7. Bezirk (Neubau). Nachhaltige Haushaltsauflösung für Altbauten, inklusive Wertausgleich für Vintage-Möbel und Antiquitäten.",
+  "wien-1080":
+    "Premium-Räumung in der Josefstadt (1080 Wien). Diskrete Verlassenschaftsräumung und Wohnungsauflösung mit Komplett-Service und Fixpreis.",
+  "wien-1090":
+    "Haushaltsauflösung am Alsergrund (1090). Kompetente Entrümpelung von Studenten-WGs bis zur Arztpraxis. Besenreine Übergabe ohne versteckte Kosten.",
+  "wien-1100":
+    "Schnelle Entrümpelung in Favoriten (1100 Wien). Wohnungsräumung, Kellerräumung & Sperrmüll-Abholung. Günstig durch faire Wertanrechnung!",
+  "wien-1110":
+    "Räumung in Simmering (1110). Wir lösen Häuser und Wohnungen auf. Professionell, besenrein und mit direkter MA 48 Entsorgungs-Logistik.",
+  "wien-1120":
+    "Wohnungsauflösung in Meidling (1120 Wien). Zuverlässige Räumungsfirma für Gemeindebauten und Privathäuser. Jetzt Gratis-Besichtigung sichern!",
+  "wien-1130":
+    "Verlassenschaftsräumung in Hietzing (1130). Respektvolle & diskrete Haushaltsauflösung von Villen und Wohnungen. Inklusive Wertausgleich.",
+  "wien-1140":
+    "Entrümpelung in Penzing (1140 Wien). Professionelle Räumung für Haus, Keller & Dachboden. Festpreis-Garantie und umweltgerechte Entsorgung.",
+  "wien-1150":
+    "Haushaltsauflösung im 15. Bezirk. Rasche Wohnungsräumung in Rudolfsheim-Fünfhaus. Ihr verlässlicher Partner für besenreine Übergaben.",
+  "wien-1160":
+    "Räumungen in Ottakring (1160 Wien). Von der Brunnenmarkt-Wohnung bis zur Wilhelminenberg-Villa: Stressfreie Entrümpelung zum Fixpreis.",
+  "wien-1170":
+    "Zuverlässige Entrümpelung in Hernals (1170). Wir entrümpeln Häuser, Wohnungen & Keller besenrein. Profitieren Sie vom fairen Wertausgleich.",
+  "wien-1180":
+    "Haushaltsauflösung in Währing (1180 Wien). Diskrete Räumung von Altbauwohnungen und Verlassenschaften im Cottageviertel. Kostenloses Angebot.",
+  "wien-1190":
+    "Exklusive Räumung in Döbling (1190). Professionelle Wohnungs- und Hausauflösung mit Antiquitäten-Ankauf und besenreiner Übergabe.",
+  "wien-1200":
+    "Entrümpelung in der Brigittenau (1200 Wien). Schnelle Hilfe bei Wohnungsräumungen und Sperrmüll. Transparente Fixpreise, keine versteckten Kosten.",
+  "wien-1210":
+    "Räumungsfirma in Floridsdorf (1210). Wir entrümpeln Häuser, Wohnungen und Kleingärten links der Donau. Besenrein, legal und zuverlässig.",
+  "wien-1220":
+    "Haushaltsauflösung in der Donaustadt (1220 Wien). Vom Kagraner Einfamilienhaus bis zur Seestadt-Wohnung: Entrümpelung mit Fixpreis-Garantie.",
+  "wien-1230":
+    "Entrümpelung in Liesing (1230). Haus- und Wohnungsräumungen im 23. Bezirk. Inklusive Sperrmüllentsorgung und Wertanrechnung. Jetzt anfragen!",
+};
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -49,9 +100,15 @@ export async function generateMetadata({ params }: Props) {
   const { slug } = params;
   const loc = getLocationBySlug(slug);
   if (!loc) return { title: "Standorte | Objekträumung" };
+  const description =
+    UNIQUE_LOCATION_DESCRIPTIONS[slug] ??
+    `Entrümpelung und Haushaltsauflösung in ${loc.nameDe}. Festpreis, Wertausgleich, kostenlose Besichtigung.`;
   return {
     title: `${loc.nameDe} | Objekträumung`,
-    description: `Entrümpelung und Haushaltsauflösung in ${loc.nameDe}. Festpreis, Wertausgleich, kostenlose Besichtigung.`,
+    description,
+    alternates: {
+      canonical: `${SITE_URL}/locations/${slug}`,
+    },
   };
 }
 

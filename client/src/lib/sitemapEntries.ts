@@ -70,7 +70,7 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
     entries.push(toEntry(`/services/${slug}`, 0.8, "monthly", now));
   }
 
-  for (const slug of getAllLocationSlugs()) {
+  for (const slug of getAllLocationSlugs().filter((s) => s !== "klosterneuburg-kahlenberg")) {
     entries.push(toEntry(`/locations/${slug}`, 0.75, "monthly", now));
   }
 
