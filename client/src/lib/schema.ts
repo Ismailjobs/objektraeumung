@@ -18,6 +18,20 @@ export const SCHEMA_LOGO_ID = `${SITE_URL}/#logo`;
 export const SCHEMA_OFFER_CATALOG_ID = `${SITE_URL}/#offer-catalog`;
 export const SCHEMA_FAQ_ID = `${SITE_URL}/#faq`;
 
+/** Rechtlicher Firmenname (Impressum: SWIFT e.U.). */
+const LEGAL_NAME = "SWIFT e.U." as const;
+
+/** GISA-Registernummer (Impressum). */
+const GISA_NUMBER = "34964177" as const;
+
+function gisaIdentifierNode(): JsonLdObject {
+  return {
+    "@type": "PropertyValue",
+    name: "GISA-Nr",
+    value: GISA_NUMBER,
+  };
+}
+
 /** 16 Leistungen im OfferCatalog – slug muss in serviceList.ts existieren. */
 const OFFER_CATALOG_ENTRIES: { name: string; slug: string }[] = [
   { name: "Hausentrümpelung", slug: "haushaltsaufloesung" },
@@ -64,6 +78,25 @@ const BUSINESS_GEO = {
   latitude: 48.1574632,
   longitude: 16.2965206,
 } as const;
+
+const BUSINESS_MAP_URL = `https://www.google.com/maps/search/?api=1&query=${BUSINESS_GEO.latitude},${BUSINESS_GEO.longitude}`;
+
+function contactPointNode(): JsonLdObject {
+  return {
+    "@type": "ContactPoint",
+    telephone: PHONE_CANONICAL_LINK,
+    contactType: "customer service",
+    availableLanguage: ["German", "English"],
+  };
+}
+
+function makesOfferNode(): JsonLdObject {
+  return {
+    "@type": "Offer",
+    name: "Festpreis-Angebot",
+    url: `${SITE_URL}/prices`,
+  };
+}
 
 /** Wien districts 1010–1230 (postal codes). */
 const WIEN_POSTAL_CODES = [
@@ -174,9 +207,11 @@ function organizationNode(): JsonLdObject {
     "@type": "Organization",
     "@id": SCHEMA_ORG_ID,
     name: "Objekträumung",
+    legalName: LEGAL_NAME,
     alternateName: "Objektraeumung",
     url: SITE_URL,
     logo: { "@id": SCHEMA_LOGO_ID },
+    identifier: gisaIdentifierNode(),
     sameAs: SAME_AS,
     email: EMAIL,
     telephone: PHONE_CANONICAL_LINK,
@@ -203,16 +238,19 @@ function localBusinessNode(locale: string): JsonLdObject {
     "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "@id": SCHEMA_LOCAL_BUSINESS_ID,
     name: "Objekträumung",
+    legalName: LEGAL_NAME,
     alternateName: "Objektraeumung",
     url: `${SITE_URL}/`,
     image: [`${SITE_URL}/hero-1.webp`],
     logo: { "@id": SCHEMA_LOGO_ID },
+    identifier: gisaIdentifierNode(),
     description: isDe
       ? DEFAULT_META_DESCRIPTION
       : "Professional clearance, household clearance, decluttering and estate clearance in Vienna, Lower Austria and Burgenland. Fast, discreet and fixed-price.",
     category: [...LOCAL_BUSINESS_CATEGORIES],
     telephone: PHONE_CANONICAL_LINK,
     email: EMAIL,
+    contactPoint: contactPointNode(),
     parentOrganization: { "@id": SCHEMA_ORG_ID },
     address: {
       "@type": "PostalAddress",
@@ -227,6 +265,7 @@ function localBusinessNode(locale: string): JsonLdObject {
       latitude: BUSINESS_GEO.latitude,
       longitude: BUSINESS_GEO.longitude,
     },
+    hasMap: BUSINESS_MAP_URL,
     areaServed: buildAreaServed(),
     priceRange: "€€",
     currenciesAccepted: "EUR",
@@ -241,6 +280,7 @@ function localBusinessNode(locale: string): JsonLdObject {
     },
     sameAs: SAME_AS,
     hasOfferCatalog: { "@id": SCHEMA_OFFER_CATALOG_ID },
+    makesOffer: makesOfferNode(),
     potentialAction: {
       "@type": "CommunicateAction",
       target: {
