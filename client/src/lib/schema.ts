@@ -38,6 +38,33 @@ const OFFER_CATALOG_ENTRIES: { name: string; slug: string }[] = [
   { name: "Zimmer-Räumung", slug: "zimmer-raeumung" },
 ];
 
+/** Kategorien für LocalBusiness / HomeAndConstructionBusiness (JSON-LD). */
+const LOCAL_BUSINESS_CATEGORIES = [
+  "Räumungsservice",
+  "Entrümpelungsservice",
+  "Haushaltsauflösung",
+  "Sperrmüllabholung",
+  "Entsorgungsservice",
+  "Wohnungsauflösung",
+  "Kellerräumung",
+  "Dachbodenräumung",
+  "Garagenräumung",
+  "Firmenauflösung",
+  "Büroräumung",
+  "Gastro Räumung",
+  "Gewerberäumung",
+  "Verlassenschaften Räumung",
+  "Messie Entrümpelung",
+  "Wertanrechnung Antiquitäten",
+  "Möbel Wertanrechnung",
+] as const;
+
+/** Geschäftsstandort (Lore-Kutschera-Weg 14/3/13, 1120 Wien). */
+const BUSINESS_GEO = {
+  latitude: 48.1574632,
+  longitude: 16.2965206,
+} as const;
+
 /** Wien districts 1010–1230 (postal codes). */
 const WIEN_POSTAL_CODES = [
   "1010", "1020", "1030", "1040", "1050", "1060", "1070", "1080", "1090",
@@ -173,7 +200,7 @@ function localBusinessNode(locale: string): JsonLdObject {
   const postalCode = ADDRESS.match(/\d{4}/)?.[0] ?? "1120";
 
   return {
-    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "@id": SCHEMA_LOCAL_BUSINESS_ID,
     name: "Objekträumung",
     alternateName: "Objektraeumung",
@@ -183,6 +210,7 @@ function localBusinessNode(locale: string): JsonLdObject {
     description: isDe
       ? DEFAULT_META_DESCRIPTION
       : "Professional clearance, household clearance, decluttering and estate clearance in Vienna, Lower Austria and Burgenland. Fast, discreet and fixed-price.",
+    category: [...LOCAL_BUSINESS_CATEGORIES],
     telephone: PHONE_CANONICAL_LINK,
     email: EMAIL,
     parentOrganization: { "@id": SCHEMA_ORG_ID },
@@ -194,17 +222,22 @@ function localBusinessNode(locale: string): JsonLdObject {
       addressRegion: "Wien",
       addressCountry: "AT",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS_GEO.latitude,
+      longitude: BUSINESS_GEO.longitude,
+    },
     areaServed: buildAreaServed(),
     priceRange: "€€",
     currenciesAccepted: "EUR",
     paymentAccepted: "Barzahlung, Banküberweisung",
     knowsLanguage: "de-AT",
-    openingHours: "Mo - Sa: 08:00 - 18:00",
+    openingHours: "Mo - Sa: 07:00 - 22:00",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "08:00",
-      closes: "18:00",
+      opens: "07:00",
+      closes: "22:00",
     },
     sameAs: SAME_AS,
     hasOfferCatalog: { "@id": SCHEMA_OFFER_CATALOG_ID },

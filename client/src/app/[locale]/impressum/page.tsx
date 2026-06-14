@@ -204,7 +204,7 @@ export default async function ImpressumPage({ params }: Props) {
             </div>
             <div className="space-y-2">
               <h3 className="font-semibold">17. Widerruf einer Einwilligung</h3>
-              <p>Wenn eine Datenverarbeitung auf Ihrer Einwilligung beruht, koennen Sie diese jederzeit mit Wirkung fuer die Zukunft widerrufen. Laut Dokument: office@swiftumzug.at</p>
+              <p>Wenn eine Datenverarbeitung auf Ihrer Einwilligung beruht, koennen Sie diese jederzeit mit Wirkung fuer die Zukunft widerrufen. Laut Dokument: office@objektraeumung.at</p>
             </div>
             <div className="space-y-2">
               <h3 className="font-semibold">18. Widerspruch gegen Verarbeitung auf Grundlage berechtigter Interessen</h3>
