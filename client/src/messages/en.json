@@ -9,6 +9,7 @@
     "locations": "Locations",
     "contact": "Contact",
     "referenzen": "References",
+    "ratgeber": "Guide",
     "ueberblick": "Overview",
     "impressum": "Impressum",
     "partner": "Partners",
@@ -2715,6 +2716,10 @@
   "cookieBanner": {
     "message": "This website does not use or store any cookies.",
     "close": "Close"
+  },
+  "ratgeberPage": {
+    "relatedOnService": "Related guide articles",
+    "relatedArticles": "More guide articles"
   },
   "footer": {
     "tagline": "Objekträumung – Clearance Vienna & Austria",

@@ -9,6 +9,7 @@
     "locations": "Standorte",
     "contact": "Kontakt",
     "referenzen": "Referenzen",
+    "ratgeber": "Ratgeber",
     "ueberblick": "Überblick",
     "impressum": "Impressum",
     "partner": "Partner",
@@ -2715,6 +2716,10 @@
   "cookieBanner": {
     "message": "Diese Website verwendet und speichert keine Cookies.",
     "close": "Schließen"
+  },
+  "ratgeberPage": {
+    "relatedOnService": "Passende Ratgeber-Artikel",
+    "relatedArticles": "Weitere Ratgeber-Artikel"
   },
   "footer": {
     "tagline": "Objekträumung – Räumung Wien & Österreich",

@@ -3,6 +3,8 @@ import { SITE_URL } from "@/lib/constants";
 import { routing } from "@/i18n/routing";
 import { SERVICE_LIST } from "@/lib/serviceList";
 import { getAllSlugs as getAllLocationSlugs } from "@/lib/locationsData";
+import { getRatgeberMetaList } from "@/data/ratgeber/registry";
+import { getRatgeberLastModified } from "@/lib/ratgeber-dates";
 
 type ChangeFrequency = "weekly" | "monthly" | "yearly";
 
@@ -22,6 +24,7 @@ const STATIC_PATHS: SitemapPathConfig[] = [
   { path: "/ueberblick", priority: 0.8, changeFrequency: "monthly" },
   { path: "/about", priority: 0.7, changeFrequency: "monthly" },
   { path: "/partner", priority: 0.5, changeFrequency: "monthly" },
+  { path: "/ratgeber", priority: 0.75, changeFrequency: "weekly" },
   { path: "/impressum", priority: 0.3, changeFrequency: "yearly" },
 ];
 
@@ -72,6 +75,12 @@ export function getSitemapEntries(): MetadataRoute.Sitemap {
 
   for (const slug of getAllLocationSlugs().filter((s) => s !== "klosterneuburg-kahlenberg")) {
     entries.push(toEntry(`/locations/${slug}`, 0.75, "monthly", now));
+  }
+
+  for (const meta of getRatgeberMetaList()) {
+    entries.push(
+      toEntry(`/ratgeber/${meta.slug}`, 0.7, "monthly", getRatgeberLastModified(meta))
+    );
   }
 
   return entries;

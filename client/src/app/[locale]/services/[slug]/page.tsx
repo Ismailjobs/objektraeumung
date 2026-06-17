@@ -37,6 +37,8 @@ import {
   serviceHeroAbsoluteUrl,
 } from "@/lib/schema";
 import { PageStructuredData } from "@/components/PageStructuredData";
+import { RelatedRatgeberSection } from "@/components/ratgeber/RelatedRatgeberSection";
+import { getRatgeberArticlesForService } from "@/data/ratgeber/registry";
 
 const ALL_SLUGS = [...SERVICE_LIST.map((s) => s.slug), ...Object.keys(LEGACY_SLUGS)];
 
@@ -84,7 +86,9 @@ export default async function ServiceSlugPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "services" });
   const tNav = await getTranslations({ locale, namespace: "nav" });
   const tUeb = await getTranslations({ locale, namespace: "ueberblick" });
+  const tRatgeber = await getTranslations({ locale, namespace: "ratgeberPage" });
   const title = t(`${titleKey}.title`);
+  const relatedRatgeber = getRatgeberArticlesForService(slug);
   const metaDesc = t(`${titleKey}.metaDescription`);
   const theme = getServiceTheme(contentKey as ServiceKey);
   const isHousehold = slug === "haushaltsaufloesung";
@@ -195,6 +199,12 @@ export default async function ServiceSlugPage({ params }: Props) {
         )}
       </article>
       {!isEinkauf && !isHousehold && !isKeller && !isDachboden && !isVerlassenschaft && !isMessie && !isWohnungsaufloesung && !isZimmerRaeumung && !isFirmenaufloesung && !isGastroRetail && !isGaragenraeumung && !isLagerGewerbeparks && !isAntiquitaetenWertanrechnung && !isMoebelWertanrechnung && !isRaeumungWien && !isEntrumpelungWien && !isEntsorgungWien && !isUeberblick && <HowItWorksSection />}
+      {relatedRatgeber.length > 0 && (
+        <RelatedRatgeberSection
+          articles={relatedRatgeber}
+          title={tRatgeber("relatedOnService")}
+        />
+      )}
       <div className={theme.contactBg}>
         <ContactSection defaultService={contentKey} />
       </div>

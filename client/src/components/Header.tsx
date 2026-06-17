@@ -12,7 +12,7 @@ import { getServicesByCategory } from "@/lib/serviceList";
 
 const navLinks = [
   { key: "services", href: "/services", hasDropdown: true },
-  { key: "referenzen", href: "/referenzen" },
+  { key: "ratgeber", href: "/ratgeber" },
   { key: "ueberblick", href: "/ueberblick" },
   { key: "locations", href: "/locations" },
   { key: "prices", href: "/prices" },
@@ -218,8 +218,8 @@ export function Header() {
                   )}
                 </AnimatePresence>
               </div>
-              <Link href="/referenzen" onClick={() => setOpen(false)} className="text-white/90 hover:text-accent font-medium py-2">
-                {t("referenzen")}
+              <Link href="/ratgeber" onClick={() => setOpen(false)} className="text-white/90 hover:text-accent font-medium py-2">
+                {t("ratgeber")}
               </Link>
               <Link href="/ueberblick" onClick={() => setOpen(false)} className="text-white/90 hover:text-accent font-medium py-2">
                 {t("ueberblick")}
