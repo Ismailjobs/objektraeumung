@@ -3,14 +3,264 @@ import { MoebelBewertenObjektrueumungWienArticle } from "@/components/ratgeber/a
 import { BueroaufloesungWienDsgvoAktenvernichtungArticle } from "@/components/ratgeber/articles/bueroaufloesung-wien-dsgvo-aktenvernichtung";
 import { ZwangsraeumungDelogierungWienHausverwaltungArticle } from "@/components/ratgeber/articles/zwangsraeumung-delogierung-wien-hausverwaltung";
 import { SchwerlastentsorgungWienGrosslastenArticle } from "@/components/ratgeber/articles/schwerlastentsorgung-wien-grosslasten";
+import { HaushaltsaufloesungPreiseWien2026Article } from "@/components/ratgeber/articles/haushaltsaufloesung-preise-wien-2026";
+import { Ma48MistplatzWienEntsorgungsGuide2026Article } from "@/components/ratgeber/articles/ma-48-mistplatz-wien-entsorgungs-guide-2026";
+import { EntruempelungWienUmgebungKorneuburgTullnSchwechatArticle } from "@/components/ratgeber/articles/entruempelung-wien-umgebung-korneuburg-tulln-schwechat";
+import { RaeumungVorSanierungAltbauWien2026Article } from "@/components/ratgeber/articles/raeumung-vor-sanierung-altbau-wien-2026";
+import { MessieWohnungRaeumungWienSpezialArticle } from "@/components/ratgeber/articles/messie-wohnung-raeumung-wien-spezial";
+import { GeschaeftslokalRaeumungRueckbauWienArticle } from "@/components/ratgeber/articles/geschaeftslokal-raeumung-rueckbau-wien";
 
 /**
  * Zentrale Artikel-Registry.
  * Neuen Artikel hinzufügen:
  * 1. `components/ratgeber/articles/{slug}.tsx` anlegen (Vorlage: `_vorlage-artikel.tsx`)
  * 2. Import + Eintrag unten ergänzen
+ *
+ * publishedAt: höchstens 18. Juni 2026 (2026-06-18T23:59:59.000Z).
  */
 export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
+  {
+    meta: {
+      slug: "geschaeftslokal-raeumung-rueckbau-wien",
+      title: "Geschäftslokal Räumung & Rückbau in Wien: Ihr B2B-Leitfaden für die besenreine Übergabe",
+      description:
+        "Geschäftslokal Räumung Wien: B2B-Rückbau, Gastro & Retail, Entsorgungsnachweise & Fixpreis. Besenreine Übergabe zum Stichtag — jetzt Angebot anfragen.",
+      excerpt:
+        "Geschäftslokal Räumung in Wien: Terminplan rückwärts, professioneller Rückbau, Gastro-Spezialfälle, Entsorgungsnachweise und B2B-Wertausgleich zum Fixpreis.",
+      publishedAt: "2026-06-18T08:00:00.000Z",
+      readingTimeMinutes: 9,
+      categories: ["Gewerbe", "B2B", "Wien"],
+      tags: [
+        "Geschäftslokal Räumung Wien",
+        "Gewerberäumung",
+        "Rückbau",
+        "Gastro",
+        "Fixpreis",
+        "besenrein",
+      ],
+      relatedSlugs: [
+        "bueroaufloesung-wien-dsgvo-aktenvernichtung",
+        "schwerlastentsorgung-wien-grosslasten",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+      ],
+      serviceSlugs: [
+        "firmenaufloesung",
+        "gastro-retail",
+        "lager-gewerbeparks",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "entsorgung-wien",
+        "moebel-wertanrechnung",
+        "einkauf",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: GeschaeftslokalRaeumungRueckbauWienArticle,
+  },
+  {
+    meta: {
+      slug: "messie-wohnung-raeumung-wien-spezial",
+      title: "Spezialräumung für Messie-Wohnungen in Wien: Diskret, Sicher & Besenrein",
+      description:
+        "Messie-Wohnung Wien: diskrete Spezialräumung mit PSA, MA-48-Entsorgung & Fixpreis. Vertrauliches Erstgespräch — Objekt Räumung Wien übernimmt die schwere Arbeit.",
+      excerpt:
+        "Messie-Wohnung in Wien: Diskretion, Arbeitsschutz, systematischer Ablauf, Wiederherstellung und transparente Fixpreis-Kalkulation für Extremfälle.",
+      publishedAt: "2026-06-17T02:00:00.000Z",
+      readingTimeMinutes: 9,
+      categories: ["Messie", "Spezialräumung", "Wien"],
+      tags: [
+        "Messie-Wohnung Wien",
+        "Messie Entrümpelung",
+        "Spezialräumung",
+        "Diskret",
+        "MA 48",
+        "Fixpreis",
+      ],
+      relatedSlugs: [
+        "zwangsraeumung-delogierung-wien-hausverwaltung",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "haushaltsaufloesung-preise-wien-2026",
+      ],
+      serviceSlugs: [
+        "messie-entruempelung",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "verlassenschaft",
+        "entrumpelung-wien",
+        "entsorgung-wien",
+        "raeumung-wien",
+        "kellerraeumung",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: MessieWohnungRaeumungWienSpezialArticle,
+  },
+  {
+    meta: {
+      slug: "raeumung-vor-sanierung-altbau-wien-2026",
+      title: "Räumung vor der Sanierung in Wien: Der Profi-Guide für Altbauwohnungen 2026",
+      description:
+        "Räumung vor Sanierung Wien: Altbau besenrein vorbereiten, Demontage & MA-48-Entsorgung. Fixpreis, Altbauschutz & Wertausgleich. Jetzt Besichtigung anfragen.",
+      excerpt:
+        "Räumung vor der Sanierung in Wien: Entkernung light für Altbauwohnungen — Handwerker vorbereiten, Demontage, MA-48-Entsorgung, Altbauschätze schützen und Wertausgleich nutzen.",
+      publishedAt: "2026-06-17T03:00:00.000Z",
+      readingTimeMinutes: 9,
+      categories: ["Sanierung", "Altbau", "Wien"],
+      tags: [
+        "Räumung vor Sanierung Wien",
+        "Altbau Sanierung",
+        "Entkernung",
+        "MA 48",
+        "Wertausgleich",
+        "Fixpreis",
+      ],
+      relatedSlugs: [
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "moebel-bewerten-objektrueumung-wien",
+        "haushaltsaufloesung-preise-wien-2026",
+      ],
+      serviceSlugs: [
+        "wohnungsaufloesung",
+        "haushaltsaufloesung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "entsorgung-wien",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "einkauf",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: RaeumungVorSanierungAltbauWien2026Article,
+  },
+  {
+    meta: {
+      slug: "entruempelung-wien-umgebung-korneuburg-tulln-schwechat",
+      title: "Entrümpelung in Wien-Umgebung: Profi-Räumung für Korneuburg, Tulln & Schwechat",
+      description:
+        "Entrümpelung Wien-Umgebung: Korneuburg, Tulln & Schwechat. Regionale Logistik, Fixpreis & Wertanrechnung. Kostenlose Besichtigung — jetzt Angebot anfragen.",
+      excerpt:
+        "Entrümpelung in der Wien-Umgebung: Logistik-Konzepte für Korneuburg, Tulln und Schwechat. Hanglagen, Donauufer, Airport-Zone — Fixpreis inkl. Wertausgleich.",
+      publishedAt: "2026-06-17T04:00:00.000Z",
+      readingTimeMinutes: 8,
+      categories: ["Region", "Niederösterreich", "Entrümpelung"],
+      tags: [
+        "Entrümpelung Wien Umgebung",
+        "Korneuburg",
+        "Tulln",
+        "Schwechat",
+        "Niederösterreich",
+        "Fixpreis",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
+        "moebel-bewerten-objektrueumung-wien",
+      ],
+      serviceSlugs: [
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "haushaltsaufloesung",
+        "firmenaufloesung",
+        "lager-gewerbeparks",
+        "gastro-retail",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "entsorgung-wien",
+        "moebel-wertanrechnung",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungWienUmgebungKorneuburgTullnSchwechatArticle,
+  },
+  {
+    meta: {
+      slug: "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+      title: "MA 48 Mistplatz in Wien: Der ultimative Entsorgungs-Guide & Profi-Checkliste 2026",
+      description:
+        "MA 48 Mistplatz Wien: Trenn-Guide, 4-Schritte-Ablauf & Checkliste 2026. Wann Eigenanlieferung sinnvoll ist — und wann Profis günstiger sind. Jetzt beraten lassen.",
+      excerpt:
+        "MA 48 Mistplatz in Wien: So nutzen Sie das städtische Entsorgungssystem effizient. Trenn-Guide, Gefahrgut-Tipps, Selbst vs. Profi und Checkliste für Ihren Einsatztag.",
+      publishedAt: "2026-06-17T05:00:00.000Z",
+      readingTimeMinutes: 8,
+      categories: ["Entsorgung", "MA 48", "Wien"],
+      tags: [
+        "MA 48 Wien",
+        "Mistplatz Wien",
+        "Abfallentsorgung",
+        "Mülltrennung",
+        "Sperrmüll",
+        "Entsorgung Wien",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
+        "moebel-bewerten-objektrueumung-wien",
+      ],
+      serviceSlugs: [
+        "entsorgung-wien",
+        "entrumpelung-wien",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "garagenraeumung",
+        "zimmer-raeumung",
+        "raeumung-wien",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: Ma48MistplatzWienEntsorgungsGuide2026Article,
+  },
+  {
+    meta: {
+      slug: "haushaltsaufloesung-preise-wien-2026",
+      title: "Haushaltsauflösung Preise Wien 2026: Was kostet eine Räumung wirklich?",
+      description:
+        "Haushaltsauflösung Preise Wien 2026: Richtwerte, 4 Kostenfaktoren & Wertanrechnung. Fixpreis ohne Nachzahlungen. Kostenlose Besichtigung — jetzt anfragen.",
+      excerpt:
+        "Haushaltsauflösung Preise in Wien 2026: Was bestimmt die Kosten? Richtwerte nach Objektgröße, Wertanrechnung und transparentes Fixpreis-Versprechen.",
+      publishedAt: "2026-06-17T06:00:00.000Z",
+      readingTimeMinutes: 7,
+      categories: ["Preise", "Haushaltsauflösung", "Wien"],
+      tags: [
+        "Haushaltsauflösung Preise Wien",
+        "Räumungskosten",
+        "Fixpreis",
+        "Wertanrechnung",
+        "Wertausgleich",
+        "2026",
+      ],
+      relatedSlugs: [
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "moebel-bewerten-objektrueumung-wien",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "zimmer-raeumung",
+        "garagenraeumung",
+        "verlassenschaft",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "einkauf",
+        "entrumpelung-wien",
+        "haushaltsaufloesung-ueberblick",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: HaushaltsaufloesungPreiseWien2026Article,
+  },
   {
     meta: {
       slug: "schwerlastentsorgung-wien-grosslasten",
@@ -32,7 +282,7 @@ export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
       ],
       relatedSlugs: [
         "bueroaufloesung-wien-dsgvo-aktenvernichtung",
-        "zwangsraeumung-delogierung-wien-hausverwaltung",
+        "haushaltsaufloesung-preise-wien-2026",
       ],
       serviceSlugs: [
         "lager-gewerbeparks",
@@ -145,9 +395,9 @@ export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
         "Antiquitäten",
       ],
       relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
         "bueroaufloesung-wien-dsgvo-aktenvernichtung",
         "zwangsraeumung-delogierung-wien-hausverwaltung",
-        "schwerlastentsorgung-wien-grosslasten",
       ],
       serviceSlugs: [
         "moebel-wertanrechnung",
