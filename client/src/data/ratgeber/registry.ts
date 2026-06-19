@@ -9,6 +9,14 @@ import { EntruempelungWienUmgebungKorneuburgTullnSchwechatArticle } from "@/comp
 import { RaeumungVorSanierungAltbauWien2026Article } from "@/components/ratgeber/articles/raeumung-vor-sanierung-altbau-wien-2026";
 import { MessieWohnungRaeumungWienSpezialArticle } from "@/components/ratgeber/articles/messie-wohnung-raeumung-wien-spezial";
 import { GeschaeftslokalRaeumungRueckbauWienArticle } from "@/components/ratgeber/articles/geschaeftslokal-raeumung-rueckbau-wien";
+import { EntruempelungMietnomadenWienVermieterArticle } from "@/components/ratgeber/articles/entruempelung-mietnomaden-wien-vermieter";
+import { HalteverbotEntruempelungWienMa46Article } from "@/components/ratgeber/articles/halteverbot-entruempelung-wien-ma-46";
+import { GebrauchteMoebelVerkaufenWienWillhabenWertanrechnungArticle } from "@/components/ratgeber/articles/gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung";
+import { EntruempelungWienSteuerlichAbsetzenArticle } from "@/components/ratgeber/articles/entruempelung-wien-steuerlich-absetzen";
+import { BauschuttSperrmuellWienEntsorgungArticle } from "@/components/ratgeber/articles/bauschutt-sperrmuell-wien-entsorgung";
+import { EntruempelungBurgenlandMattersburgRustOberpullendorfArticle } from "@/components/ratgeber/articles/entruempelung-burgenland-mattersburg-rust-oberpullendorf";
+import { ZimmerRaeumungWienWgUebergabeArticle } from "@/components/ratgeber/articles/zimmer-raeumung-wien-wg-uebergabe";
+import { EntruempelungAuswanderungWienAuslandArticle } from "@/components/ratgeber/articles/entruempelung-auswanderung-wien-ausland";
 
 /**
  * Zentrale Artikel-Registry.
@@ -19,6 +27,329 @@ import { GeschaeftslokalRaeumungRueckbauWienArticle } from "@/components/ratgebe
  * publishedAt: höchstens 18. Juni 2026 (2026-06-18T23:59:59.000Z).
  */
 export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
+  {
+    meta: {
+      slug: "entruempelung-auswanderung-wien-ausland",
+      title:
+        "Entrümpelung bei Auswanderung aus Wien: Komplette Wohnungsauflösung für Ihren Neustart im Ausland",
+      description:
+        "Auswanderung Wien: Wohnungsauflösung für Relocation ins Ausland. Fixpreis, Wertanrechnung & besenreine Übergabe — auch wenn Sie schon im Ausland sind. Jetzt anfragen.",
+      excerpt:
+        "Entrümpelung bei Auswanderung aus Wien: Zeitplan, Wertanrechnung, Altbau & Genossenschaft, Express-Service und FAQ für internationale Relocations.",
+      publishedAt: "2026-06-18T10:00:00.000Z",
+      readingTimeMinutes: 9,
+      categories: ["Auswanderung", "Haushaltsauflösung", "Wien"],
+      tags: [
+        "Auswanderung Wien",
+        "Wohnungsauflösung Ausland",
+        "Relocation Wien",
+        "Fixpreis",
+        "Wertanrechnung",
+        "Wiener Wohnen",
+        "Express Räumung",
+      ],
+      relatedSlugs: [
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+        "haushaltsaufloesung-preise-wien-2026",
+        "zimmer-raeumung-wien-wg-uebergabe",
+        "bauschutt-sperrmuell-wien-entsorgung",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "verlassenschaft",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "moebel-wertanrechnung",
+        "entsorgung-wien",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungAuswanderungWienAuslandArticle,
+  },
+  {
+    meta: {
+      slug: "zimmer-raeumung-wien-wg-uebergabe",
+      title: "Zimmer Räumung in Wien: Der stressfreie Leitfaden für WG-Zimmer, Studentenheime und Teilräumungen",
+      description:
+        "Zimmer Räumung Wien: WG-Zimmer, Studentenheime & Teilräumungen. Express-Termine, Fixpreis & Wertanrechnung für Studenten — besenreine Übergabe. Jetzt anfragen.",
+      excerpt:
+        "Zimmer Räumung in Wien: Leitfaden für WG-Zimmer, Studentenheime und Teilräumungen. Zeitplan, Kostenfaktoren, Checkliste und FAQ für stressfreie Übergabe.",
+      publishedAt: "2026-06-18T09:00:00.000Z",
+      readingTimeMinutes: 8,
+      categories: ["WG", "Studenten", "Wien"],
+      tags: [
+        "Zimmer Räumung Wien",
+        "WG Räumung",
+        "Studenten Entrümpelung",
+        "Teilräumung",
+        "Fixpreis",
+        "Wertanrechnung",
+        "Express Termin",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
+        "bauschutt-sperrmuell-wien-entsorgung",
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+      ],
+      serviceSlugs: [
+        "wohnungsaufloesung",
+        "haushaltsaufloesung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "kellerraeumung",
+        "moebel-wertanrechnung",
+        "entsorgung-wien",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: ZimmerRaeumungWienWgUebergabeArticle,
+  },
+  {
+    meta: {
+      slug: "entruempelung-burgenland-mattersburg-rust-oberpullendorf",
+      title:
+        "Entrümpelung in Burgenland Nord & Mitte: Mattersburg, Rust & Oberpullendorf rechtssicher und fachgerecht",
+      description:
+        "Entrümpelung Burgenland: Mattersburg, Rust & Oberpullendorf. Regionale Logistik, Fixpreis & Wertanrechnung für Höfe, Seehäuser & Gewerbe — jetzt anfragen.",
+      excerpt:
+        "Entrümpelung im nördlichen und mittleren Burgenland: Mattersburg, Rust und Oberpullendorf. Regionale Logistik, Mülltrennung, Fixpreis-Garantie und FAQ.",
+      publishedAt: "2026-06-18T08:00:00.000Z",
+      readingTimeMinutes: 9,
+      categories: ["Region", "Burgenland", "Entrümpelung"],
+      tags: [
+        "Entrümpelung Burgenland",
+        "Mattersburg",
+        "Rust",
+        "Oberpullendorf",
+        "Haushaltsauflösung",
+        "Fixpreis",
+        "Wertanrechnung",
+      ],
+      relatedSlugs: [
+        "entruempelung-wien-umgebung-korneuburg-tulln-schwechat",
+        "bauschutt-sperrmuell-wien-entsorgung",
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+      ],
+      serviceSlugs: [
+        "entrumpelung-wien",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "verlassenschaft",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "entsorgung-wien",
+        "raeumung-wien",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungBurgenlandMattersburgRustOberpullendorfArticle,
+  },
+  {
+    meta: {
+      slug: "bauschutt-sperrmuell-wien-entsorgung",
+      title: "Bauschutt vs. Sperrmüll in Wien: Was gilt als was und wie entsorgt man es richtig?",
+      description:
+        "Bauschutt vs. Sperrmüll Wien: Unterschiede, Trennregeln & MA-48-Entsorgung. Rigips, Einbauküche & Fixpreis — fachgerecht entsorgen lassen. Jetzt anfragen.",
+      excerpt:
+        "Bauschutt vs. Sperrmüll in Wien: Was gilt als was? Vergleichstabelle, Entsorgungsregeln, häufige Fehler und FAQ für Renovierung und Räumung.",
+      publishedAt: "2026-06-18T03:00:00.000Z",
+      readingTimeMinutes: 10,
+      categories: ["Entsorgung", "Bauschutt", "Wien"],
+      tags: [
+        "Bauschutt Sperrmüll Wien",
+        "MA 48",
+        "Sperrmüll",
+        "Bauschutt",
+        "Mülltrennung",
+        "Entsorgung Wien",
+      ],
+      relatedSlugs: [
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "halteverbot-entruempelung-wien-ma-46",
+        "raeumung-vor-sanierung-altbau-wien-2026",
+      ],
+      serviceSlugs: [
+        "entsorgung-wien",
+        "entrumpelung-wien",
+        "haushaltsaufloesung",
+        "kellerraeumung",
+        "wohnungsaufloesung",
+        "raeumung-wien",
+        "moebel-wertanrechnung",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: BauschuttSperrmuellWienEntsorgungArticle,
+  },
+  {
+    meta: {
+      slug: "entruempelung-wien-steuerlich-absetzen",
+      title: "Entrümpelung in Wien steuerlich absetzen: Der ultimative Leitfaden für Vermieter, Privatpersonen & Erben",
+      description:
+        "Entrümpelung steuerlich absetzen Wien: Handwerkerbonus, Werbungskosten & Nachlassverbindlichkeiten. Transparente Rechnung — Fixpreis von Objekträumung. Jetzt anfragen.",
+      excerpt:
+        "Entrümpelung in Wien steuerlich absetzen: Privatpersonen, Vermieter & Erben. Rechnungsstruktur, Checkliste, häufige Fehler und FAQ für das Finanzamt.",
+      publishedAt: "2026-06-18T04:00:00.000Z",
+      readingTimeMinutes: 11,
+      categories: ["Steuer", "Entrümpelung", "Wien"],
+      tags: [
+        "Entrümpelung steuerlich absetzen Wien",
+        "Handwerkerbonus",
+        "Werbungskosten",
+        "Haushaltsnahe Dienstleistungen",
+        "Verlassenschaft",
+        "Fixpreis",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+        "entruempelung-mietnomaden-wien-vermieter",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "verlassenschaft",
+        "kellerraeumung",
+        "entrumpelung-wien",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "firmenaufloesung",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungWienSteuerlichAbsetzenArticle,
+  },
+  {
+    meta: {
+      slug: "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+      title: "Gebrauchte Möbel verkaufen in Wien: Willhaben vs. direkte Wertanrechnung bei der Räumung",
+      description:
+        "Möbel verkaufen Wien: Willhaben vs. Wertanrechnung im Vergleich. Zeit, Kosten & Fixpreis — wann sich Sofort-Wertanrechnung bei der Entrümpelung lohnt. Jetzt anfragen.",
+      excerpt:
+        "Gebrauchte Möbel in Wien verkaufen: Willhaben vs. Sofort-Wertanrechnung. Vergleichstabelle, Kombi-Strategie und FAQ für Haushaltsauflösungen.",
+      publishedAt: "2026-06-18T05:00:00.000Z",
+      readingTimeMinutes: 10,
+      categories: ["Wertanrechnung", "Möbel", "Wien"],
+      tags: [
+        "Möbel verkaufen Wien",
+        "Willhaben",
+        "Wertanrechnung",
+        "Wertausgleich",
+        "Haushaltsauflösung",
+        "Fixpreis",
+      ],
+      relatedSlugs: [
+        "moebel-bewerten-objektrueumung-wien",
+        "haushaltsaufloesung-preise-wien-2026",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+      ],
+      serviceSlugs: [
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "einkauf",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "verlassenschaft",
+        "entrumpelung-wien",
+        "firmenaufloesung",
+        "entsorgung-wien",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: GebrauchteMoebelVerkaufenWienWillhabenWertanrechnungArticle,
+  },
+  {
+    meta: {
+      slug: "halteverbot-entruempelung-wien-ma-46",
+      title: "Halteverbot für die Entrümpelung in Wien organisieren: Richtlinien, MA 46 Antrag & Kosten",
+      description:
+        "Halteverbot Entrümpelung Wien: MA-46-Antrag, 48-Stunden-Regel & Kosten ab 80 €. HVZ rechtssicher organisieren — oder Full-Service von Objekträumung. Jetzt anfragen.",
+      excerpt:
+        "Halteverbot für die Entrümpelung in Wien: Warum HVZ unverzichtbar ist, MA-46-Antrag Schritt für Schritt, Kosten & Fristen und FAQ für Vermieter und Räumungskunden.",
+      publishedAt: "2026-06-18T06:00:00.000Z",
+      readingTimeMinutes: 10,
+      categories: ["Logistik", "Halteverbot", "Wien"],
+      tags: [
+        "Halteverbot Entrümpelung Wien",
+        "MA 46",
+        "Halteverbotszone",
+        "HVZ Wien",
+        "Parkverbot",
+        "Entrümpelung",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "entruempelung-wien-umgebung-korneuburg-tulln-schwechat",
+      ],
+      serviceSlugs: [
+        "entrumpelung-wien",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "raeumung-wien",
+        "firmenaufloesung",
+        "messie-entruempelung",
+        "verlassenschaft",
+        "kellerraeumung",
+        "dachbodenraeumung",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: HalteverbotEntruempelungWienMa46Article,
+  },
+  {
+    meta: {
+      slug: "entruempelung-mietnomaden-wien-vermieter",
+      title: "Entrümpelung nach Mietnomaden in Wien: Kosten, Rechte & Notfall-Leitfaden für Vermieter",
+      description:
+        "Mietnomaden Entrümpelung Wien: Delogierung, Beweissicherung, MA-48-Entsorgung & Fixpreis. Rechte, Kosten & FAQ für Vermieter — jetzt diskret anfragen.",
+      excerpt:
+        "Entrümpelung nach Mietnomaden in Wien: Rechtliche Voraussetzungen, Beweissicherung, 4-Phasen-Ablauf, Aufbewahrungspflichten, Kosten & FAQ für Vermieter.",
+      publishedAt: "2026-06-18T07:00:00.000Z",
+      readingTimeMinutes: 11,
+      categories: ["Mietnomaden", "Vermieter", "Wien"],
+      tags: [
+        "Mietnomaden Entrümpelung Wien",
+        "Delogierung",
+        "Vermieter",
+        "Zwangsräumung",
+        "Fixpreis",
+        "MA 48",
+      ],
+      relatedSlugs: [
+        "zwangsraeumung-delogierung-wien-hausverwaltung",
+        "messie-wohnung-raeumung-wien-spezial",
+        "haushaltsaufloesung-preise-wien-2026",
+      ],
+      serviceSlugs: [
+        "wohnungsaufloesung",
+        "haushaltsaufloesung",
+        "verlassenschaft",
+        "messie-entruempelung",
+        "entrumpelung-wien",
+        "entsorgung-wien",
+        "raeumung-wien",
+        "moebel-wertanrechnung",
+        "kellerraeumung",
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungMietnomadenWienVermieterArticle,
+  },
   {
     meta: {
       slug: "geschaeftslokal-raeumung-rueckbau-wien",
@@ -319,9 +650,9 @@ export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
         "Fixpreis",
       ],
       relatedSlugs: [
-        "moebel-bewerten-objektrueumung-wien",
-        "bueroaufloesung-wien-dsgvo-aktenvernichtung",
-        "schwerlastentsorgung-wien-grosslasten",
+        "entruempelung-mietnomaden-wien-vermieter",
+        "messie-wohnung-raeumung-wien-spezial",
+        "haushaltsaufloesung-preise-wien-2026",
       ],
       serviceSlugs: [
         "verlassenschaft",
@@ -395,9 +726,9 @@ export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
         "Antiquitäten",
       ],
       relatedSlugs: [
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
         "haushaltsaufloesung-preise-wien-2026",
         "bueroaufloesung-wien-dsgvo-aktenvernichtung",
-        "zwangsraeumung-delogierung-wien-hausverwaltung",
       ],
       serviceSlugs: [
         "moebel-wertanrechnung",
