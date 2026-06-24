@@ -1504,15 +1504,43 @@
   },
   "partner": {
     "metaTitle": "Partner | Objekträumung",
-    "metaDescription": "Partner und Kooperationen von Objekträumung: Sofortentrümpelung – professionelle Entrümpelung und Räumung in Österreich.",
+    "metaDescription": "Partner und Kooperationen von Objekträumung: Entrümpelung, Räumung und Umzug in Wien, Oberösterreich, Steiermark, Salzburg und ganz Österreich.",
     "breadcrumb": "Partner",
     "eyebrow": "Kooperationen",
     "title": "Unsere Partner im Bereich Entrümpelung & Räumung",
     "intro": "Objekträumung arbeitet mit ausgewählten Partnern zusammen, die dieselben Qualitätsstandards teilen: transparente Preise, zuverlässige Abwicklung und respektvoller Umgang mit Kundinnen und Kunden.",
-    "sofortTitle": "Sofortentrümpelung",
-    "sofortText1": "Sofortentrümpelung ist ein spezialisiertes Unternehmen für schnelle und professionelle Entrümpelungen in Österreich. Ob Wohnungsauflösung, Keller- oder Dachbodenräumung, Gewerbeobjekte oder Sperrmüllabholung – das Team übernimmt die komplette Abwicklung von der Besichtigung bis zur besenreinen Übergabe.",
-    "sofortText2": "Wir empfehlen Sofortentrümpelung als verlässlichen Partner, wenn Sie eine zeitnahe Entrümpelung mit Fixpreis-Garantie und fachgerechter Entsorgung suchen. Mehr Informationen, Leistungen und Kontaktmöglichkeiten finden Sie auf der Website.",
-    "sofortLinkLabel": "sofortentrumpelung.at besuchen",
+    "entries": {
+      "sofort": {
+        "title": "Sofortentrümpelung",
+        "text1": "Sofortentrümpelung ist ein spezialisiertes Unternehmen für schnelle und professionelle Entrümpelungen in Österreich. Ob Wohnungsauflösung, Keller- oder Dachbodenräumung, Gewerbeobjekte oder Sperrmüllabholung – das Team übernimmt die komplette Abwicklung von der Besichtigung bis zur besenreinen Übergabe.",
+        "text2": "Wir empfehlen Sofortentrümpelung als verlässlichen Partner, wenn Sie eine zeitnahe Entrümpelung mit Fixpreis-Garantie und fachgerechter Entsorgung suchen. Mehr Informationen, Leistungen und Kontaktmöglichkeiten finden Sie auf der Website.",
+        "linkLabel": "sofortentrumpelung.at besuchen"
+      },
+      "swift": {
+        "title": "SWIFT Umzug",
+        "text1": "SWIFT Umzug ist Ihr Partner für professionelle Umzüge in Wien und ganz Österreich. Ob Privatumzug, Büroumzug oder Firmenumzug – das Team plant, packt und transportiert zuverlässig von der Besichtigung bis zur Schlüsselübergabe.",
+        "text2": "Für Umzüge mit klarer Kostenplanung, versichertem Transport und erfahrenem Personal empfehlen wir SWIFT Umzug. Alle Leistungen und Kontaktmöglichkeiten finden Sie auf der Website.",
+        "linkLabel": "swiftumzug.at besuchen"
+      },
+      "ooe": {
+        "title": "Entrümpelung Oberösterreich",
+        "text1": "entruempelung-ooe.at ist spezialisiert auf Entrümpelungen und Haushaltsauflösungen in Oberösterreich. Von Linz über Wels bis Steyr – Wohnungs-, Keller- und Gewerberäumungen werden termingerecht und besenrein abgewickelt.",
+        "text2": "Wenn Sie in Oberösterreich eine zuverlässige Entrümpelungsfirma mit Fixpreis und fachgerechter Entsorgung suchen, empfehlen wir diesen regionalen Partner. Details zu Leistungen und Anfrage finden Sie online.",
+        "linkLabel": "entruempelung-ooe.at besuchen"
+      },
+      "steiermark": {
+        "title": "Steirer Entrümpler",
+        "text1": "steirer-entruempler.at bietet professionelle Entrümpelungen und Räumungen in der Steiermark – von Graz über Leoben bis in die Regionen. Haushaltsauflösungen, Kellerräumungen und Gewerbeobjekte werden sorgfältig und termingerecht durchgeführt.",
+        "text2": "Für Kundinnen und Kunden in der Steiermark empfehlen wir Steirer Entrümpler als erfahrenen Partner mit transparenten Preisen und besenreiner Übergabe. Mehr erfahren Sie auf der Website.",
+        "linkLabel": "steirer-entruempler.at besuchen"
+      },
+      "salzburg": {
+        "title": "Entrümpelungsfirma Salzburg",
+        "text1": "entruempelungsfirma-salzburg.at ist Ihr Ansprechpartner für Entrümpelungen im Bundesland Salzburg und Umgebung. Ob Wohnungsauflösung, Verlassenschaft oder Gewerberäumung – das Team übernimmt Besichtigung, Räumung und fachgerechte Entsorgung.",
+        "text2": "Suchen Sie in Salzburg eine verlässliche Entrümpelungsfirma mit Fixpreis-Garantie, empfehlen wir diesen Partner. Leistungen, Referenzen und Kontakt finden Sie auf der Website.",
+        "linkLabel": "entruempelungsfirma-salzburg.at besuchen"
+      }
+    },
     "whyTitle": "Warum Partnerschaften?",
     "whyText": "Gemeinsam mit starken Partnern können wir Kundinnen und Kunden in ganz Österreich noch besser unterstützen. Jeder Partner wird sorgfältig ausgewählt – nach Erfahrung, Versicherungsschutz und Kundenzufriedenheit."
   },

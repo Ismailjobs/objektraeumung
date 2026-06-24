@@ -1504,15 +1504,43 @@
   },
   "partner": {
     "metaTitle": "Partners | Objekträumung",
-    "metaDescription": "Partners and collaborations of Objekträumung: Sofortentrümpelung – professional clearance and removal services in Austria.",
+    "metaDescription": "Partners and collaborations of Objekträumung: clearance, removal and moving services in Vienna, Upper Austria, Styria, Salzburg and across Austria.",
     "breadcrumb": "Partners",
     "eyebrow": "Collaborations",
     "title": "Our partners in clearance & removal",
     "intro": "Objekträumung works with selected partners who share the same quality standards: transparent pricing, reliable execution and respectful customer service.",
-    "sofortTitle": "Sofortentrümpelung",
-    "sofortText1": "Sofortentrümpelung is a specialised company for fast, professional clearances across Austria. Whether household clearance, cellar or attic clearance, commercial premises or bulky waste collection – the team handles the full process from inspection to broom-clean handover.",
-    "sofortText2": "We recommend Sofortentrümpelung as a reliable partner when you need prompt clearance with fixed-price guarantee and compliant disposal. More information, services and contact options are available on their website.",
-    "sofortLinkLabel": "Visit sofortentrumpelung.at",
+    "entries": {
+      "sofort": {
+        "title": "Sofortentrümpelung",
+        "text1": "Sofortentrümpelung is a specialised company for fast, professional clearances across Austria. Whether household clearance, cellar or attic clearance, commercial premises or bulky waste collection – the team handles the full process from inspection to broom-clean handover.",
+        "text2": "We recommend Sofortentrümpelung as a reliable partner when you need prompt clearance with fixed-price guarantee and compliant disposal. More information, services and contact options are available on their website.",
+        "linkLabel": "Visit sofortentrumpelung.at"
+      },
+      "swift": {
+        "title": "SWIFT Umzug",
+        "text1": "SWIFT Umzug is your partner for professional moves in Vienna and across Austria. Whether private, office or business relocations – the team plans, packs and transports reliably from survey to key handover.",
+        "text2": "For moves with clear cost planning, insured transport and experienced staff, we recommend SWIFT Umzug. All services and contact options are available on their website.",
+        "linkLabel": "Visit swiftumzug.at"
+      },
+      "ooe": {
+        "title": "Clearance Upper Austria",
+        "text1": "entruempelung-ooe.at specialises in clearances and household dissolutions in Upper Austria. From Linz and Wels to Steyr – apartment, cellar and commercial clearances are completed on schedule with a broom-clean handover.",
+        "text2": "If you need a reliable clearance company in Upper Austria with fixed pricing and compliant disposal, we recommend this regional partner. Service details and enquiries are available online.",
+        "linkLabel": "Visit entruempelung-ooe.at"
+      },
+      "steiermark": {
+        "title": "Steirer Entrümpler",
+        "text1": "steirer-entruempler.at provides professional clearances across Styria – from Graz and Leoben to the surrounding regions. Household dissolutions, cellar clearances and commercial premises are handled carefully and on time.",
+        "text2": "For customers in Styria we recommend Steirer Entrümpler as an experienced partner with transparent pricing and broom-clean handover. Learn more on their website.",
+        "linkLabel": "Visit steirer-entruempler.at"
+      },
+      "salzburg": {
+        "title": "Clearance Company Salzburg",
+        "text1": "entruempelungsfirma-salzburg.at is your contact for clearances in Salzburg and the surrounding area. Whether household dissolution, probate clearance or commercial premises – the team handles survey, clearance and compliant disposal.",
+        "text2": "If you are looking for a reliable clearance company in Salzburg with fixed-price guarantee, we recommend this partner. Services, references and contact details are on their website.",
+        "linkLabel": "Visit entruempelungsfirma-salzburg.at"
+      }
+    },
     "whyTitle": "Why partnerships?",
     "whyText": "Together with strong partners we can support customers across Austria even better. Every partner is carefully selected – based on experience, insurance cover and customer satisfaction."
   },

@@ -7,7 +7,13 @@ import { PageStructuredData } from "@/components/PageStructuredData";
 import { buildSimpleContentPageGraph, canonicalToAbsolute } from "@/lib/schema";
 import { SITE_URL } from "@/lib/constants";
 
-const PARTNER_URL = "https://sofortentrumpelung.at";
+const PARTNER_ENTRIES = [
+  { id: "sofort", url: "https://sofortentrumpelung.at" },
+  { id: "swift", url: "https://swiftumzug.at" },
+  { id: "ooe", url: "https://entruempelung-ooe.at" },
+  { id: "steiermark", url: "https://steirer-entruempler.at" },
+  { id: "salzburg", url: "https://entruempelungsfirma-salzburg.at" },
+] as const;
 
 type Props = { params: { locale: string } };
 
@@ -62,20 +68,31 @@ export default async function PartnerPage({ params }: Props) {
       </header>
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 py-14 md:py-20 space-y-12">
-        <section className="rounded-2xl border border-navy/10 bg-slate-50/80 p-6 md:p-10">
-          <h2 className="text-xl md:text-2xl font-bold text-navy mb-4">{t("sofortTitle")}</h2>
-          <p className="text-navy/85 text-base md:text-lg leading-relaxed">{t("sofortText1")}</p>
-          <p className="mt-4 text-navy/85 text-base md:text-lg leading-relaxed">{t("sofortText2")}</p>
-          <a
-            href={PARTNER_URL}
-            target="_blank"
-            rel="noopener"
-            className="mt-8 inline-flex items-center gap-2 text-accent hover:text-accent-hover font-semibold text-base transition-colors"
+        {PARTNER_ENTRIES.map(({ id, url }) => (
+          <section
+            key={id}
+            className="rounded-2xl border border-navy/10 bg-slate-50/80 p-6 md:p-10"
           >
-            {t("sofortLinkLabel")}
-            <ExternalLink size={18} strokeWidth={2.5} aria-hidden="true" />
-          </a>
-        </section>
+            <h2 className="text-xl md:text-2xl font-bold text-navy mb-4">
+              {t(`entries.${id}.title`)}
+            </h2>
+            <p className="text-navy/85 text-base md:text-lg leading-relaxed">
+              {t(`entries.${id}.text1`)}
+            </p>
+            <p className="mt-4 text-navy/85 text-base md:text-lg leading-relaxed">
+              {t(`entries.${id}.text2`)}
+            </p>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener"
+              className="mt-8 inline-flex items-center gap-2 text-accent hover:text-accent-hover font-semibold text-base transition-colors"
+            >
+              {t(`entries.${id}.linkLabel`)}
+              <ExternalLink size={18} strokeWidth={2.5} aria-hidden="true" />
+            </a>
+          </section>
+        ))}
 
         <section>
           <h2 className="text-lg font-bold text-navy mb-3">{t("whyTitle")}</h2>
