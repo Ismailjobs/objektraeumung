@@ -6,6 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 import { buildWebPageNode } from "@/lib/schema";
 import { PageStructuredData } from "@/components/PageStructuredData";
 import { Hero } from "@/components/Hero";
+import { HomePartnerRecommendation } from "@/components/HomePartnerRecommendation";
 
 const HeroGoogleReviews = nextDynamic(
   () => import("@/components/HeroGoogleReviews").then((m) => m.HeroGoogleReviews),
@@ -92,6 +93,7 @@ export default async function HomePage() {
       <DistrictsSeo />
       <HomeFaqSection />
       <ContactSection />
+      <HomePartnerRecommendation />
     </>
   );
 }
