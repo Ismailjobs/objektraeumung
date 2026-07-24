@@ -25,6 +25,9 @@ const ContactSubmissionSchema = new Schema<IContactSubmission>(
   { collection: "contact_submissions" }
 );
 
+ContactSubmissionSchema.index({ email: 1, createdAt: -1 });
+ContactSubmissionSchema.index({ phone: 1, createdAt: -1 });
+
 export const ContactSubmission: Model<IContactSubmission> =
   mongoose.models.ContactSubmission ??
   mongoose.model<IContactSubmission>("ContactSubmission", ContactSubmissionSchema);

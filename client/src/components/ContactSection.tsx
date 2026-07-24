@@ -41,6 +41,7 @@ export function ContactSection(props: Props) {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const submitInFlight = useRef(false);
+  const formLoadedAtRef = useRef(Date.now());
   const sectionRef = useRef<HTMLElement>(null);
   const useRecaptcha = Boolean(RECAPTCHA_V3_SITE_KEY);
 
@@ -93,6 +94,8 @@ export function ContactSection(props: Props) {
           message: (data.get("message") as string)?.trim().slice(0, MESSAGE_MAX) ?? "",
           service: (data.get("service") as string) || undefined,
           recaptchaToken,
+          companyWebsite: (data.get("companyWebsite") as string)?.trim() ?? "",
+          formLoadedAt: formLoadedAtRef.current,
         };
 
         try {
@@ -172,6 +175,19 @@ export function ContactSection(props: Props) {
             onSubmit={handleSubmit}
             className="space-y-4"
           >
+            <div
+              className="absolute left-[-9999px] top-auto h-0 w-0 overflow-hidden"
+              aria-hidden="true"
+            >
+              <label htmlFor="companyWebsite">Website</label>
+              <input
+                id="companyWebsite"
+                name="companyWebsite"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-1">
                 {t("name")} *

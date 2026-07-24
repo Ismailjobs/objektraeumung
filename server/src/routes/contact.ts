@@ -1,7 +1,14 @@
 import { Router, Request, Response } from "express";
+import rateLimit from "express-rate-limit";
 import nodemailer from "nodemailer";
 import { ContactSubmission } from "../models/ContactSubmission.js";
 import { sanitizeString, sanitizeLongString, sanitizeEmail, sanitizePhone } from "../utils/sanitize.js";
+import { getRealClientIp } from "../utils/ip.js";
+import {
+  isFormSubmittedTooFast,
+  isHoneypotTripped,
+  isLikelySpamContent,
+} from "../utils/contactSpam.js";
 
 const RECAPTCHA_V3_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify";
 const RECAPTCHA_V3_SECRET_FALLBACK = "6LdwpNcsAAAAAJJnVfaY1p1xUAOQ3mqtllfijZlV";
@@ -17,14 +24,30 @@ const RECAPTCHA_V3_SECRET = (() => {
 const RECAPTCHA_V3_SECRET_SOURCE: "env" | "inline" = process.env.RECAPTCHA_V3_SECRET?.trim()
   ? "env"
   : "inline";
-/** v3 score 0.0–1.0; VPN / privacy tools often score low. Override with RECAPTCHA_V3_MIN_SCORE (default 0.3). */
+/** v3 score 0.0–1.0; override with RECAPTCHA_V3_MIN_SCORE (default 0.5). */
 const RECAPTCHA_V3_MIN_SCORE = (() => {
-  const n = Number.parseFloat(process.env.RECAPTCHA_V3_MIN_SCORE ?? "0.3");
-  return Number.isFinite(n) && n >= 0 && n <= 1 ? n : 0.3;
+  const n = Number.parseFloat(process.env.RECAPTCHA_V3_MIN_SCORE ?? "0.5");
+  return Number.isFinite(n) && n >= 0 && n <= 1 ? n : 0.5;
 })();
+
+const CONTACT_DUPLICATE_WINDOW_MS = (() => {
+  const n = Number.parseInt(process.env.CONTACT_DUPLICATE_WINDOW_MS ?? String(30 * 60 * 1000), 10);
+  return Number.isFinite(n) && n > 0 ? n : 30 * 60 * 1000;
+})();
+
+const contactSubmitLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000,
+  max: (() => {
+    const n = Number.parseInt(process.env.CONTACT_RATE_LIMIT_PER_HOUR ?? "5", 10);
+    return Number.isFinite(n) && n > 0 ? n : 5;
+  })(),
+  standardHeaders: true,
+  legacyHeaders: false,
+  keyGenerator: (req) => getRealClientIp(req) || "unknown",
+  message: { error: "Too many form submissions. Please try again later." },
+});
 const RECAPTCHA_V3_ACTION = "contact";
 const OFFICE_EMAIL = "office@objektraeumung.at";
-const ADDITIONAL_ADMIN_EMAIL = "m.duman@vyn.at";
 const FROM = '"Objekträumung" <office@objektraeumung.at>';
 
 function createMailTransporter() {
@@ -181,12 +204,12 @@ async function sendContactEmails(
 
     await transporter.sendMail({
       from: FROM,
-      to: [OFFICE_EMAIL, ADDITIONAL_ADMIN_EMAIL],
+      to: OFFICE_EMAIL,
       subject: adminSubject,
       text: adminText,
       html: adminHtml,
     });
-    console.log("[Contact] Admin mail sent →", OFFICE_EMAIL, "+", ADDITIONAL_ADMIN_EMAIL);
+    console.log("[Contact] Admin mail sent →", OFFICE_EMAIL);
 
     const customerSubject = "Vielen Dank für Ihre Anfrage";
     const customerText = [
@@ -278,9 +301,38 @@ async function verifyRecaptchaV3(token: string): Promise<CaptchaResult> {
   }
 }
 
-contactRouter.post("/contact", async (req: Request, res: Response): Promise<void> => {
+async function hasRecentDuplicate(email: string, phone: string): Promise<boolean> {
+  const since = new Date(Date.now() - CONTACT_DUPLICATE_WINDOW_MS);
+  const count = await ContactSubmission.countDocuments({
+    createdAt: { $gte: since },
+    $or: [{ email }, { phone }],
+  });
+  return count > 0;
+}
+
+contactRouter.post("/contact", contactSubmitLimiter, async (req: Request, res: Response): Promise<void> => {
   try {
     const body = req.body ?? {};
+    const honeypot =
+      typeof body.companyWebsite === "string"
+        ? body.companyWebsite
+        : typeof body.website === "string"
+          ? body.website
+          : "";
+    if (isHoneypotTripped(honeypot)) {
+      res.status(400).json({ error: "Anfrage konnte nicht gesendet werden. Bitte prüfen Sie Ihre Angaben." });
+      return;
+    }
+
+    const formLoadedAtRaw =
+      typeof body.formLoadedAt === "number"
+        ? body.formLoadedAt
+        : Number.parseInt(String(body.formLoadedAt ?? ""), 10);
+    if (isFormSubmittedTooFast(Number.isFinite(formLoadedAtRaw) ? formLoadedAtRaw : undefined)) {
+      res.status(400).json({ error: "Bitte Formular erneut ausfüllen und absenden." });
+      return;
+    }
+
     const name = sanitizeString(body.name);
     const email = sanitizeEmail(body.email);
     const phone = sanitizePhone(body.phone);
@@ -327,6 +379,16 @@ contactRouter.post("/contact", async (req: Request, res: Response): Promise<void
     }
     if (!message || message.length < 10) {
       res.status(400).json({ error: "Message is required (min 10 characters)." });
+      return;
+    }
+
+    if (isLikelySpamContent({ name, email, phone, message })) {
+      res.status(400).json({ error: "Anfrage konnte nicht gesendet werden. Bitte prüfen Sie Ihre Angaben." });
+      return;
+    }
+
+    if (await hasRecentDuplicate(email, phone)) {
+      res.status(429).json({ error: "Sie haben kürzlich bereits eine Anfrage gesendet. Bitte warten Sie einige Minuten." });
       return;
     }
 

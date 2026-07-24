@@ -15,6 +15,11 @@ import {
   EMAIL_REGEX,
   PHONE_REGEX,
 } from "@/lib/contact-validation";
+import {
+  isFormSubmittedTooFast,
+  isHoneypotTripped,
+  isLikelySpamContent,
+} from "@/lib/contact-spam";
 
 const RECAPTCHA_V3_VERIFY_URL = "https://www.google.com/recaptcha/api/siteverify";
 const RECAPTCHA_V3_SECRET_FALLBACK = "6LdwpNcsAAAAAJJnVfaY1p1xUAOQ3mqtllfijZlV";
@@ -26,8 +31,8 @@ const RECAPTCHA_V3_SECRET_SOURCE: "env" | "inline" = process.env.RECAPTCHA_V3_SE
   ? "env"
   : "inline";
 const RECAPTCHA_V3_MIN_SCORE = (() => {
-  const n = Number.parseFloat(process.env.RECAPTCHA_V3_MIN_SCORE ?? "0.3");
-  return Number.isFinite(n) && n >= 0 && n <= 1 ? n : 0.3;
+  const n = Number.parseFloat(process.env.RECAPTCHA_V3_MIN_SCORE ?? "0.5");
+  return Number.isFinite(n) && n >= 0 && n <= 1 ? n : 0.5;
 })();
 const RECAPTCHA_V3_ACTION = "contact";
 const OFFICE_EMAIL = "office@objektraeumung.at";
@@ -205,7 +210,20 @@ async function verifyRecaptchaV3(token: string): Promise<{
 
 function validateBody(
   body: unknown
-): { data: { name: string; email: string; phone: string; address: string; plzOrt: string; message: string; token: string }; error?: string } | null {
+): {
+  data: {
+    name: string;
+    email: string;
+    phone: string;
+    address: string;
+    plzOrt: string;
+    message: string;
+    token: string;
+    companyWebsite: string;
+    formLoadedAt?: number;
+  };
+  error?: string;
+} | null {
   if (!body || typeof body !== "object") return null;
   const b = body as Record<string, unknown>;
   const name = (typeof b.name === "string" ? b.name.trim() : "").slice(0, NAME_MAX);
@@ -218,6 +236,11 @@ function validateBody(
   const plzOrt = plzOrtRaw;
   const message = (typeof b.message === "string" ? b.message.trim() : "").slice(0, MESSAGE_MAX);
   const token = (typeof b.recaptchaToken === "string" ? b.recaptchaToken : typeof b.token === "string" ? b.token : "").trim();
+  const companyWebsite =
+    (typeof b.companyWebsite === "string" ? b.companyWebsite : typeof b.website === "string" ? b.website : "").trim();
+  const formLoadedAtRaw =
+    typeof b.formLoadedAt === "number" ? b.formLoadedAt : Number.parseInt(String(b.formLoadedAt ?? ""), 10);
+  const formLoadedAt = Number.isFinite(formLoadedAtRaw) ? formLoadedAtRaw : undefined;
 
   if (name.length < NAME_MIN) return null;
   if (!email || email.length > EMAIL_MAX || !EMAIL_REGEX.test(email)) return null;
@@ -226,7 +249,10 @@ function validateBody(
   if (plzOrt.length > 0 && (plzOrt.length < PLZ_ORT_MIN || plzOrt.length > PLZ_ORT_MAX)) return null;
   if (message.length < MESSAGE_MIN || message.length > MESSAGE_MAX) return null;
   if (RECAPTCHA_V3_SECRET && !token) return null;
-  return { data: { name, email, phone, address, plzOrt, message, token }, error: undefined };
+  return {
+    data: { name, email, phone, address, plzOrt, message, token, companyWebsite, formLoadedAt },
+    error: undefined,
+  };
 }
 
 export async function POST(request: Request) {
@@ -266,6 +292,25 @@ export async function POST(request: Request) {
       );
     }
     const data = result.data;
+
+    if (isHoneypotTripped(data.companyWebsite)) {
+      return NextResponse.json(
+        { error: "Anfrage konnte nicht gesendet werden. Bitte prüfen Sie Ihre Angaben." },
+        { status: 400 }
+      );
+    }
+    if (isFormSubmittedTooFast(data.formLoadedAt)) {
+      return NextResponse.json(
+        { error: "Bitte Formular erneut ausfüllen und absenden." },
+        { status: 400 }
+      );
+    }
+    if (isLikelySpamContent(data)) {
+      return NextResponse.json(
+        { error: "Anfrage konnte nicht gesendet werden. Bitte prüfen Sie Ihre Angaben." },
+        { status: 400 }
+      );
+    }
 
     if (RECAPTCHA_V3_SECRET) {
       const rec = await verifyRecaptchaV3(data.token);
