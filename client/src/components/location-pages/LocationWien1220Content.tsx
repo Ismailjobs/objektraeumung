@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { ChevronRight, ArrowRight, MapPin, MessageCircle, Phone, CheckCircle2 } from "lucide-react";
 import { ContactSection } from "@/components/ContactSection";
+import { LocationEeatBlocks } from "@/components/location-pages/LocationEeatBlocks";
 import { PHONE_DISPLAY, PHONE_LINK, WHATSAPP_URL } from "@/lib/constants";
 
 type Props = { locale: string };
@@ -96,6 +97,8 @@ export async function LocationWien1220Content({ locale }: Props) {
             {t("section1Body")}
           </p>
         </section>
+
+        <LocationEeatBlocks translationKey="locationWien1220" />
 
         <section>
           <h2 className="text-xl md:text-2xl font-bold text-navy mb-4">

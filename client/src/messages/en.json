@@ -65,11 +65,31 @@
     "ariaCurrent": "Current review",
     "ariaReview": "Review {n}",
     "items": [
-      { "name": "Maria K.", "text": "Household clearance on time and fair. Highly recommend!", "timeAgo": "2 weeks ago" },
-      { "name": "Thomas B.", "text": "Fast pickup, fixed price as agreed. Would use again.", "timeAgo": "3 weeks ago" },
-      { "name": "Sabine M.", "text": "Discreet and reliable. My mother's estate handled professionally.", "timeAgo": "1 month ago" },
-      { "name": "Peter H.", "text": "Office clearance in one day. Everything went smoothly.", "timeAgo": "2 weeks ago" },
-      { "name": "Eva S.", "text": "Bulky waste collected, price was transparent. Top service!", "timeAgo": "1 week ago" }
+      {
+        "name": "Maria K.",
+        "text": "Household clearance on time and fair. Highly recommend!",
+        "timeAgo": "2 weeks ago"
+      },
+      {
+        "name": "Thomas B.",
+        "text": "Fast pickup, fixed price as agreed. Would use again.",
+        "timeAgo": "3 weeks ago"
+      },
+      {
+        "name": "Sabine M.",
+        "text": "Discreet and reliable. My mother's estate handled professionally.",
+        "timeAgo": "1 month ago"
+      },
+      {
+        "name": "Peter H.",
+        "text": "Office clearance in one day. Everything went smoothly.",
+        "timeAgo": "2 weeks ago"
+      },
+      {
+        "name": "Eva S.",
+        "text": "Bulky waste collected, price was transparent. Top service!",
+        "timeAgo": "1 week ago"
+      }
     ]
   },
   "trust": {
@@ -121,10 +141,22 @@
   "whyUs": {
     "title": "Why us?",
     "subtitle": "Transparent, on schedule, and with a single point of contact for your project.",
-    "fixedPrice": { "title": "Fixed Price", "desc": "No hidden costs. You get a clear quote on site." },
-    "fast": { "title": "Fast", "desc": "Appointment within 24 hours. Pickup by arrangement." },
-    "discreet": { "title": "Discreet", "desc": "Professional and confidential handling – including estates." },
-    "vienna": { "title": "Vienna & Austria", "desc": "Serving all 23 Vienna districts and beyond." }
+    "fixedPrice": {
+      "title": "Fixed Price",
+      "desc": "No hidden costs. You get a clear quote on site."
+    },
+    "fast": {
+      "title": "Fast",
+      "desc": "Appointment within 24 hours. Pickup by arrangement."
+    },
+    "discreet": {
+      "title": "Discreet",
+      "desc": "Professional and confidential handling – including estates."
+    },
+    "vienna": {
+      "title": "Vienna & Austria",
+      "desc": "Serving all 23 Vienna districts and beyond."
+    }
   },
   "services": {
     "sectionLabel": "Services",
@@ -213,7 +245,11 @@
       "faq3Q": "Do you also clear cellars and ancillary rooms?",
       "faq3A": "Yes, all ancillary rooms, cellar compartments and attics are included in the quote.",
       "galleryTitle": "Impressions of our household clearances",
-      "gallery": ["Household clearance Vienna", "Clearance on site", "Clean handover"]
+      "gallery": [
+        "Household clearance Vienna",
+        "Clearance on site",
+        "Clean handover"
+      ]
     },
     "apartment": {
       "title": "Apartment Clearance",
@@ -222,7 +258,11 @@
       "body1": "We clear apartments on schedule and cleanly: furniture, household goods, appliances. Ideal when lease ends, estate or property transfer.",
       "body2": "After clearance we hand over the apartment in good condition. Transparent pricing and free inspection.",
       "galleryTitle": "Apartment clearance – References",
-      "gallery": ["Apartment clearance Vienna", "Daire Boşaltma", "Fast processing"]
+      "gallery": [
+        "Apartment clearance Vienna",
+        "Daire Boşaltma",
+        "Fast processing"
+      ]
     },
     "office": {
       "title": "Office Clearance",
@@ -231,7 +271,11 @@
       "body1": "We clear offices, practices, shops and commercial premises: desks, filing cabinets, IT equipment and special waste are disposed of or recycled properly.",
       "body2": "On schedule and discreet. We coordinate with your timeline and handle the full logistics.",
       "galleryTitle": "Office and business clearance",
-      "gallery": ["Office clearance Vienna", "Ofis Boşaltma", "Commercial clearance"]
+      "gallery": [
+        "Office clearance Vienna",
+        "Ofis Boşaltma",
+        "Commercial clearance"
+      ]
     },
     "warehouse": {
       "title": "Warehouse Clearance",
@@ -240,7 +284,11 @@
       "body1": "We clear storage halls, cellars, garages and containers. Old stock, pallets, machinery and scrap – we handle full disposal.",
       "body2": "Large premises are no problem: we bring the right equipment and work efficiently. Free inspection and fixed-price quote.",
       "galleryTitle": "Warehouse and hall clearance",
-      "gallery": ["Warehouse clearance Vienna", "Depo Boşaltma", "Container disposal"]
+      "gallery": [
+        "Warehouse clearance Vienna",
+        "Depo Boşaltma",
+        "Container disposal"
+      ]
     },
     "bulk": {
       "title": "Bulky Waste",
@@ -249,7 +297,11 @@
       "body1": "Bulky waste, old furniture, mattresses, appliances and green waste: we collect everything and dispose of it properly. No minimum volume.",
       "body2": "Quick appointment booking in Vienna and surroundings. Transparent pricing – you receive a fixed quote in advance.",
       "galleryTitle": "Bulky waste & disposal",
-      "gallery": ["Bulky waste Vienna", "Eşya Ayıklama", "Proper disposal"]
+      "gallery": [
+        "Bulky waste Vienna",
+        "Eşya Ayıklama",
+        "Proper disposal"
+      ]
     },
     "cleaning": {
       "title": "Cleaning",
@@ -258,7 +310,11 @@
       "body1": "After clearance we handle cleaning: floors, windows, kitchens and bathrooms. So you hand over the property in perfect condition.",
       "body2": "Whether deep cleaning or final cleaning – we use professional products and guarantee a clean result.",
       "galleryTitle": "Cleaning after clearance",
-      "gallery": ["Property cleaning Vienna", "Temizlik Hizmeti", "Final cleaning"]
+      "gallery": [
+        "Property cleaning Vienna",
+        "Temizlik Hizmeti",
+        "Final cleaning"
+      ]
     },
     "general": {
       "title": "Objekträumung",
@@ -267,7 +323,11 @@
       "body1": "From apartment to office to warehouse: we offer the full range of clearance and removal services. One contact, one invoice.",
       "body2": "Free inspection, fixed quote and on-schedule execution. We are there for you in Vienna and all of Austria.",
       "galleryTitle": "Objekträumung – References",
-      "gallery": ["Objekträumung", "Clearance Vienna", "Professional service"]
+      "gallery": [
+        "Objekträumung",
+        "Clearance Vienna",
+        "Professional service"
+      ]
     },
     "einkauf": {
       "title": "Einkauf / Purchase",
@@ -1408,14 +1468,46 @@
     "title": "Customer Reviews",
     "subtitle": "What our customers say",
     "items": [
-      { "name": "Maria K.", "text": "Household clearance on time and fair. Highly recommend!", "location": "Vienna 10" },
-      { "name": "Thomas B.", "text": "Fast pickup, fixed price as agreed. Would use again.", "location": "Vienna 15" },
-      { "name": "Sabine M.", "text": "Discreet and reliable. My mother's estate handled professionally.", "location": "Vienna 7" },
-      { "name": "Peter H.", "text": "Office clearance in one day. Everything went smoothly.", "location": "Vienna 3" },
-      { "name": "Eva S.", "text": "Bulky waste collected, price was transparent. Top service!", "location": "Vienna 21" },
-      { "name": "Michael R.", "text": "From inspection to handover – everything perfectly organised.", "location": "Vienna 12" },
-      { "name": "Lisa W.", "text": "Apartment clearance on time and clean. Very satisfied.", "location": "Vienna 4" },
-      { "name": "Andreas F.", "text": "Fair valuation of furniture. Competent and friendly.", "location": "Lower Austria" }
+      {
+        "name": "Maria K.",
+        "text": "Household clearance on time and fair. Highly recommend!",
+        "location": "Vienna 10"
+      },
+      {
+        "name": "Thomas B.",
+        "text": "Fast pickup, fixed price as agreed. Would use again.",
+        "location": "Vienna 15"
+      },
+      {
+        "name": "Sabine M.",
+        "text": "Discreet and reliable. My mother's estate handled professionally.",
+        "location": "Vienna 7"
+      },
+      {
+        "name": "Peter H.",
+        "text": "Office clearance in one day. Everything went smoothly.",
+        "location": "Vienna 3"
+      },
+      {
+        "name": "Eva S.",
+        "text": "Bulky waste collected, price was transparent. Top service!",
+        "location": "Vienna 21"
+      },
+      {
+        "name": "Michael R.",
+        "text": "From inspection to handover – everything perfectly organised.",
+        "location": "Vienna 12"
+      },
+      {
+        "name": "Lisa W.",
+        "text": "Apartment clearance on time and clean. Very satisfied.",
+        "location": "Vienna 4"
+      },
+      {
+        "name": "Andreas F.",
+        "text": "Fair valuation of furniture. Competent and friendly.",
+        "location": "Lower Austria"
+      }
     ]
   },
   "districts": {
@@ -1657,7 +1749,7 @@
     "benefit3Desc": "Antiques, technology and collections are credited directly against the quote."
   },
   "locationWien1170": {
-    "heroTitle": "Household clearance 1170 Vienna",
+    "heroTitle": "Clearance 1170 Vienna – Dornbach hillsides & narrow access",
     "breadcrumbDistrict": "1170 Hernals",
     "heroSub": "Clearance work in Hernals – between Elterleinplatz and Dornbach: suburban villas, municipal housing and commercial premises.",
     "heroPoint1": "Professional clearance of slopes and gardens.",
@@ -1693,7 +1785,13 @@
     "faq2Q": "The access to our house in Neuwaldegg is very steep. Is that a problem?",
     "faq2A": "No, we specialise in such requirements and use special vehicles and securing techniques when needed.",
     "faq3Q": "What happens to the old wine barrels in my grandfather's cellar?",
-    "faq3A": "We assess condition and value. There are often enthusiasts interested in such items – we will of course pass on any proceeds to you."
+    "faq3A": "We assess condition and value. There are often enthusiasts interested in such items – we will of course pass on any proceeds to you.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: 92 m² period flat in Dornbach – 4th floor, no lift, steep street",
+    "caseStudyBody": "An estate had to clear a flat on Dornbachstraße within ten days for sale. No 7.5-ton truck access; lift out of service. We used two smaller vans, a temporary inclined lift and a no-parking zone. Antique furniture and a piano were valued and offset against the fixed price. Bulky waste went same day to MA 48 Richthausenstraße; broom-clean handover on day two.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Why Hernals needs different logistics than the city centre",
+    "expertBody": "Our teams know the bottlenecks between Elterleinplatz, Dornbach and Neuwaldegg from dozens of jobs per year. We handle MA 48 disposal on Richthausenstraße, cottage-estate access rules and documented handovers."
   },
   "locationWien1180": {
     "heroTitle": "Household clearance 1180 Vienna",
@@ -1735,7 +1833,7 @@
     "faq3A": "We know the local conditions and use agile, smaller vehicles. We also set up temporary no-parking zones when required."
   },
   "locationWien1010": {
-    "heroTitle": "Household clearance 1010 Vienna",
+    "heroTitle": "Clearance 1010 Vienna – no-parking zones & listed staircases",
     "breadcrumbDistrict": "1010 Innere Stadt",
     "heroSub": "Specialist teams for household clearances in the Inner City – including no-parking zones and value adjustment.",
     "heroPoint1": "No-parking zones & official procedures included",
@@ -1770,10 +1868,16 @@
     "faq1Q": "Do you handle the no-parking zone in the 1st district?",
     "faq1A": "Yes, we apply for and install the required signage including municipal fees.",
     "faq2Q": "Can you store sensitive items?",
-    "faq2A": "We offer climate-controlled interim storage and coordinate auctions for high-value pieces."
+    "faq2A": "We offer climate-controlled interim storage and coordinate auctions for high-value pieces.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: period flat on Kohlmarkt – 4th floor, no lift, 48-hour deadline",
+    "caseStudyBody": "A property manager needed a 110 m² flat cleared within two days after a tenant change. Night no-parking zone on Kohlmarkt; listed staircase with original parquet. Protected floors throughout, two-shift clearance, disposal via Eva-Zilcher-Gasse. Photo protocol for handover on morning two.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Why the Inner City is not a standard clearance job",
+    "expertBody": "District 1 has no MA 48 site – every disposal run must be planned. Our teams know delivery windows, courtyard access and listed-building requirements from hundreds of city jobs."
   },
   "locationWien1020": {
-    "heroTitle": "Household clearance 1020 Vienna",
+    "heroTitle": "Clearance 1020 Vienna – Danube Canal, Prater & car-free Nordbahnviertel",
     "breadcrumbDistrict": "1020 Leopoldstadt",
     "heroSub": "Flexible household clearances in Leopoldstadt – from the Karmeliterviertel to Donau-City new builds.",
     "heroPoint1": "Experience in period and modern residential buildings",
@@ -1811,7 +1915,13 @@
     "faq2Q": "Are there surcharges for higher floors without a lift?",
     "faq2A": "No – whether a period building in Karmeliterviertel or municipal housing, lift-free stairwells are already included in our fixed price.",
     "faq3Q": "What happens to the furniture from my flat near the Prater?",
-    "faq3A": "Reusable furniture we donate to local charities; the rest we dispose of properly at MA48 facilities."
+    "faq3A": "Reusable furniture we donate to local charities; the rest we dispose of properly at MA48 facilities.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: Danube Canal loft – car-free zone, 72 m², two days",
+    "caseStudyBody": "Owner clearing a listed house on Obere Donaustraße for sale. No car access; 120 m cargo route. E-cargo bikes, approved courtyard roll container, design furniture valued against fixed price. Disposal via MA 48 Percostraße.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Leopoldstadt: old building charm meets Donau City logistics",
+    "expertBody": "We know Karmelitermarkt house rules, Messe Wien loading times and Nordbahnviertel without cars. No district MA 48 site – Percostraße planned from the quote."
   },
   "locationWien1030": {
     "heroTitle": "Household clearance 1030 Vienna",
@@ -1935,7 +2045,7 @@
     "faq3A": "No, we are specialised in such situations. We use smaller vehicles and trolleys to reach even hard-to-access properties."
   },
   "locationWien1060": {
-    "heroTitle": "Household clearance 1060 Vienna",
+    "heroTitle": "Clearance 1060 Vienna – Mariahilfer Straße pedestrian zone & Naschmarkt lofts",
     "breadcrumbDistrict": "1060 Mariahilf",
     "heroSub": "Clearance in Mariahilf – Naschmarkt lofts, boutiques in Gumpendorfer Straße and penthouse flats near Haus des Meeres.",
     "heroPoint1": "City-ready teams for trendy attics & co-living spaces",
@@ -1973,10 +2083,16 @@
     "faq2Q": "Do you also clear outside business hours?",
     "faq2A": "Yes, we can work at night or at weekends on request so your commercial space can be handed over without loss of revenue.",
     "faq3Q": "Mariahilfer Straße is a pedestrian zone. How does clearance work there?",
-    "faq3A": "We know the delivery times and access rules for the pedestrian zone and plan our operations accordingly to avoid conflicts."
+    "faq3A": "We know the delivery times and access rules for the pedestrian zone and plan our operations accordingly to avoid conflicts.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: pop-up store Mariahilfer Straße – 5–7 am loading window",
+    "caseStudyBody": "Fashion pop-up had to vacate 45 m² in the pedestrian zone after three months. Approved 5:00–7:30 slot, dismantled fittings, disposal via Eva-Zilcher-Gasse. Next tenant moved in same day.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Mariahilf needs time windows, not brute force",
+    "expertBody": "We know Mahü delivery rules, Gumpendorfer Kurzpark zones and disposal via Favoriten or 48er-Tandler Margareten."
   },
   "locationWien1070": {
-    "heroTitle": "Household clearance 1070 Vienna",
+    "heroTitle": "Clearance 1070 Vienna – Spittelberg bottlenecks & vinyl collections",
     "breadcrumbDistrict": "1070 Neubau",
     "heroSub": "Household clearance & clearance in 1070 Vienna Neubau – fixed price, value allowance and free inspection for flats, lofts & studios.",
     "heroPoint1": "Logistics experts for period stairwells & courtyards",
@@ -2014,7 +2130,13 @@
     "faq2Q": "What happens to my designer furniture or artworks?",
     "faq2A": "Our experts value valuable pieces and credit the proceeds directly against the clearance cost, which often significantly reduces the price.",
     "faq3Q": "How long does a clearance in the 7th district take?",
-    "faq3A": "An average 60–70 m² period flat is usually cleared and broom-clean within one working day."
+    "faq3A": "An average 60–70 m² period flat is usually cleared and broom-clean within one working day.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: Spittelberg loft – 800 vinyl records, 3rd floor, 1.20 m stairwell",
+    "caseStudyBody": "Musician left 68 m² loft with ~800 records and vintage furniture. No van access in Spittelberggasse; lift too small. Collection catalogued, part offset against price, rest donated with written consent. One-day clearance with inventory list.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Neubau: collections meet narrow stairs",
+    "expertBody": "We know typical Biedermeier buildings without lifts, Neustiftgasse parking and disposal routes to Hernals or Auhof."
   },
   "locationWien1080": {
     "heroTitle": "Household clearance 1080 Vienna",
@@ -2095,7 +2217,7 @@
     "faq3A": "Yes, we can often start the same or next day. We are especially flexible for exams or job moves."
   },
   "locationWien1100": {
-    "heroTitle": "Household clearance 1100 Vienna",
+    "heroTitle": "Clearance 1100 Vienna – Reumannplatz municipal housing & on-site MA 48",
     "breadcrumbDistrict": "1100 Favoriten",
     "heroSub": "High-volume clearances in Favoriten – for municipal housing, new builds and terraced houses. MA 48 coordination, value adjustment and short-notice express appointments included.",
     "heroPoint1": "Large teams for extensive flats in large housing estates",
@@ -2131,7 +2253,13 @@
     "faq2Q": "What happens to the plants from my garden on Laaer Berg?",
     "faq2A": "We offer a special service for proper removal or referral of plants to charities and allotment associations.",
     "faq3Q": "My flat is on the 20th floor. Is that a problem?",
-    "faq3A": "No, we specialise in working in high-rises. We protect lifts and common areas and work quickly and discreetly."
+    "faq3A": "No, we specialise in working in high-rises. We protect lifts and common areas and work quickly and discreetly.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: 95 m² municipal flat Reumannplatz – broken lift, one day",
+    "caseStudyBody": "Flat in Per-Albin-Hansson-Siedlung had to be returned to Wiener Wohnen within seven days after a death. Lift broken; three teams parallel, container spot agreed with management, disposal Eva-Zilcher-Gasse same day. Acceptance protocol included.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Favoriten: volume logistics with local MA 48 advantage",
+    "expertBody": "Daily work in municipal blocks, Laaer Berg houses and Wienerberg City towers. On-district MA 48 keeps fixed prices transparent."
   },
   "locationWien1110": {
     "heroTitle": "Household clearance 1110 Vienna",
@@ -2214,7 +2342,7 @@
     "faq3A": "We know the internal rules of the business parks and coordinate closely with facility management to ensure a smooth process."
   },
   "locationWien1130": {
-    "heroTitle": "Household clearance 1130 Vienna",
+    "heroTitle": "Clearance 1130 Vienna – Ober St. Veit villas & Schönbrunn area",
     "breadcrumbDistrict": "1130 Hietzing",
     "heroSub": "Discreet clearance of houses and villas in Hietzing with valuation of high-value estates. Fixed price, value adjustment and reliable coordination with MA 48.",
     "heroPoint1": "Maximum protection for high-quality floors, stairwells & gardens",
@@ -2250,7 +2378,13 @@
     "faq2Q": "I live abroad and have inherited a villa in Hietzing. How can you help?",
     "faq2A": "We specialise in supporting international heirs. We arrange video inspections and send you all protocols and documents digitally.",
     "faq3Q": "What happens to my grandmother's valuable porcelain?",
-    "faq3A": "We have valuable pieces valued by experts and credit you fairly. On request we also arrange insured transport to an auction house."
+    "faq3A": "We have valuable pieces valued by experts and credit you fairly. On request we also arrange insured transport to an auction house.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: Ober St. Veit villa – estate, porcelain, 280 m²",
+    "caseStudyBody": "Three heirs abroad inherited a full villa inventory. Video walkthrough, priority list, marble and parquet protected, garden paths untouched. Disposal via MA 48 Auhof; photo protocol and value schedule for probate.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Hietzing demands respect for fabric, garden and estate",
+    "expertBody": "Discreet villa clearances near Schönbrunn with routes to Auhof (1140) or Liesing (1230). One contact for heirs, notary and agent."
   },
   "locationWien1140": {
     "heroTitle": "Household clearance 1140 Vienna",
@@ -2292,7 +2426,7 @@
     "faq3A": "We check each piece carefully. Reusable furniture is credited to you, well-preserved items we donate on request, and the rest we dispose of properly."
   },
   "locationWien1150": {
-    "heroTitle": "Household clearance 1150 Vienna",
+    "heroTitle": "Clearance 1150 Vienna – Westbahnhof, Airbnb turnaround & period buildings",
     "breadcrumbDistrict": "1150 Rudolfsheim-Fünfhaus",
     "heroSub": "Clearance in Rudolfsheim-Fünfhaus – Gründerzeit belt, Stadthalle quarter and Airbnb apartments near Westbahnhof.",
     "heroPoint1": "Fast clearances for investor flats & short-term lets (Airbnb)",
@@ -2330,7 +2464,13 @@
     "faq2Q": "What happens to well-preserved furniture?",
     "faq2A": "We work closely with charities in Vienna and donate reusable items after your approval.",
     "faq3Q": "How do you handle the difficult parking situation around Westbahnhof?",
-    "faq3A": "We know the local conditions and apply for no-parking zones in good time. We also use agile, compact vehicles."
+    "faq3A": "We know the local conditions and apply for no-parking zones in good time. We also use agile, compact vehicles.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: Airbnb flat Sechshauser Straße – 5-hour window",
+    "caseStudyBody": "Landlord had 55 m² 4th floor walk-up cleared between 11:00 checkout and 16:00 check-in. Two teams parallel, smoke odour treated with ozone, digital photo protocol by 15:30.",
+    "expertLabel": "Local experience",
+    "expertTitle": "1150: speed at Westbahnhof, tight alleys in the Grätzel",
+    "expertBody": "Zero-downtime windows for Airbnb and hospitality. Lift-free floors in fixed price; disposal via Hernals or Auhof."
   },
   "locationWien1160": {
     "heroTitle": "Household clearance 1160 Vienna",
@@ -2374,7 +2514,7 @@
     "faq3A": "No, we have experience with slopes and use special vehicles or technical aids when needed to ensure safe removal."
   },
   "locationWien1190": {
-    "heroTitle": "Household clearance 1190 Vienna",
+    "heroTitle": "Clearance 1190 Vienna – Grinzing, steep vineyards & wine cellars",
     "breadcrumbDistrict": "1190 Döbling",
     "heroSub": "Discreet clearance in Döbling: wine tavern villas, loft flats and cooperative properties. Fixed price, value-based adjustment and direct MA48 link.",
     "heroPoint1": "Specialist in villas on slopes with narrow access.",
@@ -2410,7 +2550,13 @@
     "faq2Q": "Are there extra costs for extremely steep locations in Grinzing?",
     "faq2A": "No, we include the extra effort required for such locations transparently in our fixed-price quote from the outset.",
     "faq3Q": "How discreet can you be when clearing a grand villa?",
-    "faq3A": "Discretion is our top priority. Our vehicles are unmarked, our staff are bound by confidentiality agreements and we can work outside normal business hours on request."
+    "faq3A": "Discretion is our top priority. Our vehicles are unmarked, our staff are bound by confidentiality agreements and we can work outside normal business hours on request.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: Grinzing Heurigen house – 35° slope, cellar, 180 bottles",
+    "caseStudyBody": "Family clearing Heurigen house: flat, garden, ~180 bottles and old barrels. No lorry access; quiet staged removal, inclined lift for heavy pieces. Same-day green waste and bulky waste via MA 48 Grinzinger Straße 151.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Döbling: Heurigen charm meets logistics challenge",
+    "expertBody": "From Karl-Marx-Hof to Sievering villas – wine cellar documentation, MA 48 Heiligenstadt, unmarked vehicles on request."
   },
   "locationWien1210": {
     "heroTitle": "Household clearance 1210 Vienna",
@@ -2491,7 +2637,7 @@
     "faq3A": "We know Millennium City’s strict delivery and security rules and ensure smooth execution without disrupting ongoing operations."
   },
   "locationWien1220": {
-    "heroTitle": "Household clearance 1220 Vienna",
+    "heroTitle": "Clearance 1220 Vienna – Seestadt Aspern, Donau City & Lobau gardens",
     "breadcrumbDistrict": "1220 Donaustadt",
     "heroSub": "Full-scale clearances in Donaustadt – from Donau City via Seestadt Aspern to the Lobau.",
     "heroPoint1": "Large vehicle fleet for single-family homes, flats and commercial properties",
@@ -2527,7 +2673,13 @@
     "faq2Q": "Are photos enough for a quote?",
     "faq2A": "For an initial assessment and rough price range, yes. We only set the binding fixed price after a free on-site inspection.",
     "faq3Q": "I am dissolving a bathing spot on the Alte Donau. Can you take that on?",
-    "faq3A": "Yes, we have experience clearing bathing huts, jetties and gardens and ensure the proper removal of all materials."
+    "faq3A": "Yes, we have experience clearing bathing huts, jetties and gardens and ensure the proper removal of all materials.",
+    "caseStudyLabel": "Case from the district",
+    "caseStudyTitle": "Case: Essling detached home – garden, pool, double garage, 220 m²",
+    "caseStudyBody": "Family abroad left fully furnished house, overgrown garden and garage workshop. Two containers, three-day clearance, green waste separated, disposal MA 48 Mühlwasserstraße 2. Agent received photo protocol for sale.",
+    "expertLabel": "Local experience",
+    "expertTitle": "Donaustadt: district scale, towers and allotments in one place",
+    "expertBody": "From Kagran to Essling we plan routes around Donauufer traffic. Donau City lift coordination, container permits, both MA 48 sites in district 22."
   },
   "locationWien1230": {
     "heroTitle": "Household clearance 1230 Vienna",
