@@ -1,5 +1,6 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { buildMetadata } from "@/lib/seo";
@@ -37,10 +38,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   unstable_setRequestLocale(locale);
 
   const messages = await getMessages();
+  const pathname = headers().get("x-pathname") ?? "";
+  /** Detail pages carry their own FAQPage schema – no generic sitewide FAQ there. */
+  const isLocationDetailPage = /^\/locations\/[^/]+$/.test(pathname);
 
   return (
     <>
-      <JsonLd locale={locale} />
+      <JsonLd locale={locale} includeSitewideFaq={!isLocationDetailPage} />
       <NextIntlClientProvider locale={locale} messages={messages}>
         <Header />
         <main className="flex-1 pb-32 md:pb-24">{children}</main>

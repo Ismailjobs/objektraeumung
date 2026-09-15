@@ -67,7 +67,9 @@ export default async function middleware(request: NextRequest, event: NextFetchE
     );
   }
 
-  return intlMiddleware(request);
+  const response = intlMiddleware(request);
+  response.headers.set("x-pathname", request.nextUrl.pathname);
+  return response;
 }
 
 export const config = {

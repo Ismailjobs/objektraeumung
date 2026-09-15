@@ -299,16 +299,22 @@ function siteWideFaqNode(): JsonLdObject {
   };
 }
 
-/** Sitewide @graph: Organization, Logo, LocalBusiness, OfferCatalog, WebSite, FAQPage. */
-export function buildSiteWideGraph(locale: string): JsonLdObject[] {
-  return [
+/** Sitewide @graph: Organization, Logo, LocalBusiness, OfferCatalog, WebSite, optional FAQPage. */
+export function buildSiteWideGraph(
+  locale: string,
+  opts?: { includeSitewideFaq?: boolean },
+): JsonLdObject[] {
+  const graph: JsonLdObject[] = [
     organizationNode(),
     logoImageNode(),
     localBusinessNode(locale),
     offerCatalogNode(),
     websiteNode(),
-    siteWideFaqNode(),
   ];
+  if (opts?.includeSitewideFaq !== false) {
+    graph.push(siteWideFaqNode());
+  }
+  return graph;
 }
 
 export function buildBreadcrumbList(
@@ -459,6 +465,8 @@ export function buildLocationDetailPageGraph(input: {
   stateNames: Record<string, string>;
   breadcrumbLocationsLabel: string;
   homeLabel: string;
+  /** Location-specific FAQ from page content (faq1Q/faq1A …). */
+  faqPairs?: { question: string; answer: string }[];
 }): JsonLdObject[] {
   const url = canonicalToAbsolute(`/locations/${input.slug}`);
   const name = input.locale === "at" ? input.loc.nameDe : input.loc.nameEn;
@@ -479,7 +487,7 @@ export function buildLocationDetailPageGraph(input: {
     breadcrumbs.push({ name: stateName, item: stateUrl }, { name, item: url });
   }
 
-  return [
+  const graph: JsonLdObject[] = [
     buildWebPageNode({ url, name: pageTitle, description, idSuffix: "#webpage" }),
     buildBreadcrumbList(breadcrumbs),
     buildServiceOfferNode({
@@ -488,4 +496,13 @@ export function buildLocationDetailPageGraph(input: {
       description,
     }),
   ];
+
+  if (input.faqPairs?.length) {
+    graph.push({
+      ...buildFaqPage(input.faqPairs),
+      "@id": `${url}#faq`,
+    });
+  }
+
+  return graph;
 }

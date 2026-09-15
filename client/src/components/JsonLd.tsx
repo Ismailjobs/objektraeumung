@@ -1,8 +1,14 @@
 import { buildSiteWideGraph } from "@/lib/schema";
 
-/** Sitewide JSON-LD @graph (Organization, LocalBusiness, OfferCatalog, WebSite, FAQPage). */
-export function JsonLd({ locale }: { locale: string }) {
-  const graph = buildSiteWideGraph(locale);
+/** Sitewide JSON-LD @graph (Organization, LocalBusiness, OfferCatalog, WebSite, optional FAQPage). */
+export function JsonLd({
+  locale,
+  includeSitewideFaq = true,
+}: {
+  locale: string;
+  includeSitewideFaq?: boolean;
+}) {
+  const graph = buildSiteWideGraph(locale, { includeSitewideFaq });
   return (
     <script
       type="application/ld+json"
