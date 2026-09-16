@@ -47,19 +47,19 @@ const UNIQUE_LOCATION_DESCRIPTIONS: Record<string, string> = {
   "wien-1020":
     "Entrümpelung 1020 Wien – Donaukanal, Prater & autofreies Nordbahnviertel. Lastenrad-Logistik, MA 48 Percostraße, Wertausgleich & Fixpreis.",
   "wien-1030":
-    "Wohnungsräumung im 3. Bezirk (Landstraße). Stressfreie Entrümpelung von Altbauten & Diplomatenwohnungen. Kostenlose Erstbesichtigung vor Ort!",
+    "Entrümpelung 1030 Wien – Botschaftsviertel & Landstraßer Hauptstraße. Neu Marx, Rochusmarkt, NDA & Fixpreis. MA 48 Simmering.",
   "wien-1040":
-    "Zuverlässige Entrümpelung in Wieden (1040 Wien). Wir räumen Wohnungen & Lofts besenrein. Transparente Kosten dank Fixpreis & Wertausgleich.",
+    "Entrümpelung 1040 Wien – Naschmarkt, Schleifmühlgasse & TU-Studenten. Ordinationen DSGVO, Design-Lofts, Fixpreis & Wertausgleich.",
   "wien-1050":
-    "Haushaltsauflösung in Margareten (1050). Ihr Wiener Team für schnelle Wohnungsräumungen, Kellerentrümpelung und fairen Ankauf von Altwaren.",
+    "Entrümpelung 1050 Wien – 48er-Tandler im Bezirk & Hinterhof-Gemeindebau. Messie diskret, Matzleinsdorf, Fixpreis inklusive.",
   "wien-1060":
     "Entrümpelung 1060 Wien – Fußgängerzone Mariahilfer Straße & Naschmarkt-Lofts. Nacht-Ladezonen, Pop-up-Räumung, 48er-Tandler, Fixpreis.",
   "wien-1070":
     "Entrümpelung 1070 Wien – Spittelberg-Nadelöhre & Vinyl-Sammlungen. Biedermeier-Stiegen, MQ-Lofts, Wertanrechnung & Fixpreis inkl. Haltezone.",
   "wien-1080":
-    "Premium-Räumung in der Josefstadt (1080 Wien). Diskrete Verlassenschaftsräumung und Wohnungsauflösung mit Komplett-Service und Fixpreis.",
+    "Entrümpelung 1080 Wien – Theaterdepots, Palais & Einbahn-Labyrinth. Stuck-Schutz, Bibliotheken, MA 48 Hernals, Fixpreis.",
   "wien-1090":
-    "Haushaltsauflösung am Alsergrund (1090). Kompetente Entrümpelung von Studenten-WGs bis zur Arztpraxis. Besenreine Übergabe ohne versteckte Kosten.",
+    "Entrümpelung 1090 Wien – AKH-Praxen, Uni-WGs & Servitenviertel. Semester-Express, Medizin-Entsorgung, MA 48 Heiligenstadt.",
   "wien-1100":
     "Entrümpelung 1100 Wien – Gemeindebau Reumannplatz & MA 48 vor Ort. Wiener-Wohnen-Abstimmung, Parallel-Teams, Eva-Zilcher-Gasse, Fixpreis.",
   "wien-1110":
