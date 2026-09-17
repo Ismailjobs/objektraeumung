@@ -23,6 +23,10 @@ export type RatgeberArticleMeta = {
   ogImage?: string;
   author?: string;
   featured?: boolean;
+  /** FAQ für JSON-LD FAQPage (BlogPosting-Ergänzung). */
+  faqPairs?: { question: string; answer: string }[];
+  /** Geschätzte Wortanzahl für BlogPosting wordCount. */
+  wordCount?: number;
 };
 
 export type RatgeberArticleRecord = {

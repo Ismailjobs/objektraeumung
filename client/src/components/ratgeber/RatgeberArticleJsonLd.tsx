@@ -23,35 +23,40 @@ export function RatgeberArticleJsonLd({ article, breadcrumbHome, breadcrumbRatge
       : `${SITE_URL}${article.ogImage.startsWith("/") ? article.ogImage : `/${article.ogImage}`}`
     : `${SITE_URL}/hero-1.webp`;
 
-  const graph = [
-    {
-      "@type": "Article",
-      "@id": `${url}#article`,
-      headline: article.title,
-      description: article.description,
-      url,
-      image: [image],
-      datePublished: article.publishedAt,
-      dateModified: modified,
-      author: {
-        "@type": "Organization",
-        "@id": SCHEMA_ORG_ID,
-        name: article.author ?? "Objekträumung",
-      },
-      publisher: {
-        "@type": "Organization",
-        "@id": SCHEMA_ORG_ID,
-        name: "Objekträumung",
-        logo: {
-          "@type": "ImageObject",
-          url: `${SITE_URL}/icon.webp`,
-        },
-      },
-      mainEntityOfPage: { "@id": `${url}#webpage` },
-      articleSection: article.categories[0],
-      keywords: (article.tags ?? article.categories).join(", "),
-      inLanguage: "de-AT",
+  const blogPosting: Record<string, unknown> = {
+    "@type": "BlogPosting",
+    "@id": `${url}#blogposting`,
+    headline: article.title,
+    description: article.description,
+    url,
+    image: [image],
+    datePublished: article.publishedAt,
+    dateModified: modified,
+    author: {
+      "@type": "Organization",
+      "@id": SCHEMA_ORG_ID,
+      name: article.author ?? "Objekträumung",
     },
+    publisher: {
+      "@type": "Organization",
+      "@id": SCHEMA_ORG_ID,
+      name: "Objekträumung",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/icon.webp`,
+      },
+    },
+    mainEntityOfPage: { "@id": `${url}#webpage` },
+    articleSection: article.categories[0],
+    keywords: (article.tags ?? article.categories).join(", "),
+    inLanguage: "de-AT",
+  };
+  if (article.wordCount) {
+    blogPosting.wordCount = article.wordCount;
+  }
+
+  const graph: Record<string, unknown>[] = [
+    blogPosting,
     {
       "@type": "WebPage",
       "@id": `${url}#webpage`,
@@ -76,6 +81,21 @@ export function RatgeberArticleJsonLd({ article, breadcrumbHome, breadcrumbRatge
       ],
     },
   ];
+
+  if (article.faqPairs && article.faqPairs.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${url}#faq`,
+      mainEntity: article.faqPairs.map((pair) => ({
+        "@type": "Question",
+        name: pair.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: pair.answer,
+        },
+      })),
+    });
+  }
 
   return (
     <script

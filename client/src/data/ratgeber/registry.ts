@@ -24,6 +24,11 @@ import { EntruempelungWien5FataleFehlerArticle } from "@/components/ratgeber/art
 import { ElektrogeraeteEntsorgenWienUmgebungArticle } from "@/components/ratgeber/articles/elektrogeraete-entsorgen-wien-umgebung";
 import { EntruempelungOesterreichweitSteiermarkKaerntenOberoesterreichSalzburgArticle } from "@/components/ratgeber/articles/entruempelung-oesterreichweit-steiermark-kaernten-oberoesterreich-salzburg";
 import { BibliothekSammlungAufloesenWienWertanrechnungArticle } from "@/components/ratgeber/articles/bibliothek-sammlung-aufloesen-wien-wertanrechnung";
+import { AirbnbFerienwohnungExpressEntruempelungWienArticle } from "@/components/ratgeber/articles/airbnb-ferienwohnung-express-entruempelung-wien";
+import { EntruempelungAltbauOhneLiftWienFixpreisArticle } from "@/components/ratgeber/articles/entruempelung-altbau-ohne-lift-wien-fixpreis";
+import { KellerentruempelungGemeindebauWienArticle } from "@/components/ratgeber/articles/kellerentruempelung-gemeindebau-wien";
+import { HaushaltsaufloesungVorImmobilienverkaufWienArticle } from "@/components/ratgeber/articles/haushaltsaufloesung-vor-immobilienverkauf-wien";
+import { SeniorenEntruempelungDownsizingWienPflegeheimArticle } from "@/components/ratgeber/articles/senioren-entruempelung-downsizing-wien-pflegeheim";
 
 /**
  * Zentrale Artikel-Registry.
@@ -34,6 +39,307 @@ import { BibliothekSammlungAufloesenWienWertanrechnungArticle } from "@/componen
  * publishedAt: höchstens 23. Juni 2026 (2026-06-23T23:59:59.000Z).
  */
 export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
+  {
+    meta: {
+      slug: "airbnb-ferienwohnung-express-entruempelung-wien",
+      title:
+        "Airbnb & Ferienwohnung Wien: Express-Entrümpelung zwischen Check-out und Check-in",
+      description:
+        "Airbnb Entrümpelung Wien: Express-Turnaround in 6 Stunden, Fixpreis, Geruchsneutralisation & MA-48-Entsorgung. Für Vermieter & Kurzzeitvermieter — jetzt anfragen.",
+      excerpt:
+        "Airbnb & Ferienwohnung in Wien: So schaffen Sie die Express-Entrümpelung zwischen Check-out und Check-in — Timeline, Fixpreis, Lastenlift & Geruchsneutralisation.",
+      publishedAt: "2026-06-23T22:00:00.000Z",
+      readingTimeMinutes: 11,
+      wordCount: 2100,
+      categories: ["Airbnb", "Vermieter", "Wien"],
+      tags: [
+        "Airbnb Entrümpelung Wien",
+        "Ferienwohnung Räumung",
+        "Express Entrümpelung",
+        "Kurzzeitvermietung",
+        "Fixpreis",
+        "Geruchsneutralisation",
+        "MA 48",
+      ],
+      relatedSlugs: [
+        "zimmer-raeumung-wien-wg-uebergabe",
+        "halteverbot-entruempelung-wien-ma-46",
+        "haushaltsaufloesung-preise-wien-2026",
+        "entruempelung-wien-steuerlich-absetzen",
+      ],
+      serviceSlugs: [
+        "wohnungsaufloesung",
+        "haushaltsaufloesung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "entsorgung-wien",
+        "zimmer-raeumung",
+      ],
+      faqPairs: [
+        {
+          question:
+            "Schaffen Sie wirklich eine komplette Entrümpelung in 6 Stunden zwischen Check-out und Check-in?",
+          answer:
+            "Ja — für typische Ferienwohnungen bis ca. 80 m² mit normaler Möblierung. Voraussetzung: mindestens 48 Stunden Vorlauf, gesicherter Zugang und rechtzeitig beantragtes Halteverbot. Bei Hochhaus-Einsätzen mit Lastenlift koordinieren wir das Zeitfenster mit der Hausverwaltung.",
+        },
+        {
+          question: "Was kostet eine Express-Entrümpelung für meine Airbnb-Wohnung in Wien?",
+          answer:
+            "Eine typische 2-Zimmer-Ferienwohnung (50–70 m²) liegt zwischen 800 und 1.800 Euro zum Fixpreis — inklusive Transport, MA-48-Entsorgung und besenreiner Übergabe. Verwertbare Möbel rechnen wir per Wertanrechnung an.",
+        },
+        {
+          question:
+            "Können Sie auch bei starkem Rauch- oder Haustiergeruch helfen, damit der nächste Gast zufrieden ist?",
+          answer:
+            "Ja. Neben der Entrümpelung bieten wir Ozonbehandlung und Spezialreinigung an. Geruchsbelastete Textilien entsorgen wir fachgerecht; die Geruchsneutralisation lässt sich in den Fixpreis integrieren.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: AirbnbFerienwohnungExpressEntruempelungWienArticle,
+  },
+  {
+    meta: {
+      slug: "entruempelung-altbau-ohne-lift-wien-fixpreis",
+      title:
+        "Entrümpelung Altbau ohne Lift Wien: Tragekonzept, Kosten & Fixpreis im 4.–5. Stock",
+      description:
+        "Entrümpelung ohne Lift Wien: Gründerzeit 4.–5. Stock, Tragekonzept & Parkett-Schutz. Fixpreis ohne Nachzahlung, Wertanrechnung & MA 48 — jetzt Besichtigung anfragen.",
+      excerpt:
+        "Entrümpelung im Wiener Altbau ohne Lift: Tragekonzept für den 4.–5. Stock, transparente Fixpreis-Kalkulation, Parkett-Schutz und MA-48-Entsorgung.",
+      publishedAt: "2026-06-23T21:00:00.000Z",
+      readingTimeMinutes: 10,
+      wordCount: 1570,
+      categories: ["Altbau", "Entrümpelung", "Wien"],
+      tags: [
+        "Entrümpelung ohne Lift Wien",
+        "Altbau Entrümpelung",
+        "Gründerzeitwohnung",
+        "Treppenhaus Räumung",
+        "Fixpreis",
+        "Wertanrechnung",
+        "MA 48",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-preise-wien-2026",
+        "halteverbot-entruempelung-wien-ma-46",
+        "dachbodenraeumung-wien-ma-48-checkliste",
+        "entruempelung-wien-5-fatale-fehler",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "entsorgung-wien",
+        "moebel-wertanrechnung",
+        "kellerraeumung",
+        "dachbodenraeumung",
+      ],
+      faqPairs: [
+        {
+          question: "Wird der fehlende Lift automatisch im Fixpreis berücksichtigt?",
+          answer:
+            "Ja. Stockwerk, Treppenbreite und Trageweg fließen in unsere Besichtigung ein und werden transparent im Fixpreis kalkuliert — ohne versteckte Aufschläge am Einsatztag.",
+        },
+        {
+          question: "Können schwere Möbel aus dem 5. Stock ohne Aufzug sicher transportiert werden?",
+          answer:
+            "Ja. Wir planen Träger-Teams, Schutzmaterial für Parkett und Stuck sowie bei Bedarf kleinere Transporter statt Sperr-Lkw. Schwerlaststücke sichern wir mit Tragegurten und Kantenschutz.",
+        },
+        {
+          question: "Was passiert mit antiken Möbeln im Gründerzeit-Altbau?",
+          answer:
+            "Wir bewerten verwertbare Stücke im Rahmen der Räumung und rechnen den Wert fair auf den Fixpreis an. Ein separater Ankauf findet nicht statt — Sie profitieren direkt von der Wertanrechnung.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungAltbauOhneLiftWienFixpreisArticle,
+  },
+  {
+    meta: {
+      slug: "kellerentruempelung-gemeindebau-wien",
+      title:
+        "Kellerentrümpelung Gemeindebau Wien: Wiener Wohnen, nummerierte Abteile & besenreine Übergabe",
+      description:
+        "Keller räumen Wien Gemeindebau: nummerierte Abteile, Wiener-Wohnen-Fristen, MA 48 & 48er-Tandler. Fixpreis, Hausverwaltungs-Protokoll — jetzt anfragen.",
+      excerpt:
+        "Kellerentrümpelung im Wiener Gemeindebau: nummerierte Kellerabteile, Abstimmung mit Wiener Wohnen, MA-48-Entsorgung und besenreine Übergabe vor der Frist.",
+      publishedAt: "2026-06-23T20:00:00.000Z",
+      readingTimeMinutes: 10,
+      wordCount: 1900,
+      categories: ["Keller", "Gemeindebau", "Wien"],
+      tags: [
+        "Kellerentrümpelung Wien",
+        "Keller räumen Wien",
+        "Gemeindebau Entrümpelung",
+        "Wiener Wohnen",
+        "MA 48",
+        "48er-Tandler",
+        "Fixpreis",
+      ],
+      relatedSlugs: [
+        "dachbodenraeumung-wien-ma-48-checkliste",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "haushaltsaufloesung-preise-wien-2026",
+        "entruempelung-wien-5-fatale-fehler",
+      ],
+      serviceSlugs: [
+        "kellerraeumung",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "entrumpelung-wien",
+        "entsorgung-wien",
+        "raeumung-wien",
+      ],
+      faqPairs: [
+        {
+          question: "Muss ich als Mieter das Kellerabteil vor Auszug leerräumen?",
+          answer:
+            "In der Regel ja — die Hausverwaltung verlangt eine besenreine Übergabe des Kellerabteils. Fristen stehen im Übergabeprotokoll; wir koordinieren die Räumung rechtzeitig mit der Verwaltung.",
+        },
+        {
+          question: "Was passiert, wenn das Kellerabteil feucht oder verschimmelt ist?",
+          answer:
+            "Unsere Teams sind für kontaminierte Keller ausgerüstet (Atemschutz, Schutzkleidung). Feuchter Müll wird getrennt und fachgerecht über MA 48 entsorgt; auf Wunsch dokumentieren wir den Zustand fotografisch.",
+        },
+        {
+          question: "Räumen Sie auch mehrere Kellerabteile in einem Gemeindebau auf einmal?",
+          answer:
+            "Ja. Bei Erbengemeinschaften oder Hausverwaltungsaufträgen inventarisieren wir nummerierte Abteile, räumen parallel und liefern ein Gesamtprotokoll für die Übergabe.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: KellerentruempelungGemeindebauWienArticle,
+  },
+  {
+    meta: {
+      slug: "haushaltsaufloesung-vor-immobilienverkauf-wien",
+      title:
+        "Haushaltsauflösung vor Immobilienverkauf Wien: Timeline für Makler, Fotos & besenreine Besichtigung",
+      description:
+        "Haushaltsauflösung vor Verkauf Wien: 7–14-Tage-Timeline für Makler & Erbengemeinschaft. Fixpreis, Wertanrechnung, Foto-Protokoll — jetzt Besichtigung anfragen.",
+      excerpt:
+        "Haushaltsauflösung vor dem Immobilienverkauf in Wien: Makler-Timeline, besenreine Besichtigung, Erbengemeinschaft, Wertanrechnung und Fixpreis aus einer Hand.",
+      publishedAt: "2026-06-23T19:00:00.000Z",
+      readingTimeMinutes: 11,
+      wordCount: 1900,
+      categories: ["Immobilienverkauf", "Verlassenschaft", "Wien"],
+      tags: [
+        "Haushaltsauflösung vor Verkauf",
+        "Wohnung verkaufen entrümpeln Wien",
+        "besenrein Makler",
+        "Erbengemeinschaft",
+        "Fixpreis",
+        "Wertanrechnung",
+        "Verlassenschaft",
+      ],
+      relatedSlugs: [
+        "wohnungsaufloesung-todesfall-wien-ablauf",
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+        "haushaltsaufloesung-preise-wien-2026",
+        "entruempelung-wien-steuerlich-absetzen",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "verlassenschaft",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "entsorgung-wien",
+      ],
+      faqPairs: [
+        {
+          question: "Wie viele Tage vor der Makler-Besichtigung sollte die Räumung abgeschlossen sein?",
+          answer:
+            "Ideal sind 3–5 Werktage Puffer vor dem Fototermin. So können Handwerker kleine Mängel beheben und die Wohnung wirkt auf Fotos und bei Besichtigungen optimal.",
+        },
+        {
+          question: "Müssen Keller und Dachboden vor dem Verkauf auch geräumt werden?",
+          answer:
+            "Ja, in den meisten Fällen. Käufer und Makler prüfen Nebenflächen — vollgestellte Keller oder Dachböden senken den Verkaufspreis und verzögern den Notartermin.",
+        },
+        {
+          question: "Erhalte ich Unterlagen für Notar und Erbengemeinschaft?",
+          answer:
+            "Ja. Sie erhalten ein Übergabeprotokoll mit Fotos, eine transparente Fixpreis-Rechnung und auf Wunsch eine Wertaufstellung für das Nachlass- bzw. Verkaufsverfahren.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: HaushaltsaufloesungVorImmobilienverkaufWienArticle,
+  },
+  {
+    meta: {
+      slug: "senioren-entruempelung-downsizing-wien-pflegeheim",
+      title:
+        "Senioren-Entrümpelung & Downsizing Wien: Umzug ins Pflegeheim ohne Stress für die Familie",
+      description:
+        "Senioren Entrümpelung Wien: Downsizing fürs Pflegeheim — behalten, spenden, entsorgen. Videobesichtigung, diskret, Fixpreis & Wertanrechnung. Jetzt anfragen.",
+      excerpt:
+        "Senioren-Entrümpelung in Wien: Downsizing beim Umzug ins Pflegeheim — Sortierliste, Videobesichtigung für Angehörige im Ausland, Spende & besenreine Übergabe.",
+      publishedAt: "2026-06-23T18:00:00.000Z",
+      readingTimeMinutes: 10,
+      wordCount: 1130,
+      categories: ["Senioren", "Downsizing", "Wien"],
+      tags: [
+        "Senioren Entrümpelung Wien",
+        "Downsizing Wien",
+        "Pflegeheim Umzug",
+        "Haushaltsauflösung Eltern",
+        "diskret",
+        "Fixpreis",
+        "Wertanrechnung",
+      ],
+      relatedSlugs: [
+        "wohnungsaufloesung-todesfall-wien-ablauf",
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+        "haushaltsaufloesung-preise-wien-2026",
+        "entruempelung-auswanderung-wien-ausland",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "verlassenschaft",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "moebel-wertanrechnung",
+        "kellerraeumung",
+        "dachbodenraeumung",
+        "entsorgung-wien",
+      ],
+      faqPairs: [
+        {
+          question: "Kann die Entrümpelung erfolgen, wenn ich als Angehöriger im Ausland lebe?",
+          answer:
+            "Ja. Wir bieten Videobesichtigungen, digitale Sortierlisten (behalten / spenden / entsorgen) und Freigaben per E-Mail — mit einer festen Ansprechperson in Wien.",
+        },
+        {
+          question: "Wie gehen Sie respektvoll mit Erinnerungsstücken um?",
+          answer:
+            "Fotos, Briefe und persönliche Gegenstände werden separat verpackt und nur nach Ihrer Freigabe weitergegeben oder entsorgt. Tempo und Ton orientieren sich am Wohlbefinden der Familie.",
+        },
+        {
+          question: "Was passiert mit gut erhaltenen Möbeln nach dem Downsizing?",
+          answer:
+            "Auf Wunsch spenden wir an soziale Einrichtungen in Wien. Verwertbare Möbel rechnen wir im Rahmen der Räumung auf den Fixpreis an — kein separater Ankauf.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: SeniorenEntruempelungDownsizingWienPflegeheimArticle,
+  },
   {
     meta: {
       slug: "bibliothek-sammlung-aufloesen-wien-wertanrechnung",
