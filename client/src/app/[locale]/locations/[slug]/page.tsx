@@ -63,31 +63,31 @@ const UNIQUE_LOCATION_DESCRIPTIONS: Record<string, string> = {
   "wien-1100":
     "Entrümpelung 1100 Wien – Gemeindebau Reumannplatz & MA 48 vor Ort. Wiener-Wohnen-Abstimmung, Parallel-Teams, Eva-Zilcher-Gasse, Fixpreis.",
   "wien-1110":
-    "Räumung in Simmering (1110). Wir lösen Häuser und Wohnungen auf. Professionell, besenrein und mit direkter MA 48 Entsorgungs-Logistik.",
+    "Entrümpelung 1110 Wien – Gasometer, Kleingärten & MA 48 Simmering. Container-Logistik, Nachtschichten, Fixpreis & diskrete Verlassenschaften.",
   "wien-1120":
-    "Wohnungsauflösung in Meidling (1120 Wien). Zuverlässige Räumungsfirma für Gemeindebauten und Privathäuser. Jetzt Gratis-Besichtigung sichern!",
+    "Entrümpelung 1120 Wien – Meidling Bahnhof, Hetzendorf MA 48 & Euro Plaza. Gründerzeit ohne Lift, Express ab 48 h, Fixpreis inkl. Keller.",
   "wien-1130":
     "Entrümpelung 1130 Wien – Villen Ober St. Veit & Schönbrunn-Nähe. Diskrete Verlassenschaft, Parkett-Schutz, Wertgutachten, MA 48 Auhof.",
   "wien-1140":
-    "Entrümpelung in Penzing (1140 Wien). Professionelle Räumung für Haus, Keller & Dachboden. Festpreis-Garantie und umweltgerechte Entsorgung.",
+    "Entrümpelung 1140 Wien – Otto-Wagner-Villen, Wolfersberg & MA 48 Auhof. Seiltechnik, Garten-Schutz, Container, Fixpreis & Wertausgleich.",
   "wien-1150":
     "Entrümpelung 1150 Wien – Westbahnhof & Airbnb-Turnaround. Express-Räumung in Stunden, liftlose Gründerzeit, Haltezone Gürtel, Fixpreis.",
   "wien-1160":
-    "Räumungen in Ottakring (1160 Wien). Von der Brunnenmarkt-Wohnung bis zur Wilhelminenberg-Villa: Stressfreie Entrümpelung zum Fixpreis.",
+    "Entrümpelung 1160 Wien – Brunnenmarkt, Yppenplatz-Lofts & Wilhelminenberg. Fabriketagen, Messie diskret, MA 48 Hernals/Auhof, Fixpreis.",
   "wien-1170":
     "Entrümpelung 1170 Wien – Hanglagen Dornbach & enge Zufahrten. Schrägaufzüge, MA 48 Richthausenstraße im Bezirk, Wertausgleich & Fixpreis.",
   "wien-1180":
-    "Haushaltsauflösung in Währing (1180 Wien). Diskrete Räumung von Altbauwohnungen und Verlassenschaften im Cottageviertel. Kostenloses Angebot.",
+    "Entrümpelung 1180 Wien – Cottageviertel, BOKU & Diplomatenresidenzen. Flügel-Schutz, NDA, MA 48 Hernals/Heiligenstadt, Fixpreis.",
   "wien-1190":
     "Entrümpelung 1190 Wien – Grinzing, steile Weinberge & Weinkeller. Schrägaufzüge, MA 48 Heiligenstadt, diskret & fixpreislich.",
   "wien-1200":
-    "Entrümpelung in der Brigittenau (1200 Wien). Schnelle Hilfe bei Wohnungsräumungen und Sperrmüll. Transparente Fixpreise, keine versteckten Kosten.",
+    "Entrümpelung 1200 Wien – Millennium City, Handelskai & Wallensteinplatz. Hochhaus-Lastenlift, Express-Turnaround, MA 48 Heiligenstadt/Donaufeld.",
   "wien-1210":
-    "Räumungsfirma in Floridsdorf (1210). Wir entrümpeln Häuser, Wohnungen und Kleingärten links der Donau. Besenrein, legal und zuverlässig.",
+    "Entrümpelung 1210 Wien – Stammersdorf, Großfeldsiedlung & Bisamberg. Zwei MA-48-Standorte, Container, Gewerbe Brünner Straße, Fixpreis.",
   "wien-1220":
     "Entrümpelung 1220 Wien – Seestadt Aspern, Donau City & Lobau-Gärten. Container-Logistik, MA 48 Stadlau & Percostraße, Fixpreis-Garantie.",
   "wien-1230":
-    "Entrümpelung in Liesing (1230). Haus- und Wohnungsräumungen im 23. Bezirk. Inklusive Sperrmüllentsorgung und Wertanrechnung. Jetzt anfragen!",
+    "Entrümpelung 1230 Wien – Alterlaa, Mauer-Weinberge & Triester Straße. Produktionshallen, MA 48 Inzersdorf & Seybelgasse, Fixpreis.",
 };
 
 /** Bundesländer & Regionen außerhalb Wiens – einzigartige Meta Descriptions. */

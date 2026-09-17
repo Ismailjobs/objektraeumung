@@ -65,11 +65,31 @@
     "ariaCurrent": "Aktuelle Bewertung",
     "ariaReview": "Bewertung {n}",
     "items": [
-      { "name": "Maria K.", "text": "Haushaltsauflösung termingerecht und fair. Sehr empfehlenswert!", "timeAgo": "vor 2 Wochen" },
-      { "name": "Thomas B.", "text": "Schnelle Abholung, Festpreis wie besprochen. Gerne wieder.", "timeAgo": "vor 3 Wochen" },
-      { "name": "Sabine M.", "text": "Diskret und zuverlässig. Nachlass meiner Mutter professionell abgewickelt.", "timeAgo": "vor 1 Monat" },
-      { "name": "Peter H.", "text": "Büroräumung in einem Tag. Alles reibungslos.", "timeAgo": "vor 2 Wochen" },
-      { "name": "Eva S.", "text": "Sperrmüll abgeholt, Preis war transparent. Top Service!", "timeAgo": "vor 1 Woche" }
+      {
+        "name": "Maria K.",
+        "text": "Haushaltsauflösung termingerecht und fair. Sehr empfehlenswert!",
+        "timeAgo": "vor 2 Wochen"
+      },
+      {
+        "name": "Thomas B.",
+        "text": "Schnelle Abholung, Festpreis wie besprochen. Gerne wieder.",
+        "timeAgo": "vor 3 Wochen"
+      },
+      {
+        "name": "Sabine M.",
+        "text": "Diskret und zuverlässig. Nachlass meiner Mutter professionell abgewickelt.",
+        "timeAgo": "vor 1 Monat"
+      },
+      {
+        "name": "Peter H.",
+        "text": "Büroräumung in einem Tag. Alles reibungslos.",
+        "timeAgo": "vor 2 Wochen"
+      },
+      {
+        "name": "Eva S.",
+        "text": "Sperrmüll abgeholt, Preis war transparent. Top Service!",
+        "timeAgo": "vor 1 Woche"
+      }
     ]
   },
   "trust": {
@@ -121,10 +141,22 @@
   "whyUs": {
     "title": "Warum wir?",
     "subtitle": "Transparent, termingerecht und mit einem Ansprechpartner für Ihr Projekt.",
-    "fixedPrice": { "title": "Festpreis", "desc": "Keine versteckten Kosten. Sie erhalten ein klares Angebot vor Ort." },
-    "fast": { "title": "Schnell", "desc": "Terminvereinbarung innerhalb von 24 Stunden. Abholung nach Absprache." },
-    "discreet": { "title": "Diskret", "desc": "Professionelle und vertrauliche Abwicklung – auch bei Nachlass." },
-    "vienna": { "title": "Wien & Österreich", "desc": "In allen 23 Wiener Bezirken und darüber hinaus für Sie im Einsatz." }
+    "fixedPrice": {
+      "title": "Festpreis",
+      "desc": "Keine versteckten Kosten. Sie erhalten ein klares Angebot vor Ort."
+    },
+    "fast": {
+      "title": "Schnell",
+      "desc": "Terminvereinbarung innerhalb von 24 Stunden. Abholung nach Absprache."
+    },
+    "discreet": {
+      "title": "Diskret",
+      "desc": "Professionelle und vertrauliche Abwicklung – auch bei Nachlass."
+    },
+    "vienna": {
+      "title": "Wien & Österreich",
+      "desc": "In allen 23 Wiener Bezirken und darüber hinaus für Sie im Einsatz."
+    }
   },
   "services": {
     "sectionLabel": "Leistungen",
@@ -213,7 +245,11 @@
       "faq3Q": "Räumen Sie auch Keller und Nebenräume?",
       "faq3A": "Ja, alle Nebenräume, Kellermieten und Dachböden sind im Angebot enthalten.",
       "galleryTitle": "Eindrücke unserer Haushaltsauflösungen",
-      "gallery": ["Haushaltsauflösung Wien", "Entrümpelung vor Ort", "Saubere Übergabe"]
+      "gallery": [
+        "Haushaltsauflösung Wien",
+        "Entrümpelung vor Ort",
+        "Saubere Übergabe"
+      ]
     },
     "apartment": {
       "title": "Wohnungsräumung",
@@ -222,7 +258,11 @@
       "body1": "Wir räumen Wohnungen termingerecht und sauber: Möbel, Hausrat, Elektrogeräte. Ideal bei Mietende, Nachlass oder Eigentumsübergabe.",
       "body2": "Nach der Räumung übergeben wir die Wohnung in einem ordentlichen Zustand. Transparente Preise und kostenlose Besichtigung.",
       "galleryTitle": "Wohnungsräumung – Referenzen",
-      "gallery": ["Wohnungsräumung Wien", "Daire Boşaltma", "Schnelle Abwicklung"]
+      "gallery": [
+        "Wohnungsräumung Wien",
+        "Daire Boşaltma",
+        "Schnelle Abwicklung"
+      ]
     },
     "office": {
       "title": "Büroentrümpelung",
@@ -231,7 +271,11 @@
       "body1": "Wir räumen Büros, Praxen, Läden und Gewerbeobjekte: Schreibtische, Aktenschränke, IT-Equipment und Sonderabfälle werden fachgerecht entsorgt oder verwertet.",
       "body2": "Termingerecht und diskret. Wir koordinieren uns mit Ihrem Zeitplan und übernehmen die komplette Logistik.",
       "galleryTitle": "Büro- und Geschäftsräumung",
-      "gallery": ["Büroentrümpelung Wien", "Ofis Boşaltma", "Gewerberäumung"]
+      "gallery": [
+        "Büroentrümpelung Wien",
+        "Ofis Boşaltma",
+        "Gewerberäumung"
+      ]
     },
     "warehouse": {
       "title": "Lagerräumung",
@@ -240,7 +284,11 @@
       "body1": "Wir räumen Lagerhallen, Keller, Garagen und Konteyner. Alte Bestände, Paletten, Maschinen und Schrott – wir kümmern uns um die komplette Entsorgung.",
       "body2": "Große Objekte sind kein Problem: Wir bringen das nötige Equipment mit und arbeiten effizient. Kostenlose Besichtigung und Festpreisangebot.",
       "galleryTitle": "Lager- und Hallenräumung",
-      "gallery": ["Lagerräumung Wien", "Depo Boşaltma", "Konteyner Entsorgung"]
+      "gallery": [
+        "Lagerräumung Wien",
+        "Depo Boşaltma",
+        "Konteyner Entsorgung"
+      ]
     },
     "bulk": {
       "title": "Sperrmüll",
@@ -249,7 +297,11 @@
       "body1": "Sperrmüll, alte Möbel, Matratzen, Elektrogeräte und Grünschnitt: Wir holen alles ab und entsorgen es ordnungsgemäß. Kein Mindestvolumen.",
       "body2": "Schnelle Terminvergabe in Wien und Umgebung. Transparente Preise – Sie erhalten vorab ein Festpreisangebot.",
       "galleryTitle": "Sperrmüll & Entsorgung",
-      "gallery": ["Sperrmüllabholung Wien", "Eşya Ayıklama", "Fachgerechte Entsorgung"]
+      "gallery": [
+        "Sperrmüllabholung Wien",
+        "Eşya Ayıklama",
+        "Fachgerechte Entsorgung"
+      ]
     },
     "cleaning": {
       "title": "Reinigung",
@@ -258,7 +310,11 @@
       "body1": "Nach der Entrümpelung übernehmen wir die Reinigung: Böden, Fenster, Küchen und Bäder. So übergeben Sie die Immobilie in einwandfreiem Zustand.",
       "body2": "Ob Grundreinigung oder Endreinigung – wir arbeiten mit professionellen Mitteln und garantieren ein sauberes Ergebnis.",
       "galleryTitle": "Reinigung nach Entrümpelung",
-      "gallery": ["Objektreinigung Wien", "Temizlik Hizmeti", "Endreinigung"]
+      "gallery": [
+        "Objektreinigung Wien",
+        "Temizlik Hizmeti",
+        "Endreinigung"
+      ]
     },
     "general": {
       "title": "Objekträumung",
@@ -267,7 +323,11 @@
       "body1": "Von der Wohnung über das Büro bis zum Lager: Wir bieten die komplette Palette an Räumungsdienstleistungen. Ein Ansprechpartner, eine Rechnung.",
       "body2": "Kostenlose Besichtigung, Festpreisangebot und termingerechte Abwicklung. Wir sind in Wien und ganz Österreich für Sie da.",
       "galleryTitle": "Objekträumung – Referenzen",
-      "gallery": ["Objekträumung", "Räumung Wien", "Professioneller Service"]
+      "gallery": [
+        "Objekträumung",
+        "Räumung Wien",
+        "Professioneller Service"
+      ]
     },
     "einkauf": {
       "title": "Einkauf / Ankauf",
@@ -1408,14 +1468,46 @@
     "title": "Kundenstimmen",
     "subtitle": "Das sagen unsere Kunden",
     "items": [
-      { "name": "Maria K.", "text": "Haushaltsauflösung termingerecht und fair. Sehr empfehlenswert!", "location": "Wien 10" },
-      { "name": "Thomas B.", "text": "Schnelle Abholung, Festpreis wie besprochen. Gerne wieder.", "location": "Wien 15" },
-      { "name": "Sabine M.", "text": "Diskret und zuverlässig. Nachlass meiner Mutter professionell abgewickelt.", "location": "Wien 7" },
-      { "name": "Peter H.", "text": "Büroräumung in einem Tag. Alles reibungslos.", "location": "Wien 3" },
-      { "name": "Eva S.", "text": "Sperrmüll abgeholt, Preis war transparent. Top Service!", "location": "Wien 21" },
-      { "name": "Michael R.", "text": "Von der Besichtigung bis zur Übergabe – alles perfekt organisiert.", "location": "Wien 12" },
-      { "name": "Lisa W.", "text": "Wohnungsräumung pünktlich und sauber. Sehr zufrieden.", "location": "Wien 4" },
-      { "name": "Andreas F.", "text": "Faire Bewertung der Möbel. Kompetent und freundlich.", "location": "NÖ" }
+      {
+        "name": "Maria K.",
+        "text": "Haushaltsauflösung termingerecht und fair. Sehr empfehlenswert!",
+        "location": "Wien 10"
+      },
+      {
+        "name": "Thomas B.",
+        "text": "Schnelle Abholung, Festpreis wie besprochen. Gerne wieder.",
+        "location": "Wien 15"
+      },
+      {
+        "name": "Sabine M.",
+        "text": "Diskret und zuverlässig. Nachlass meiner Mutter professionell abgewickelt.",
+        "location": "Wien 7"
+      },
+      {
+        "name": "Peter H.",
+        "text": "Büroräumung in einem Tag. Alles reibungslos.",
+        "location": "Wien 3"
+      },
+      {
+        "name": "Eva S.",
+        "text": "Sperrmüll abgeholt, Preis war transparent. Top Service!",
+        "location": "Wien 21"
+      },
+      {
+        "name": "Michael R.",
+        "text": "Von der Besichtigung bis zur Übergabe – alles perfekt organisiert.",
+        "location": "Wien 12"
+      },
+      {
+        "name": "Lisa W.",
+        "text": "Wohnungsräumung pünktlich und sauber. Sehr zufrieden.",
+        "location": "Wien 4"
+      },
+      {
+        "name": "Andreas F.",
+        "text": "Faire Bewertung der Möbel. Kompetent und freundlich.",
+        "location": "NÖ"
+      }
     ]
   },
   "districts": {
@@ -1702,21 +1794,21 @@
     "faq3A": "Wir prüfen Zustand und Wert. Oft finden sich Interessenten für solche Stücke – den Erlös geben wir selbstverständlich an Sie weiter."
   },
   "locationWien1180": {
-    "heroTitle": "Haushaltsauflösung 1180 Wien",
+    "heroTitle": "Entrümpelung 1180 Wien – Cottageviertel, BOKU & Diplomatenresidenzen",
     "breadcrumbDistrict": "1180 Währing",
-    "heroSub": "Entrümpelung in Währing: Cottageviertel, Eduardgasse und BOKU-Nähe – Studentenheime, Villen und sensible Objekte. Festpreis, Wertausgleich und besenreine Übergabe.",
-    "heroPoint1": "Villen und Altbauten im Cottageviertel – wir gehen mit größter Sorgfalt vor.",
-    "heroPoint2": "Erfahrung mit Bibliotheken, Musikinstrumenten und Kunstkollektionen.",
-    "heroPoint3": "Festpreis-Angebote für Studentenwohnungen und Dachausbau-Projekte.",
-    "heroPoint4": "Absolute Diskretion bei der Räumung von Botschaftswohnungen und -büros.",
-    "section1Title": "Entrümpelung in Wien 1180 – Eleganz erfordert Feingefühl",
-    "section1Body": "Der 18. Bezirk Währing zählt zu den prestigeträchtigsten und grünsten Gegenden Wiens. Das berühmte Cottageviertel, zahlreiche Botschaftsresidenzen und die Nähe zum Türkenschanzpark verleihen dem Bezirk eine einzigartige, elegante Atmosphäre. Unsere Objektreinigung und Räumung im 18. Bezirk verbindet höchste Professionalität mit Diskretion – ideal für Privatobjekte, Studentenwohnungen und Botschaftsimmobilien. Im Rahmen unserer Reinigungs- oder Räumungsleistungen bewerten wir nur Antiquitäten, Möbel und Second-Hand-Ware – wir kaufen sie nicht separat an.",
-    "section2Title": "Die Meister des Cottageviertels",
-    "section2Body": "Die prächtigen Villen und eleganten Zinshäuser in Währing sind oft architektonische Juwelen. Die Bewahrung der historischen Bausubstanz hat für uns oberste Priorität. Wir setzen spezielle Schutzmaterialien ein – etwa Filz und Folien – um wertvolle Parkettböden, Stuckdecken und aufwendige Verzierungen zu schützen. Unsere Teams sind darin geschult, auch in engen Treppenhäusern oder verwinkelten Gärten äußerst behutsam zu arbeiten. In den ruhigen, von Bäumen gesäumten Straßen des Cottageviertels ist ein unauffälliges Vorgehen Pflicht: Wir nutzen unmarkierte Fahrzeuge und unsere Mitarbeiter verhalten sich stets respektvoll und leise.",
-    "section3Title": "Entsorgungslogistik für Währing",
-    "section3Body": "Währing verfügt über keine eigene MA48-Annahmestelle. Daher ist die sorgfältige Planung der Entsorgungsrouten besonders wichtig. Die beiden nächstgelegenen und am besten erreichbaren Standorte sind die Mistplatz-Annahme in Hernals (Richthausenstraße 2, 1170 Wien) und jene in Heiligenstadt (Grinzinger Straße 151, 1190 Wien). Je nach Objektlage wählen wir die effizienteste Route, um Zeit und Kosten zu minimieren.",
-    "section4Title": "Zwischen Universität und Diplomatie",
-    "section4Body": "Währing ist nicht nur eine exklusive Wohngegend, sondern auch ein wichtiger akademischer Standort – die Universität für Bodenkultur (BOKU) hat hier ihren Sitz. Wir sind erfahren in der Räumung von Studentenwohnungen und im Abbau von Institutsbibliotheken und Archiven. Die Nähe zu zahlreichen diplomatischen Missionen erfordert höchste Sensibilität und die Einhaltung strengster Datenschutzvorgaben. Ob Luxuswohnung, Botschaftsresidenz, Schul- oder Institutsgebäude oder der Ausbau eines Kellerraums in einem Biedermeier-Haus – im 18. Bezirk sind wir Ihr diskreter und zuverlässiger Partner.",
+    "heroSub": "Währing: Gersthof, Pötzleinsdorf und Währinger Straße – Villen mit Parkett, Studenten-WGs und Botschaftsobjekte. Fixpreis, NDA auf Wunsch, Entsorgung über Hernals oder Heiligenstadt.",
+    "heroPoint1": "Cottageviertel: Filz, Folie, unmarkierte Fahrzeuge.",
+    "heroPoint2": "Flügel, Bibliotheken, Kunstsammlungen – Expertenbewertung.",
+    "heroPoint3": "BOKU-Studenten: Semester-Express, WG-Inventar.",
+    "heroPoint4": "Archiv-Vernichtung DSGVO-konform für Kanzleien & Institute.",
+    "section1Title": "1180: Grün, exklusiv, studentisch",
+    "section1Body": "Währing verbindet Villenidylle mit Universitätsleben. Entrümpelungen sind hier oft sensibel – diskret, dokumentiert, besenrein.",
+    "section2Title": "Schutz vor Trageweg",
+    "section2Body": "Stuck, Parkett und enge Treppen sichern wir vor dem ersten Schritt. In ruhigen Straßen arbeiten wir leise und mit neutralen Fahrzeugen.",
+    "section3Title": "Entsorgung: Hernals oder Heiligenstadt",
+    "section3Body": "Kein Mistplatz im 18. – wir planen die Route nach Objektlage: Richthausenstraße (1170) oder Grinzinger Straße (1190).",
+    "section4Title": "Villa, WG, Institut",
+    "section4Body": "Vom Semester-Ende in der WG bis zur Institutsbibliothek: Inventar, Bewertung, faire Anrechnung. Botschaftsobjekte mit NDA und Datenschutz.",
     "whatWeCoverTitle": "Wofür wir zuständig sind",
     "whatPoint1": "Cottagevillen, Botschaftsresidenzen und Familienhäuser in Gersthof und Pötzleinsdorf.",
     "whatPoint2": "Studentenwohnungen und WGs entlang Währinger Straße und Gentzgasse.",
@@ -1738,7 +1830,13 @@
     "faq2Q": "Können Sie Archive von Schulen oder diplomatischen Missionen sichten und entsorgen?",
     "faq2A": "Ja, wir führen Archivinventare durch, digitalisieren auf Wunsch Unterlagen und sorgen für eine DSGVO-konforme Vernichtung.",
     "faq3Q": "Die Zufahrt zu unserem Haus im Cottageviertel ist sehr eng. Wie lösen Sie das?",
-    "faq3A": "Wir kennen die Gegebenheiten im Bezirk und setzen wendige, kleinere Fahrzeuge ein. Bei Bedarf richten wir auch temporäre Halteverbotszonen ein."
+    "faq3A": "Wir kennen die Gegebenheiten im Bezirk und setzen wendige, kleinere Fahrzeuge ein. Bei Bedarf richten wir auch temporäre Halteverbotszonen ein.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Cottagevilla Gersthof – Verlassenschaft, Flügel, 240 m²",
+    "caseStudyBody": "Eine Verlassenschaft in einer Villa im Cottageviertel: Parkett, Stuck, Bibliothek mit 800 Bänden und ein Steinway-Flügel im Salon. Die Nachbarn erwarteten leise Abwicklung; Erben wohnten im Ausland. Nach Videobesichtigung verpackten wir den Flügel separat, bewerteten Antiquitäten und räumten in drei leisen Tagesetappen. Sperrmüll über MA 48 Richthausenstraße; brauchbare Bücher an soziale Einrichtung nach Freigabe. Übergabe mit Wertaufstellung und Fotos für den Notar.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Währing: Eleganz, Akademie und Diplomatie",
+    "expertBody": "Cottage-Siedlungen, BOKU-Nähe und Botschaftsresidenzen verlangen Feingefühl. Wir kennen enge Zufahrten in Gersthof, Schutzstandards für Parkett und die schnellsten Entsorgungsrouten nach 1170 oder 1190."
   },
   "locationWien1010": {
     "heroTitle": "Entrümpelung 1010 Wien – Haltezonen & denkmalgeschützte Stiegen",
@@ -2200,21 +2298,21 @@
     "faq3A": "Nein, wir sind auf die Arbeit in Hochhäusern spezialisiert. Wir schützen die Aufzüge und Gemeinschaftsbereiche und arbeiten schnell und diskret."
   },
   "locationWien1110": {
-    "heroTitle": "Haushaltsauflösung 1110 Wien",
+    "heroTitle": "Entrümpelung 1110 Wien – Gasometer, Kleingärten & MA 48 Simmering",
     "breadcrumbDistrict": "1110 Simmering",
-    "heroSub": "Entrümpelung in Simmering – Gasometer-Lofts, Einfamilienhäuser und Gewerbehallen zwischen Zentralfriedhof und Alberner Hafen.",
-    "heroPoint1": "Großflächen- & Industrieauflösungen inklusive Räumungskonzepte",
-    "heroPoint2": "Erfahrung mit den speziellen Anforderungen der Gasometer-Appartements",
-    "heroPoint3": "Flexible Termine für die Räumung von Garten- & Kleingartenanlagen",
-    "heroPoint4": "Effiziente Logistik für große Wohnhausanlagen",
-    "section1Title": "Haushaltsauflösung in Simmering: Wo Industrie auf Idylle trifft",
-    "section1Body": "Simmering, der 11. Bezirk, ist ein Bezirk der Gegensätze. Hier treffen weitläufige Industriegebiete und der geschäftige Alberner Hafen auf ruhige Einfamilienhaus-Siedlungen und die idyllischen Kleingärten am Leberberg. Diese Vielfalt spiegelt sich auch in den Anforderungen an eine Haushaltsauflösung wider. Ob es sich um die Räumung einer riesigen Werkshalle oder die Auflösung eines kleinen Reihenhauses handelt – wir haben die passende Lösung. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik im großen Stil",
-    "section2Body": "Simmering ist flächenmäßig einer der größten Bezirke Wiens und beherbergt zahlreiche große Wohnhausanlagen und weitläufige Industrieareale. Eine effiziente Logistik ist hier der Schlüssel zum Erfolg. Wir sind darauf spezialisiert, auch große Mengen an Sperrmüll und Bauschutt schnell und fachgerecht zu beseitigen. Durch den Einsatz von Containern und eine enge Zusammenarbeit mit den lokalen Betrieben halten wir die Kosten niedrig und die Umweltbelastung so gering wie möglich.",
-    "section3Title": "Effiziente Entsorgung in Simmering",
-    "section3Body": "Ein großer Vorteil für Haushaltsauflösungen in Simmering ist die hervorragende Infrastruktur. Der Bezirk verfügt mit dem MA48-Mistplatz in der Johann-Petrak-Gasse 1 über eine eigene, großzügig angelegte Sammelstelle. Dies ermöglicht kurze Transportwege und eine schnelle, umweltgerechte Entsorgung von Sperrmüll, Bauschutt und Problemstoffen. Zudem können auf allen Mistplätzen in der 48er-Tandler-Box gut erhaltene Gegenstände für die Wiederverwendung abgegeben werden, was den Abfallberg reduziert.",
-    "section4Title": "Einzigartige Wohnwelten: Von den Gasometern bis zum Zentralfriedhof",
-    "section4Body": "Eine besondere Herausforderung und zugleich ein Wahrzeichen des Bezirks sind die Gasometer. Die Auflösung einer Wohnung in diesen denkmalgeschützten Gebäuden erfordert nicht nur eine sorgfältige Planung, sondern auch einen besonders behutsamen Umgang mit der einzigartigen Architektur. Im Kontrast dazu stehen die zahlreichen Einfamilienhäuser und Kleingartenanlagen, bei deren Räumung oft auch Gärten, Schuppen und Lauben berücksichtigt werden müssen. Wir kümmern uns um Lagerhallen und Werkstätten ebenso wie um Verlassenschaften, bei denen die Nähe zum Zentralfriedhof, einer der größten Friedhofsanlagen Europas, ein besonders hohes Maß an Sensibilität und Diskretion erfordert.",
+    "heroSub": "Simmering von den Gasometern bis Alberner Hafen: Industriehallen, Kleingarten-Lauben und Einfamilienhäuser am Leberberg – Fixpreis, Container-Logistik und Entsorgung über Johann-Petrak-Gasse 1.",
+    "heroPoint1": "Denkmalschutz-Gasometer: leise Etappen, Schutz der Ziegelwände.",
+    "heroPoint2": "Kleingarten-Auflösung inkl. Laube, Pool und Grünschnitt.",
+    "heroPoint3": "Schwerlast & Werkstatt: Stapler, Krane, Demontage-Nachweise.",
+    "heroPoint4": "Diskrete Verlassenschaften in Zentralfriedhof-Nähe.",
+    "section1Title": "1110: Gegensätze auf einer Karte",
+    "section1Body": "Simmering verbindet Hafen, Industrie und Kleingärten. Entrümpelungen brauchen hier Weitblick: mal Container, mal Nachtfenster, mal Garten-Laube – immer mit Fixpreis und fairer Wertanrechnung im Räumungskontext.",
+    "section2Title": "Großflächen-Logistik ohne Nachbarschaftsstress",
+    "section2Body": "Bei Wohnhausanlagen und Hallen planen wir Ladezonen und Teams parallel. In engen Siedlungsstraßen setzen wir wendige Transporter; bei Schwerlast organisieren wir Stapler oder Krane mit Nachweis.",
+    "section3Title": "MA 48 Johann-Petrak-Gasse – Entsorgung im Bezirk",
+    "section3Body": "Der Mistplatz in Simmering ermöglicht kurze Wege für Sperrmüll, Elektro und Problemstoffe. Gut Erhaltenes geht in die 48er-Tandler-Box – weniger Abfall, niedrigere Kosten.",
+    "section4Title": "Gasometer, Kleingarten, Verlassenschaft",
+    "section4Body": "Denkmalgeschützte Lofts verlangen Schutz und Timing. Kleingärten brauchen Lauben-, Pool- und Strauchschnitt-Kompetenz. In sensiblen Wohnlagen arbeiten wir diskret – Wertausgleich, kein separater Ankauf.",
     "whatWeCoverTitle": "Wofür wir zuständig sind",
     "whatPoint1": "Reihenhäuser und Gemeindebauten rund um die Simmeringer Hauptstraße",
     "whatPoint2": "Proberäume, Studios und Storage-Einheiten in den Gasometern",
@@ -2238,24 +2336,30 @@
     "faq2Q": "Ich löse einen Kleingarten auf. Was passiert mit der Laube und den Pflanzen?",
     "faq2A": "Wir übernehmen die komplette Räumung von Kleingärten, inklusive Strauchschnitt, Entfernung von Gartenmöbeln und Pools und kümmern uns um die fachgerechte Beseitigung.",
     "faq3Q": "Die Zufahrt zu meinem Haus ist sehr eng. Ist das ein Problem?",
-    "faq3A": "Nein, wir sind auf alle Eventualitäten vorbereitet. Wir nutzen je nach Bedarf wendige Transporter oder organisieren temporäre Halteverbotszonen."
+    "faq3A": "Nein, wir sind auf alle Eventualitäten vorbereitet. Wir nutzen je nach Bedarf wendige Transporter oder organisieren temporäre Halteverbotszonen.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Gasometer-Loft – 140 m², 3. Etage, Proberaum-Inventar",
+    "caseStudyBody": "Ein Musikproduzent gab sein Loft in den Gasometern auf: Schallisolierung, Regale, Instrumente und Küche im offenen Grundriss. Die Hausverwaltung verlangte Ruhezeiten und Schutz der Backsteinwände. Wir räumten in zwei Nachtschichten, verpackten empfindliche Technik separat und bewerteten verwertbare Geräte. Sperrmüll und Elektro am selben Tag über MA 48 Johann-Petrak-Gasse 1; Übergabe mit Foto-Protokoll für die Verwaltung – besenrein vor dem Übergabetermin.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Simmering: Industriegröße trifft Kleingarten-Charme",
+    "expertBody": "Vom Alberner Hafen bis zum Leberberg kennen wir Zufahrten, Container-Stellplätze und die MA-48-Anbindung im Bezirk. Gasometer, Reihenhäuser und Kleingartenvereine planen wir nicht nach Schema F – sondern mit Etappen, die Nachbarn und Verwaltungen mitnehmen."
   },
   "locationWien1120": {
-    "heroTitle": "Haushaltsauflösung 1120 Wien",
+    "heroTitle": "Entrümpelung 1120 Wien – Meidling Bahnhof, Hetzendorf & Business Park",
     "breadcrumbDistrict": "1120 Meidling",
-    "heroSub": "Entrümpelung in Meidling – von Altbauwohnungen bei der Meidlinger Hauptstraße bis zu Terrassenhäusern in Hetzendorf.",
-    "heroPoint1": "Routine in Gemeindebauten & Dachgeschoßausbauten",
-    "heroPoint2": "Schnelle Räumungen nach Auszug, Todesfall oder Firmenauflösung",
-    "heroPoint3": "Fairer Wertausgleich für Sammlungen, Werkzeug und gut erhaltene Geräte",
-    "heroPoint4": "Logistik für belebte Geschäftsstraßen und ruhige Wohnviertel",
-    "section1Title": "Haushaltsauflösung in Meidling: Flexibel und zuverlässig",
-    "section1Body": "Meidling, der 12. Bezirk, ist ein Bezirk der Vielfalt. Hier trifft das pulsierende Leben rund um die Meidlinger Hauptstraße auf die ruhigen, fast schon dörflichen Siedlungen in Hetzendorf. Diese Mischung aus urbanem Flair und grüner Oase stellt vielfältige Anforderungen an eine Haushaltsauflösung. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik im Verkehrsknotenpunkt",
-    "section2Body": "Als wichtiger Verkehrsknotenpunkt mit dem Bahnhof Meidling ist der 12. Bezirk hervorragend angebunden, aber auch stark befahren. Wir kennen die besten Zeiten und Wege, um Staus zu umgehen und Ihre Wohnung oder Ihr Geschäft schnell und effizient zu räumen. In den engen Gassen der alten Ortsteile organisieren wir bei Bedarf Halteverbotszonen, während wir in den großen Wohnhausanlagen wie „Am Schöpfwerk“ auf unsere eingespielten Abläufe und die gute Zusammenarbeit mit den Hausverwaltungen setzen.",
-    "section3Title": "Lokale Entsorgung in Hetzendorf",
-    "section3Body": "Ein entscheidender Vorteil für Entrümpelungen in Meidling ist der eigene MA48-Mistplatz in Hetzendorf (Wundtgasse/Jägerhausgasse). Diese lokale Anlaufstelle ermöglicht eine schnelle und umweltfreundliche Entsorgung von Sperrmüll und Altstoffen, was Zeit und Kosten spart. Für gut erhaltene Möbel und Gegenstände, die zu schade zum Wegwerfen sind, steht auf dem Mistplatz eine 48er-Tandler-Box zur Verfügung, um die Wiederverwendung zu fördern.",
-    "section4Title": "Von der Gründerzeitwohnung bis zum Business Park",
-    "section4Body": "Meidling bietet eine breite Palette an Immobilientypen. Die prächtigen Zinshäuser entlang der Wienzeile erfordern einen sorgsamen Umgang mit historischer Bausubstanz. Im Gegensatz dazu stehen die modernen Bürokomplexe wie der Business Park Vienna oder das Euro Plaza. Bei der Auflösung von Geschäftsflächen hier sind Diskretion und die Einhaltung strenger interner Regelungen oberstes Gebot. Ob es sich um eine kleine Wohnung in einem der zahlreichen Gemeindebauten, ein Einfamilienhaus mit Garten in Altmannsdorf oder ein ganzes Büro handelt – wir bieten für jede Herausforderung die passende Lösung und garantieren eine professionelle und stressfreie Abwicklung.",
+    "heroSub": "Von der Wienzeile über Am Schöpfwerk bis Hetzendorf: Gemeindebau, Euro Plaza und Altbau ohne Lift – Fixpreis, MA 48 Hetzendorf und Express-Termine ab 48 Stunden.",
+    "heroPoint1": "Bahnhof Meidling: Stau-zeiten kennen wir – Plan statt Warten.",
+    "heroPoint2": "MA 48 Wundtgasse/Jägerhausgasse – Entsorgung im südlichen 12.",
+    "heroPoint3": "Facility-Management Euro Plaza & Business Park Vienna.",
+    "heroPoint4": "Keller, Dachboden, Garage – im Fixpreis enthalten.",
+    "section1Title": "1120: urban und fast dörflich",
+    "section1Body": "Meidling mischt pulsierende Geschäftsstraßen mit ruhigen Siedlungen. Jede Lage braucht eigenes Timing – von Express nach Auszug bis sorgfältige Verlassenschaft.",
+    "section2Title": "Gürtel-Nähe: Parken, Lifte, Stiegen",
+    "section2Body": "Liftlose Stockwerke kalkulieren wir transparent. Bei Euro Plaza und Business Park stimmen wir uns mit Facility Management ab – außerhalb der Kernzeiten, wenn nötig.",
+    "section3Title": "MA 48 Hetzendorf – kurze Wege im Bezirk",
+    "section3Body": "Der Mistplatz in Hetzendorf spart Fahrzeit. Sperrmüll, Elektro und brauchbare Stücke für die 48er-Tandler-Box – alles aus einer Hand.",
+    "section4Title": "Gründerzeit, Terrassenhaus, Bürokomplex",
+    "section4Body": "Historische Bausubstanz schützen wir mit Folie und Kantenschutz. Terrassenhäuser in Altmannsdorf und Büroflächen in modernen Parks räumen wir strukturiert und dokumentiert.",
     "whatWeCoverTitle": "Wofür wir zuständig sind",
     "whatPoint1": "Zinshäuser entlang der Wienzeile & am Margaretengürtel",
     "whatPoint2": "Familienhäuser, Gärten und Garagen in Hetzendorf & Altmannsdorf",
@@ -2277,7 +2381,13 @@
     "faq2Q": "Ich brauche sehr kurzfristig einen Termin. Ist das möglich?",
     "faq2A": "Ja, in dringenden Fällen können wir Express-Räumungen oft innerhalb von 48 Stunden realisieren.",
     "faq3Q": "Was ist bei einer Geschäftsauflösung im Euro Plaza zu beachten?",
-    "faq3A": "Wir kennen die internen Regelungen der Business Parks und stimmen uns eng mit dem Facility Management ab, um eine reibungslose Abwicklung zu gewährleisten."
+    "faq3A": "Wir kennen die internen Regelungen der Business Parks und stimmen uns eng mit dem Facility Management ab, um eine reibungslose Abwicklung zu gewährleisten.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Zinshaus Wienzeile – 78 m², 5. Stock, Verlassenschaft",
+    "caseStudyBody": "Nach einem Todesfall musste eine Gründerzeitwohnung an der Wienzeile innerhalb von zwei Wochen für den Makler übergeben werden. Kein Lift, enge Wendeltreppe, vollständiges Inventar inklusive Kellerabteil. Wir sicherten Parkett und Stuck, trugen in Etappen mit zwei Teams und bewerteten antike Möbel. Entsorgung über MA 48 Hetzendorf; besenreine Übergabe mit Inventarliste für die Erbengemeinschaft – Fixpreis ohne Nachforderungen.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Meidling: Verkehrsknoten und dörfliche Rückzugsorte",
+    "expertBody": "Zwischen Meidlinger Hauptstraße und Hetzendorf planen wir Haltezonen, Hausverwaltungs-Fenster und die schnellste Route zum Mistplatz. Für Gewerbeparks kennen wir Zutrittsregeln – für Gemeindebauten die Müllraum-Realität."
   },
   "locationWien1130": {
     "heroTitle": "Entrümpelung 1130 Wien – Villen Ober St. Veit & Schönbrunn-Nähe",
@@ -2325,21 +2435,21 @@
     "faq3A": "Wir lassen wertvolle Stücke von Experten schätzen und rechnen Ihnen den Wert fair an. Auf Wunsch organisieren wir auch den versicherten Transport zu einem Auktionshaus."
   },
   "locationWien1140": {
-    "heroTitle": "Haushaltsauflösung 1140 Wien",
+    "heroTitle": "Entrümpelung 1140 Wien – Otto-Wagner-Villen, Auhof & Wolfersberg",
     "breadcrumbDistrict": "1140 Penzing",
-    "heroSub": "Entrümpelung in Penzing – Villen in Hietzing-Nähe, Gemeindebauten in Breitensee und Gewerbeobjekte bis Auhof.",
-    "heroPoint1": "Professionelle Sicherung von Hanglagen & Gartenanlagen",
-    "heroPoint2": "Erfahrung mit der Räumung von Villen, Ateliers und Garagen in Hütteldorf",
-    "heroPoint3": "Container- und Recyclinglogistik für größere Liegenschaften und Anwesen",
-    "heroPoint4": "Diskrete Vorgehensweise in den ruhigen Wohngegenden des Bezirks",
-    "section1Title": "Haushaltsauflösung in Penzing: Zwischen urbanem Leben und Wienerwald",
-    "section1Body": "Penzing, der 14. Bezirk, ist ein Bezirk der Gegensätze. Er erstreckt sich vom lebhaften Gürtel bis zu den grünen Ausläufern des Wienerwaldes. Diese Vielfalt aus städtischem Trubel und naturnaher Idylle spiegelt sich auch in den Immobilien wider und stellt besondere Anforderungen an eine Haushaltsauflösung. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik für jede Lage",
-    "section2Body": "Die geografische Vielfalt Penzings erfordert eine flexible und durchdachte Logistik. In den dicht besiedelten Gebieten rund um die Hütteldorfer Straße und die Johnstraße ist eine genaue Planung von Halteverbotszonen und Ladezeiten unerlässlich. In den Villenvierteln von Hütteldorf oder am Wolfersberg hingegen sind es oft die steilen Hanglagen und engen Zufahrtswege, die eine besondere Herausforderung darstellen. Unsere Teams sind mit diesen Gegebenheiten bestens vertraut und setzen bei Bedarf spezielle Ausrüstung wie Seilwinden oder kleinere, wendige Fahrzeuge ein, um jedes Objekt sicher und effizient zu erreichen.",
-    "section3Title": "Praktisch und nah: Entsorgung in Auhof",
-    "section3Body": "Ein großer Vorteil für die Bewohner von Penzing ist der eigene MA48-Mistplatz in Auhof (Wientalstraße 51). Diese gut erreichbare, lokale Sammelstelle macht die Entsorgung von Sperrmüll und Altstoffen besonders effizient und umweltfreundlich. Die kurzen Wege sparen Zeit und Geld. Zudem fördert die 48er-Tandler-Box vor Ort die Wiederverwendung von gut erhaltenen Gegenständen und trägt so zur Nachhaltigkeit bei.",
-    "section4Title": "Von der Villa bis zur Gemeindewohnung",
-    "section4Body": "Die Architektur in Penzing ist so vielfältig wie der Bezirk selbst. Von den prachtvollen Villen Otto Wagners bis zu den großen Gemeindebauten in Breitensee – jede Immobilie hat ihren eigenen Charakter. Bei der Räumung einer historischen Villa legen wir größten Wert auf den Schutz der Bausubstanz und den sorgfältigen Umgang mit wertvollem Interieur. In den großen Wohnhausanlagen hingegen kommt es vor allem auf Effizienz und eine gute Koordination mit der Hausverwaltung an. Ob es sich um ein Einfamilienhaus mit großem Garten, ein Künstleratelier, Werkstätten, Studios und Lagerhallen oder eine kleine Wohnung mit Dachgeschoß handelt – wir bieten für jede Anforderung die passende Lösung und sorgen für eine professionelle und stressfreie Abwicklung.",
+    "heroSub": "Penzing vom Gürtel bis Wienerwald: Hütteldorf, Breitensee und Hanglagen am Wolfersberg – MA 48 Wientalstraße 51 im Bezirk, Seiltechnik und Garten-Rücksicht.",
+    "heroPoint1": "Otto-Wagner-Bauten: Stuck- und Parkett-Schutz als Standard.",
+    "heroPoint2": "Hanglagen Hütteldorf – Seilwinde, kleine Transporter.",
+    "heroPoint3": "Container für Villen, Ateliers und Auhof-Gewerbe.",
+    "heroPoint4": "Breitensee-Gemeindebau: effizient mit Hausverwaltung.",
+    "section1Title": "1140: Gürtel und Grün",
+    "section1Body": "Penzing reicht vom urbanen Gürtel bis in den Wienerwald. Entrümpelungen variieren zwischen dichten Straßen und steilen Villenzufahrten – Fixpreis inklusive Logistikplanung.",
+    "section2Title": "Hang, Garten, enge Gasse",
+    "section2Body": "Steile Wege sichern wir vor dem ersten Trageweg. Gärten und Schuppen gehören zum Leistungsumfang; Schäden an Rasen und Wegen vermeiden wir mit Abdeckung und Markierung.",
+    "section3Title": "MA 48 Auhof – Entsorgung im 14.",
+    "section3Body": "Wientalstraße 51 ist der lokale Anker: kurze Wege für Sperrmüll, Elektro und Grünschnitt. Second-Hand-Box für brauchbare Stücke inklusive.",
+    "section4Title": "Villa, Atelier, Gemeindewohnung",
+    "section4Body": "Historische Substanz schützen wir; in Breitensee koordinieren wir Müllräume und Nachbarn. Wertausgleich im Räumungskontext – kein separater Ankauf.",
     "whatWeCoverTitle": "Wofür wir zuständig sind",
     "whatPoint1": "Einfamilienhäuser und Altvillen in Baumgarten, Hütteldorf und am Wolfersberg",
     "whatPoint2": "Dachgeschoße und Wohnungen entlang der Linzer Straße und Johnstraße",
@@ -2361,7 +2471,13 @@
     "faq2Q": "Wir haben ein Haus in Hanglage. Ist das ein Problem?",
     "faq2A": "Nein, wir sind auf solche Herausforderungen spezialisiert und setzen bei Bedarf spezielle Ausrüstung wie Seilwinden ein, um die Sicherheit zu gewährleisten.",
     "faq3Q": "Was passiert mit den alten Möbeln aus der Villa meiner Eltern?",
-    "faq3A": "Wir prüfen jedes Stück sorgfältig. Verwertbare Möbel werden Ihnen angerechnet, gut erhaltene Stücke spenden wir auf Wunsch, und den Rest entsorgen wir fachgerecht."
+    "faq3A": "Wir prüfen jedes Stück sorgfältig. Verwertbare Möbel werden Ihnen angerechnet, gut erhaltene Stücke spenden wir auf Wunsch, und den Rest entsorgen wir fachgerecht.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Villa Wolfersberg – Hanglage, Gartenhaus, 320 m²",
+    "caseStudyBody": "Eine Erbengemeinschaft löste eine Villa mit weitläufigem Garten auf. Die Zufahrt war für Lkw gesperrt; im Haus Parkett, Stuck und eine Werkstatt im Gartenhaus. Wir dokumentierten Zufahrt und Böden, setzten Seiltechnik für schwere Möbel und stellten einen Container auf der Straße – mit Halteverbotszone. Werkzeug und antike Möbel wurden bewertet und angerechnet. Entsorgung über MA 48 Auhof; Gartenwege blieben unbeschädigt, Übergabe besenrein mit Fotos.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Penzing: Stadttrubel am Gürtel, Ruhe im Wienerwald",
+    "expertBody": "Johnstraße, Hütteldorfer Straße oder Wolfersberg – wir kennen Engpässe, Hanglagen und den Mistplatz in Auhof. Villen, Ateliers und Gemeindebauten bekommen jeweils den passenden Ablauf."
   },
   "locationWien1150": {
     "heroTitle": "Entrümpelung 1150 Wien – Westbahnhof, Airbnb-Turnaround & Gründerzeit",
@@ -2411,21 +2527,21 @@
     "faq3A": "Wir kennen die lokalen Gegebenheiten und beantragen rechtzeitig Halteverbotszonen. Zudem setzen wir auf wendige, kompakte Transporter."
   },
   "locationWien1160": {
-    "heroTitle": "Haushaltsauflösung 1160 Wien",
+    "heroTitle": "Entrümpelung 1160 Wien – Brunnenmarkt, Yppenplatz & Wilhelminenberg",
     "breadcrumbDistrict": "1160 Ottakring",
-    "heroSub": "Entrümpelung in Ottakring – Yppenplatz-Lofts, Gemeindebauten und Werkstätten am Wilhelminenberg. Fixpreis, Wertausgleich und MA 48-Abstimmung aus einer Hand.",
-    "heroPoint1": "Erfahrung mit Fabriksetagen & Hinterhofwerkstätten",
-    "heroPoint2": "Messie-Teams mit Sozialkompetenz & professioneller Ausrüstung",
-    "heroPoint3": "Fixpreise inklusive Keller, Dachboden und Innenhof",
-    "heroPoint4": "Logistik für die belebten Märkte und die ruhigen Villenviertel",
-    "section1Title": "Haushaltsauflösung in Ottakring: Zwischen urbanem Flair und grüner Lunge",
-    "section1Body": "Ottakring, der 16. Bezirk, ist ein Bezirk der Vielfalt und der Lebensfreude. Vom pulsierenden Leben am Brunnenmarkt und Yppenplatz über die traditionellen Zinshäuser bis hin zu den eleganten Villen am Wilhelminenberg – Ottakring vereint das Beste aus zwei Welten. Diese Vielfalt erfordert eine flexible und an die jeweiligen Gegebenheiten angepasste Vorgehensweise bei jeder Haushaltsauflösung. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik im Herzen des Westens",
-    "section2Body": "Das rege Treiben rund um den Brunnenmarkt, einen der längsten Straßenmärkte Europas, stellt eine besondere logistische Herausforderung dar. Wir kennen die besten Zeiten für An- und Abtransporte und organisieren bei Bedarf Halteverbotszonen, um den Marktbetrieb nicht zu stören. In den dicht verbauten Gebieten des inneren Ottakrings sind die Stiegenhäuser oft eng und ohne Lift. Unsere erfahrenen Teams meistern auch diese Hürden mit Kraft und Köpfchen. In den Villenviertel am Wilhelminenberg wiederum sind es die steilen Hanglagen, die eine besondere Planung erfordern. Wir sind auf alle Eventualitäten vorbereitet und garantieren einen reibungslosen Ablauf.",
-    "section3Title": "Entsorgungs-Optionen für Ottakring",
-    "section3Body": "Ottakring verfügt über keinen eigenen MA48-Mistplatz. Die nächstgelegene und praktischste Anlaufstelle für die fachgerechte Entsorgung von Sperrmüll und Altstoffen ist der Mistplatz in Hernals (Richthausenstraße 2, 1170 Wien). Für die Bewohner der westlichen Teile Ottakrings ist auch der Mistplatz in Auhof (Wientalstraße 51, 1140 Wien) eine gut erreichbare Alternative. Wir planen die Entsorgungsrouten effizient, um Zeit und Kosten zu sparen.",
-    "section4Title": "Ein Bezirk mit Geschichte und Zukunft",
-    "section4Body": "Ottakring blickt auf eine lange Geschichte als Arbeiter- und Industriebezirk zurück. Viele ehemalige Fabriksetagen und Hinterhofwerkstätten werden heute als Ateliers, Lofts oder Start-up-Büros genutzt. Bei der Räumung solcher Objekte, wie auch von Produktionsflächen & Werkstätten, bringen wir unser Know-how im Umgang mit schweren Maschinen und speziellen Materialien ein. Gleichzeitig ist Ottakring ein Bezirk, der sich ständig weiterentwickelt. Ob es sich um die Auflösung einer traditionellen Wohnung, die Räumung eines modernen Penthouses mit Blick über die Stadt oder die Entrümpelung eines Kleingartens in Neuwaldegg handelt – wir arbeiten schnell, professionell und mit dem nötigen Respekt für die Geschichte und die Menschen dieses einzigartigen Bezirks.",
+    "heroSub": "Ottakring vom längsten Straßenmarkt Europas bis zur Villa am Hang: Fabrik-Lofts, Messie-Diskretion und Entsorgung über MA 48 Hernals oder Auhof – Fixpreis inklusive Keller.",
+    "heroPoint1": "Brunnenmarkt: Haltezonen außerhalb der Marktzeiten.",
+    "heroPoint2": "Fabriketagen & Hinterhof-Werkstätten – Schwerlast-Erfahrung.",
+    "heroPoint3": "Messie-Teams mit Schutzausrüstung und Ozon optional.",
+    "heroPoint4": "Wilhelminenberg: Hangzufahrten und Garten-Schutz.",
+    "section1Title": "1160: Vielfalt in einem Bezirk",
+    "section1Body": "Ottakring vereint Marktleben, Arbeiterhaus-Tradition und grüne Hanglagen. Entrümpelungen passen sich an – nicht umgekehrt.",
+    "section2Title": "Markt, Innenhof, steile Straße",
+    "section2Body": "Am Brunnenmarkt planen wir Ladezeiten, die den Betrieb nicht stören. In dichten Hinterhöfen tragen wir etagenweise; am Wilhelminenberg sichern wir Zufahrten.",
+    "section3Title": "Entsorgung: Hernals oder Auhof",
+    "section3Body": "Kein eigener Mistplatz – dafür zwei nahe Optionen: Richthausenstraße (1170) oder Wientalstraße (1140). Wir wählen die Route nach Lage und Tageszeit.",
+    "section4Title": "Loft, Zinshaus, Kleingarten",
+    "section4Body": "Schwere Maschinen demontieren wir fachgerecht. Bei vernachlässigten Objekten: Schutz, Desinfektion, diskrete Abwicklung. Wertausgleich nur im Räumungsrahmen.",
     "whatWeCoverTitle": "Wofür wir zuständig sind",
     "whatPoint1": "Bauernmärkte, Lofts & Start-up-Flächen beim Brunnenviertel und Yppenplatz",
     "whatPoint2": "Einfamilienhäuser und Villen am Wilhelminenberg und in Neuwaldegg",
@@ -2449,7 +2565,13 @@
     "faq2Q": "Wie gehen Sie mit stark verschmutzten oder feuchten Kellern um?",
     "faq2A": "Unsere Teams sind für solche Fälle geschult und ausgerüstet. Wir setzen Atemschutz ein, entsorgen kontaminierten Müll fachgerecht und können bei Bedarf auch eine professionelle Trocknung organisieren.",
     "faq3Q": "Das Haus meiner Eltern liegt am Wilhelminenberg mit sehr steiler Zufahrt. Ist das ein Problem?",
-    "faq3A": "Nein, wir haben Erfahrung mit Hanglagen und setzen bei Bedarf spezielle Fahrzeuge oder technische Hilfsmittel ein, um einen sicheren Abtransport zu gewährleisten."
+    "faq3A": "Nein, wir haben Erfahrung mit Hanglagen und setzen bei Bedarf spezielle Fahrzeuge oder technische Hilfsmittel ein, um einen sicheren Abtransport zu gewährleisten.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Fabrikloft Yppenplatz – 200 m², Maschinen, Ausstellungsboden",
+    "caseStudyBody": "Ein Start-up räumte eine ehemalige Fabriketage am Yppenplatz: Schwerlast-Regale, 3D-Drucker, Küche und polierter Industrieboden. Der Vermieter verlangte bodenschonende Demontage und Abtransport außerhalb der Markttage. Wir demontierten Einbauten, sicherten den Boden mit Platten und transportierten Maschinen mit Rollwagen und Lift. Verwertbare Technik wurde angerechnet; Rest über MA 48 Richthausenstraße. Übergabe mit Boden-Fotos – besenrein in einem Tag.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Ottakring: Markt, Industrieerbe und Villenhänge",
+    "expertBody": "Vom Brunnenviertel bis Neuwaldegg kennen wir Marktzeiten, enge Innenhöfe und die Wege nach Hernals oder Auhof. Lofts, Zinshäuser und Wilhelminenberg-Villen – unterschiedliche Objekte, ein Fixpreis-Prinzip."
   },
   "locationWien1190": {
     "heroTitle": "Entrümpelung 1190 Wien – Grinzing, steile Weinberge & Weinkeller",
@@ -2497,21 +2619,21 @@
     "faq3A": "Diskretion hat für uns oberste Priorität. Unsere Fahrzeuge sind unmarkiert, unsere Mitarbeiter unterliegen Verschwiegenheitsvereinbarungen und auf Wunsch arbeiten wir auch außerhalb der üblichen Geschäftszeiten."
   },
   "locationWien1210": {
-    "heroTitle": "Haushaltsauflösung 1210 Wien",
+    "heroTitle": "Entrümpelung 1210 Wien – Stammersdorf, Großfeldsiedlung & Bisamberg",
     "breadcrumbDistrict": "1210 Floridsdorf",
-    "heroSub": "Entrümpelung in Floridsdorf – Einfamilienhäuser, Kleingärten und Unternehmensflächen vom Bisamberg bis Kagran.",
-    "heroPoint1": "Spezialisiert auf großflächige Räumungen inkl. Nebengebäude & Außenareale",
-    "heroPoint2": "Effiziente Organisation von Containerdiensten & direkten Wegen zu den Recyclinghöfen",
-    "heroPoint3": "Fairer Wertausgleich für Werkzeug, Maschinen & ganze Fuhrparks",
-    "heroPoint4": "Erfahrung mit den großen Gemeindebauten und den ländlichen Gebieten des Bezirks",
-    "section1Title": "Haushaltsauflösung in Floridsdorf: Weitblick für große Flächen",
-    "section1Body": "Floridsdorf, der 21. Bezirk, ist einer der flächenmäßig größten und vielfältigsten Bezirke Wiens. Von den städtischen Zentren um den Floridsdorfer Spitz über die riesigen Gemeindebauten wie die Großfeldsiedlung bis hin zu den ländlichen Heurigenorten wie Stammersdorf am Fuße des Bisambergs – hier treffen Welten aufeinander. Eine Haushaltsauflösung in diesem weitläufigen Bezirk erfordert vor allem eines: eine exzellente Planung und eine anpassungsfähige Logistik. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik für Stadt und Land",
-    "section2Body": "Die Weitläufigkeit Floridsdorfs stellt besondere Anforderungen an die Logistik. Wir planen unsere Routen effizient, um Zeit und Kosten zu sparen. In den dicht verbauten Gebieten organisieren wir bei Bedarf Halteverbotszonen, während wir in den ländlichen Teilen des Bezirks auch auf unbefestigten Wegen und in engen Gassen sicher agieren. Bei der Räumung von großen Einfamilienhäusern, landwirtschaftlichen Betrieben oder Gewerbearealen setzen wir auf den Einsatz von Containern, um auch große Mengen an Sperrmüll und Bauschutt schnell und umweltgerecht zu beseitigen.",
-    "section3Title": "Zwei Mistplätze für kurze Wege",
-    "section3Body": "Ein großer Vorteil in Floridsdorf ist die hervorragende Entsorgungsinfrastruktur. Mit den beiden MA48-Mistplätzen in Stammersdorf (Nikolsburger Gasse 12) und Donaufeld (Fultonstraße 10) bietet der Bezirk gleich zwei zentrale Anlaufstellen. Das garantiert kurze Transportwege und eine schnelle, umweltfreundliche Entsorgung, egal in welchem Teil des Bezirks Sie wohnen. Die 48er-Tandler-Boxen an beiden Standorten fördern zudem die Wiederverwendung gut erhaltener Gegenstände.",
-    "section4Title": "Ein Bezirk für alle Lebenslagen",
-    "section4Body": "Die Vielfalt der Immobilien in Floridsdorf ist beeindruckend. Ob es sich um die Auflösung einer kleinen Wohnung in einem der zahlreichen Gemeindebauten, die Räumung eines Einfamilienhauses mit großem Garten in Jedlesee oder die Entrümpelung eines Weinkellers in Stammersdorf handelt – wir haben für jede Situation die passende Lösung. Wir kennen die Besonderheiten der großen Wohnhausanlagen und arbeiten eng mit den Hausverwaltungen zusammen. Gleichzeitig haben wir das nötige Know-how, um landwirtschaftliche Geräte, Werkzeuge oder sogar ganze Fuhrparks fair zu bewerten und einer neuen Verwendung zuzuführen, auch im Falle von Gewerbeparks, Lagerflächen und Autowerkstätten.",
+    "heroSub": "Floridsdorf links der Donau: EFH, Kleingärten, Gewerbe an der Brünner Straße – zwei MA-48-Standorte (Stammersdorf & Donaufeld), Container-Logistik, Fixpreis.",
+    "heroPoint1": "Großfeldsiedlung: Abstimmung mit Hausverwaltung & Nachbarn.",
+    "heroPoint2": "Stammersdorf & Bisamberg: Weingärten, Lauben, steile Wege.",
+    "heroPoint3": "Gewerbeparks Brünner Straße: Maschinen, Fuhrpark, Hallen.",
+    "heroPoint4": "Fahrzeug-Abmeldung & Schadstoff-Lauben über zertifizierte Partner.",
+    "section1Title": "1210: Weitläufig und vielfältig",
+    "section1Body": "Floridsdorf ist flächenmäßig riesig. Entrümpelungen brauchen Geländeplan und klare Ansprechperson – nicht Improvisation.",
+    "section2Title": "Stadt dicht, Rand ländlich",
+    "section2Body": "In dichten Blocks Haltezonen; in Jedlesee und Stammersdorf Container und wendige Fahrzeuge auf engen Wegen. Gewerbeareale mit Stapler und Multilift.",
+    "section3Title": "Zwei Mistplätze im Bezirk",
+    "section3Body": "Nikolsburger Gasse 12 (Stammersdorf) und Fultonstraße 10 (Donaufeld) – kurze Wege von überall in Floridsdorf. 48er-Tandler an beiden Standorten.",
+    "section4Title": "Siedlung, Heuriger, Werkstatt",
+    "section4Body": "Großfeldsiedlung verlangt Nachbarschaftsfreundlichkeit. Kleingärten und Weinkeller kennen wir von Dutzenden Auflösungen. Wertausgleich im Räumungskontext.",
     "whatWeCoverTitle": "Wofür wir zuständig sind",
     "whatPoint1": "Einfamilienhäuser in Stammersdorf, Jedlersdorf & Strebersdorf",
     "whatPoint2": "Kleingartenvereine, Wochenendhäuser und Weinkeller am Bisamberg",
@@ -2533,24 +2655,30 @@
     "faq2Q": "In meinem Kleingarten befindet sich eine alte Laube mit einem Asbestdach. Was nun?",
     "faq2A": "Wir arbeiten mit zertifizierten Partnern für die fachgerechte Sanierung von Schadstoffen und sorgen für eine vorschriftsmäßige Beseitigung.",
     "faq3Q": "Was ist bei einer Wohnung in der Großfeldsiedlung zu beachten?",
-    "faq3A": "Wir kennen die Gegebenheiten der großen Wohnanlagen genau und stimmen uns eng mit der Hausverwaltung ab, um einen reibungslosen und nachbarschaftsfreundlichen Ablauf zu gewährleisten."
+    "faq3A": "Wir kennen die Gegebenheiten der großen Wohnanlagen genau und stimmen uns eng mit der Hausverwaltung ab, um einen reibungslosen und nachbarschaftsfreundlichen Ablauf zu gewährleisten.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: EFH Jedlesee – Garten, Garage, Oldtimer, 180 m²",
+    "caseStudyBody": "Eine Familie zog in eine kleinere Wohnung; zurück blieben voll möbliertes Haus, überwachsener Garten, Werkstatt-Garage und ein nicht abgemeldeter Oldtimer. Wir stellten einen Container auf, schnitten Grünschnitt separat, bewerteten Werkzeug und Möbel und vermittelten den Pkw an einen Händler. Entsorgung über MA 48 Donaufeld; Haus und Grund besenrein in vier Tagen – Makler konnte sofort besichtigen.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Floridsdorf: Stadt, Land und große Flächen",
+    "expertBody": "Vom Floridsdorfer Spitz bis Stammersdorf planen wir Anfahrten, Container und die Wahl zwischen Nikolsburger Gasse und Fultonstraße. Gemeindebauten, EFH und Gewerbe – ein Bezirk, viele Logistik-Profile."
   },
   "locationWien1200": {
-    "heroTitle": "Haushaltsauflösung 1200 Wien",
+    "heroTitle": "Entrümpelung 1200 Wien – Donau-Insel, Millennium City & Wallensteinplatz",
     "breadcrumbDistrict": "1200 Brigittenau",
-    "heroSub": "Entrümpelung in Brigittenau – Donauufer, Millennium City und Gemeindebauten zwischen Wallensteinplatz und Brigittaplatz.",
-    "heroPoint1": "Spezialisiert auf Hochhäuser & Neubauten entlang der Donau und des Donaukanals",
-    "heroPoint2": "Schnelle Räumungen für Anlegerwohnungen & Serviced Apartments",
-    "heroPoint3": "Komplettservice für Lager, Keller und Garagen in großen Wohnhausanlagen",
-    "heroPoint4": "Logistik für die belebten Gebiete rund um den Hannovermarkt",
-    "section1Title": "Haushaltsauflösung in der Brigittenau: Dynamik zwischen Donau und Donaukanal",
-    "section1Body": "Die Brigittenau, der 20. Bezirk, ist ein Bezirk im Wandel. Gelegen auf einer Insel zwischen Donau und Donaukanal, hat sich das ehemalige Arbeiterviertel zu einem lebendigen, multikulturellen Stadtteil mit modernen Wohn- und Bürokomplexen entwickelt. Eine Haushaltsauflösung in diesem dynamischen Umfeld erfordert eine flexible und anpassungsfähige Logistik. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik für die Insel",
-    "section2Body": "Die Brigittenau ist geprägt von einer hohen Bevölkerungsdichte und einer Mischung aus Gründerzeithäusern, großen Gemeindebauten und modernen Hochhäusern. Wir sind Experten für die besonderen Herausforderungen, die diese Mischung mit sich bringt. In den neuen Wohnvierteln entlang der Donau, wie dem Handelskai, kennen wir die Logistik der Hochhäuser mit ihren Ladezonen und Lastenliften. In den traditionellen, dicht verbauten Gebieten rund um den Wallensteinplatz und den Hannovermarkt organisieren wir bei Bedarf Halteverbotszonen, um eine reibungslose Abwicklung zu gewährleisten.",
-    "section3Title": "Entsorgung rund um die Insel",
-    "section3Body": "Die Brigittenau verfügt über keinen eigenen MA48-Mistplatz. Durch die zentrale Lage zwischen den Bezirken Döbling und Floridsdorf sind die Entsorgungswege jedoch kurz. Die nächstgelegenen Mistplätze sind der Standort in Heiligenstadt (Grinzinger Straße 151, 1190 Wien) und der Mistplatz in Donaufeld (Fultonstraße 10, 1210 Wien). Wir planen die Routen optimal, um eine schnelle und umweltfreundliche Entsorgung zu gewährleisten.",
-    "section4Title": "Ein Bezirk mit vielen Gesichtern",
-    "section4Body": "Von der Auflösung eines modernen Büros in der Millennium City bis zur Räumung einer kleinen Wohnung in einem der zahlreichen Gemeindebauten – die Anforderungen im 20. Bezirk sind vielfältig. Wir bieten für jede Situation die passende Lösung. Bei der Auflösung von Anlegerwohnungen oder Serviced Apartments arbeiten wir schnell und diskret, um Leerstandszeiten zu minimieren. In den großen Wohnhausanlagen stimmen wir uns eng mit den Hausverwaltungen ab, um die Gemeinschaftsbereiche zu schützen und die Nachbarn so wenig wie möglich zu stören. Wir sind Ihr verlässlicher Partner für eine professionelle und stressfreie Haushaltsauflösung in der Brigittenau, inklusive der Räumung von Kellerräumen und Lagerflächen.",
+    "heroSub": "Brigittenau zwischen Donau und Donaukanal: Hochhaus-Lastenlifte, Serviced Apartments und Gemeindebauten am Hannovermarkt – Express-Turnaround, Fixpreis, Entsorgung Heiligenstadt oder Donaufeld.",
+    "heroPoint1": "Millennium City: Security & Ladezonen-Koordination.",
+    "heroPoint2": "Handelskai-Hochhäuser: Lastenlift-Fenster planen wir mit.",
+    "heroPoint3": "Keller-Cluster in Gemeindebauten – inventarisiert & nummeriert.",
+    "heroPoint4": "Anlegerwohnungen: Leerstand minimieren, Protokoll digital.",
+    "section1Title": "1200: Insel zwischen zwei Gewässern",
+    "section1Body": "Brigittenau wächst am Donauufer. Entrümpelungen müssen Hochhaus-Logistik und dichte Grätzel gleichermaßen beherrschen.",
+    "section2Title": "Lift, Ladezone, Nachbar-Schutz",
+    "section2Body": "Lastenlifte reservieren wir mit der Verwaltung. In alten Grätzeln organisieren wir Halteverbotszonen; Keller-Räumungen laufen nummeriert und dokumentiert.",
+    "section3Title": "Entsorgung: Heiligenstadt oder Donaufeld",
+    "section3Body": "Kein eigener Mistplatz – kurze Wege nach 1190 (Grinzinger Straße) oder 1210 (Fultonstraße). Wir wählen die effizienteste Route.",
+    "section4Title": "Büro, Airbnb, Gemeindebau",
+    "section4Body": "Millennium City verlangt Security-Abstimmung. Serviced Apartments brauchen Turnaround. In Gemeindebauten schützen wir Gemeinschaftsflächen – besenrein, fixpreislich.",
     "whatWeCoverTitle": "Was wir übernehmen",
     "whatPoint1": "Gemeindebauten, Loftwohnungen & Penthouses am Donaukanal und an der Donau",
     "whatPoint2": "Büroflächen & Shops in der Millennium City und Umgebung",
@@ -2572,7 +2700,13 @@
     "faq2Q": "Können Sie während laufender Mietverhältnisse arbeiten, ohne die Nachbarn zu stören?",
     "faq2A": "Ja, wir planen lärmintensive Arbeiten in Zeitfenstern, in denen die meisten Bewohner außer Haus sind, organisieren Info-Aushänge und räumen einzelne Wohnungen nach einem exakten Plan.",
     "faq3Q": "Was ist bei einer Geschäftsauflösung in der Millennium City zu beachten?",
-    "faq3A": "Wir kennen die strengen Anlieferungs- und Sicherheitsvorschriften der Millennium City und sorgen für eine reibungslose Abwicklung, die den laufenden Betrieb nicht stört."
+    "faq3A": "Wir kennen die strengen Anlieferungs- und Sicherheitsvorschriften der Millennium City und sorgen für eine reibungslose Abwicklung, die den laufenden Betrieb nicht stört.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Serviced Apartment Handelskai – 62 m², 6-Stunden-Fenster",
+    "caseStudyBody": "Ein Betreiber musste zwischen zwei Buchungen eine voll möblierte Wohnung im Hochhaus am Handelskai übergeben. Lastenlift nur 09:00–12:00, enge Ladezone. Zwei Teams räumten parallel, trennten Wertstoffe und entsorgten über MA 48 Donaufeld. Geruchsneutralisation nach Raucher-Mieter optional inklusive. Digitales Übergabeprotokoll um 14:30 – nächste Gäste konnten einchecken.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Brigittenau: Insel-Dichte trifft Donau-Hochhaus",
+    "expertBody": "Vom Wallensteinplatz bis Millennium City kennen wir Müllraum-Regeln, Lift-Slots und Routen nach 1190 oder 1210. Tempo zählt – ohne Nachbarn und Verwaltung zu überfahren."
   },
   "locationWien1220": {
     "heroTitle": "Entrümpelung 1220 Wien – Seestadt Aspern, Donau City & Lobau-Gärten",
@@ -2620,21 +2754,21 @@
     "faq3A": "Ja, wir haben Erfahrung mit der Räumung von Badehäuschen, Stegen und Gärten und kümmern uns um die fachgerechte Beseitigung aller Materialien."
   },
   "locationWien1230": {
-    "heroTitle": "Haushaltsauflösung 1230 Wien",
+    "heroTitle": "Entrümpelung 1230 Wien – Alterlaa, Mauer-Weinberge & Triester Straße",
     "breadcrumbDistrict": "1230 Liesing",
-    "heroSub": "Entrümpelung in Liesing – Wohnsiedlungen, Unternehmensstandorte und Winzerhöfe zwischen Atzgersdorf und Perchtoldsdorf.",
-    "heroPoint1": "Spezialisiert auf Großobjekte, Lagerhallen & Produktionsstätten",
-    "heroPoint2": "Erfahrung mit Reihenhäusern, Lofts und den Terrassenhäusern von Alterlaa",
-    "heroPoint3": "Nachhaltige Verwertung über Sozialprojekte & Wiederverkauf von Materialien",
-    "heroPoint4": "Logistik für die weitläufigen Gewerbegebiete und die idyllischen Weinberge",
-    "section1Title": "Haushaltsauflösung in Liesing: Wo Industrie auf Idylle trifft",
-    "section1Body": "Liesing, der 23. Bezirk, ist ein Bezirk der Vielfalt, der sich vom Rande des Wienerwaldes bis an die südliche Stadtgrenze erstreckt. Hier treffen weitläufige Industriegebiete auf charmante alte Ortskerne, moderne Reihenhaussiedlungen auf idyllische Weinberge. Diese Mischung aus Urbanität, Industrie und ländlichem Flair stellt ganz besondere Anforderungen an eine Haushaltsauflösung. Wir rechnen den Wert von Antiquitäten, Möbeln und Altwaren ausschließlich im Zuge unserer Entrümpelungen oder Räumungen an – kein separater Ankauf.",
-    "section2Title": "Logistik für alle Dimensionen",
-    "section2Body": "Liesing ist ein Bezirk der großen Flächen. Die ausgedehnten Gewerbegebiete in Inzersdorf und entlang der Triester Straße erfordern eine professionelle Logistik für die Räumung von großen Lagerhallen, Produktionsstätten und Bürokomplexen. Wir sind darauf spezialisiert, auch schwere Maschinen und große Mengen an Material effizient und fachgerecht zu entsorgen. Im Kontrast dazu stehen die verwinkelten Gassen in den alten Ortskernen von Mauer oder Rodaun. Hier setzen wir auf wendige Fahrzeuge und eine genaue Planung, um die historische Bausubstanz und den dörflichen Charakter zu wahren.",
-    "section3Title": "Perfekte Entsorgungs-Infrastruktur",
-    "section3Body": "Liesing bietet mit den beiden MA48-Mistplätzen in Inzersdorf (Südrandstraße 2) und Liesing (Seybelgasse 7) eine optimale Infrastruktur für die fachgerechte Entsorgung. Diese dezentrale Abdeckung garantiert kurze Wege im gesamten Bezirksgebiet, was Zeit spart und die Umwelt schont. An beiden Standorten ermöglichen die 48er-Tandler-Boxen zudem die bequeme Abgabe von gut erhaltenen Gegenständen zur Wiederverwendung.",
-    "section4Title": "Einzigartige Wohnwelten: Von Alterlaa bis zum Weinberg",
-    "section4Body": "Eine architektonische Besonderheit des Bezirks ist der Wohnpark Alterlaa, eine der größten Wohnanlagen Österreichs. Die Räumung einer Wohnung in diesen Terrassenhäusern erfordert ein spezielles Know-how und eine enge Abstimmung mit der Hausverwaltung. Genauso zu Hause fühlen wir uns in den zahlreichen Einfamilienhaus- und Reihenhaussiedlungen, wo wir uns nicht nur um das Haus, sondern auch um Gärten, Garagen und Keller kümmern. Und in den Weinbaugebieten von Mauer und Kalksburg bringen wir unsere Expertise bei der Auflösung von Heurigenbetrieben und der Bewertung von Weinkellern ein. Wir sind Ihr kompetenter Partner für jede Art von Haushaltsauflösung im vielseitigen 23. Bezirk, inklusive Gewerbeparks, Büros und Produktionshallen.",
+    "heroSub": "Liesing vom Wohnpark Alterlaa bis Inzersdorf: Terrassenhäuser, Produktionshallen und Heurigenhöfe – MA 48 Inzersdorf & Seybelgasse, Container, Fixpreis.",
+    "heroPoint1": "Wohnpark Alterlaa: Hausverwaltungs-Regeln kennen wir.",
+    "heroPoint2": "Industrie Triester Straße: Stapler, Hallen, Schwerlast.",
+    "heroPoint3": "Mauer & Rodaun: Weinkeller, Presshäuser, enge Ortsgassen.",
+    "heroPoint4": "Firmenübersiedlung: Räumung, Verpackung, Zwischenlager optional.",
+    "section1Title": "1230: Vielfalt bis zur Stadtgrenze",
+    "section1Body": "Liesing reicht vom Wienerwald bis zur Industriezone. Entrümpelungen brauchen passendes Equipment – nicht immer denselben Lkw.",
+    "section2Title": "Terrasse, Halle, Weinberg",
+    "section2Body": "Im Wohnpark koordinieren wir Lift und Müllraum. In Hallen setzen wir Stapler ein; in Mauer wendige Fahrzeuge und Etappen auf engen Gassen.",
+    "section3Title": "MA 48 Inzersdorf & Liesing",
+    "section3Body": "Südrandstraße 2 und Seybelgasse 7 decken den Bezirk ab – kurze Wege, Second-Hand-Boxen, Entsorgungsnachweise auf Wunsch.",
+    "section4Title": "Heuriger, Reihenhaus, Betrieb",
+    "section4Body": "Weinkeller inventarisieren wir; Firmenübersiedlungen planen wir meilensteinbasiert. Wertausgleich nur im Räumungsrahmen – kein separater Ankauf.",
     "whatWeCoverTitle": "Was wir übernehmen",
     "whatPoint1": "Reihenhausanlagen in Siebenhirten, Atzgersdorf & am Liesingbach",
     "whatPoint2": "Gewerbeparks, Büros und Produktionshallen im Industriegebiet Liesing",
@@ -2656,7 +2790,13 @@
     "faq2Q": "Wir lösen unseren Heurigen in Mauer auf. Was passiert mit dem Weinkeller?",
     "faq2A": "Wir haben Erfahrung mit der Räumung von Weinbaubetrieben. Wir sichern Weinfässer, rechnen Ihnen den Wert von Lagerbeständen an und übergeben den Keller besenrein.",
     "faq3Q": "Die Wohnanlage in Alterlaa hat strenge Regeln. Kennen Sie sich damit aus?",
-    "faq3A": "Ja, wir kennen die spezifischen logistischen Herausforderungen und internen Vorschriften des Wohnparks Alterlaa und sorgen für eine reibungslose und unauffällige Abwicklung."
+    "faq3A": "Ja, wir kennen die spezifischen logistischen Herausforderungen und internen Vorschriften des Wohnparks Alterlaa und sorgen für eine reibungslose und unauffällige Abwicklung.",
+    "caseStudyLabel": "Praxis aus dem Bezirk",
+    "caseStudyTitle": "Fall: Produktionshalle Inzersdorf – 800 m², Maschinenpark",
+    "caseStudyBody": "Ein Mittelständler schloss eine Fertigungshalle an der Triester Straße: CNC-Maschinen, Regalsysteme, Büro und Sozialräume. Stilllegung mit Behördenfrist in 14 Tagen. Wir demontierten Maschinen, dokumentierten Seriennummern für den Verkauf, stellten zwei Container und entsorgten Restmüll über MA 48 Südrandstraße 2. Verwertbare Maschinen wurden angerechnet; Halle besenrein mit Abnahmeprotokoll für den Vermieter.",
+    "expertLabel": "Erfahrung vor Ort",
+    "expertTitle": "Liesing: Wohnpark, Weinberg und Industrieband",
+    "expertBody": "Alterlaa, Mauer oder Inzersdorf – drei Welten, ein Bezirk. Wir kennen Verwaltungsvorgaben im Wohnpark, steile Weinbergwege und Hallen-Logistik an der Triester Straße plus beide MA-48-Standorte."
   },
   "locationKlosterneuburg": {
     "heroTitle": "Haushaltsauflösung Klosterneuburg",
