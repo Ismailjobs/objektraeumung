@@ -29,6 +29,11 @@ import { EntruempelungAltbauOhneLiftWienFixpreisArticle } from "@/components/rat
 import { KellerentruempelungGemeindebauWienArticle } from "@/components/ratgeber/articles/kellerentruempelung-gemeindebau-wien";
 import { HaushaltsaufloesungVorImmobilienverkaufWienArticle } from "@/components/ratgeber/articles/haushaltsaufloesung-vor-immobilienverkauf-wien";
 import { SeniorenEntruempelungDownsizingWienPflegeheimArticle } from "@/components/ratgeber/articles/senioren-entruempelung-downsizing-wien-pflegeheim";
+import { GaragenraeumungWienParkgarageTiefgarageFixpreisArticle } from "@/components/ratgeber/articles/garagenraeumung-wien-parkgarage-tiefgarage-fixpreis";
+import { EntruempelungScheidungTrennungWienHaushaltTeilenArticle } from "@/components/ratgeber/articles/entruempelung-scheidung-trennung-wien-haushalt-teilen";
+import { NachlassverwalterEntruempelungWienErbengemeinschaftArticle } from "@/components/ratgeber/articles/nachlassverwalter-entruempelung-wien-erbengemeinschaft";
+import { ContainerMietenVsProfiEntruempelungWienArticle } from "@/components/ratgeber/articles/container-mieten-vs-profi-entruempelung-wien";
+import { DemontageEinbaukuecheBadezimmerWienEntruempelungArticle } from "@/components/ratgeber/articles/demontage-einbaukueche-badezimmer-wien-entruempelung";
 
 /**
  * Zentrale Artikel-Registry.
@@ -39,6 +44,324 @@ import { SeniorenEntruempelungDownsizingWienPflegeheimArticle } from "@/componen
  * publishedAt: höchstens 23. Juni 2026 (2026-06-23T23:59:59.000Z).
  */
 export const RATGEBER_REGISTRY: RatgeberArticleRecord[] = [
+  {
+    meta: {
+      slug: "garagenraeumung-wien-parkgarage-tiefgarage-fixpreis",
+      title:
+        "Garagenräumung Wien: Tiefgarage, Parkgarage & Stellplatz – Fixpreis & MA-48-Entsorgung",
+      description:
+        "Garagenräumung Wien: Tiefgarage, Einzelgarage & Parkgarage besenrein. Reifen, Altöl, Werkzeug – Fixpreis, Wertanrechnung & MA 48. Jetzt anfragen.",
+      excerpt:
+        "Garagenräumung in Wien: Tiefgarage, Parkgarage und Einzelstellplatz – Reifen, Werkzeug, Altöl, enge Zufahrten, MA 48 und Fixpreis aus einer Hand.",
+      publishedAt: "2026-06-23T23:04:00.000Z",
+      readingTimeMinutes: 11,
+      wordCount: 1544,
+      categories: ["Garage", "Entrümpelung", "Wien"],
+      tags: [
+        "Garagenräumung Wien",
+        "Tiefgarage räumen",
+        "Parkgarage Entrümpelung",
+        "Stellplatz",
+        "MA 48",
+        "Fixpreis",
+        "Wertanrechnung",
+      ],
+      relatedSlugs: [
+        "kellerentruempelung-gemeindebau-wien",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "bauschutt-sperrmuell-wien-entsorgung",
+        "haushaltsaufloesung-preise-wien-2026",
+      ],
+      serviceSlugs: [
+        "garagenraeumung",
+        "kellerraeumung",
+        "haushaltsaufloesung",
+        "entsorgung-wien",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "moebel-wertanrechnung",
+      ],
+      faqPairs: [
+        {
+          question: "Muss ich den Garagenstellplatz bei Auszug wirklich leerräumen?",
+          answer:
+            "In den meisten Mietverträgen ist der Garagenstellplatz vertraglich zugeordnet und muss bei Auszug leer und besenrein übergeben werden. Objekträumung liefert auf Wunsch ein Übergabeprotokoll.",
+        },
+        {
+          question: "Kann ich Autoreifen über die MA 48 entsorgen?",
+          answer:
+            "Autoreifen gehören nicht in den normalen Sperrmüll. Die MA 48 nimmt Reifen nur über spezielle Kanäle und in begrenzten Mengen an – wir übernehmen die fachgerechte Entsorgung im Fixpreis.",
+        },
+        {
+          question: "Wohin mit Altöl und Autobatterien aus der Garage?",
+          answer:
+            "Altöl, Bremsflüssigkeit und Autobatterien sind Problemstoffe. Die MA 48 und zertifizierte Annahmestellen in Wien sind die richtigen Wege – wir trennen und entsorgen fachgerecht.",
+        },
+        {
+          question: "Wie funktioniert Wertanrechnung bei Werkzeug in der Garage?",
+          answer:
+            "Bei der Besichtigung bewerten wir brauchbare Werkzeuge, Maschinen und Gartengeräte. Der geschätzte Marktwert wird direkt vom Fixpreis abgezogen.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: GaragenraeumungWienParkgarageTiefgarageFixpreisArticle,
+  },
+  {
+    meta: {
+      slug: "entruempelung-scheidung-trennung-wien-haushalt-teilen",
+      title:
+        "Entrümpelung bei Scheidung & Trennung Wien: Haushalt teilen, Inventar & besenreine Übergabe",
+      description:
+        "Entrümpelung Scheidung Wien: Haushalt fair teilen, Inventarliste, diskrete Räumung & Fixpreis. Besenreine Vermieter-Übergabe – jetzt Beratung anfragen.",
+      excerpt:
+        "Entrümpelung bei Scheidung und Trennung in Wien: Haushalt teilen, Inventarliste, diskrete Abwicklung, Wertanrechnung und schnelle besenreine Übergabe.",
+      publishedAt: "2026-06-23T23:03:00.000Z",
+      readingTimeMinutes: 10,
+      wordCount: 1395,
+      categories: ["Scheidung", "Trennung", "Wien"],
+      tags: [
+        "Entrümpelung Scheidung Wien",
+        "Haushalt teilen",
+        "Trennung Wohnung",
+        "Inventarliste",
+        "Fixpreis",
+        "diskret",
+        "Wertanrechnung",
+      ],
+      relatedSlugs: [
+        "haushaltsaufloesung-vor-immobilienverkauf-wien",
+        "zimmer-raeumung-wien-wg-uebergabe",
+        "gebrauchte-moebel-verkaufen-wien-willhaben-wertanrechnung",
+        "haushaltsaufloesung-preise-wien-2026",
+      ],
+      serviceSlugs: [
+        "wohnungsaufloesung",
+        "haushaltsaufloesung",
+        "moebel-wertanrechnung",
+        "verlassenschaft",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "zimmer-raeumung",
+      ],
+      faqPairs: [
+        {
+          question: "Können Sie die Räumung durchführen, wenn nur einer Partner anwesend sein kann?",
+          answer:
+            "Ja. Mit schriftlicher Freigabe beider Parteien oder nach Vereinbarung mit Anwalt/Mediator arbeiten wir diskret – auch ohne gemeinsame Anwesenheit vor Ort.",
+        },
+        {
+          question: "Wer trägt die Kosten der Entrümpelung bei Scheidung?",
+          answer:
+            "Das regeln Sie vertraglich untereinander oder über Anwalt. Wir stellen eine transparente Fixpreis-Rechnung aus, die als Aufteilungsgrundlage dient.",
+        },
+        {
+          question: "Was passiert mit Möbeln, die beide behalten wollen?",
+          answer:
+            "Die Inventarliste mit Markierung (Partner A / B / gemeinsam verkaufen) klärt das vor der Räumung. Verwertbares rechnen wir fair an oder trennen wir physisch.",
+        },
+        {
+          question: "Wie schnell kann die Wohnung für den Vermieter übergeben werden?",
+          answer:
+            "Nach Besichtigung oft innerhalb von 3–7 Werktagen besenrein – inklusive MA-48-Entsorgung und Übergabeprotokoll.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: EntruempelungScheidungTrennungWienHaushaltTeilenArticle,
+  },
+  {
+    meta: {
+      slug: "nachlassverwalter-entruempelung-wien-erbengemeinschaft",
+      title:
+        "Nachlassverwalter & Erbengemeinschaft Wien: Verlassenschaft entrümpeln – Protokoll & Fixpreis",
+      description:
+        "Entrümpelung für Nachlassverwalter Wien: Erbengemeinschaft, Gerichtskommissär, internationale Erben. Fixpreis, Wertanrechnung & Notar-Protokoll – jetzt anfragen.",
+      excerpt:
+        "Nachlassverwalter und Erbengemeinschaften in Wien: Verlassenschaft entrümpeln mit Gerichtskommissär-Freigabe, Protokoll für Notar und Fixpreis.",
+      publishedAt: "2026-06-23T23:02:00.000Z",
+      readingTimeMinutes: 11,
+      wordCount: 1500,
+      categories: ["Nachlass", "Verlassenschaft", "Wien"],
+      tags: [
+        "Nachlassverwalter Wien",
+        "Erbengemeinschaft",
+        "Verlassenschaft entrümpeln",
+        "Gerichtskommissär",
+        "Fixpreis",
+        "Wertanrechnung",
+        "internationale Erben",
+      ],
+      relatedSlugs: [
+        "wohnungsaufloesung-todesfall-wien-ablauf",
+        "haushaltsaufloesung-vor-immobilienverkauf-wien",
+        "bibliothek-sammlung-aufloesen-wien-wertanrechnung",
+        "entruempelung-auswanderung-wien-ausland",
+      ],
+      serviceSlugs: [
+        "verlassenschaft",
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "moebel-wertanrechnung",
+        "antiquitaeten-wertanrechnung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "entsorgung-wien",
+      ],
+      faqPairs: [
+        {
+          question: "Darf der Nachlassverwalter die Entrümpelung allein beauftragen?",
+          answer:
+            "Nachlassverwalter mit entsprechender Bestellung dürfen Verfügungen treffen. Bei Erbengemeinschaften ohne Verwalter ist die schriftliche Freigabe aller Erben oder des Gerichtskommissärs erforderlich.",
+        },
+        {
+          question: "Welche Unterlagen erhalten wir für Notar und Gericht?",
+          answer:
+            "Fixpreis-Rechnung, Übergabeprotokoll mit Fotos, Wertaufstellung bei Wertanrechnung und MA-48-Entsorgungsnachweise – lückenlos dokumentiert.",
+        },
+        {
+          question: "Können Erben im Ausland per Video teilnehmen?",
+          answer:
+            "Ja. Videobesichtigung, digitale Sortierlisten und Freigaben per E-Mail sind Standard – mit einer festen Ansprechperson in Wien.",
+        },
+        {
+          question: "Wie diskret läuft die Räumung in Villenvierteln ab?",
+          answer:
+            "Neutrale Fahrzeuge, leise Arbeitsweise, Terminfenster nach Absprache – besonders in 1130, 1180 und 1190.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: NachlassverwalterEntruempelungWienErbengemeinschaftArticle,
+  },
+  {
+    meta: {
+      slug: "container-mieten-vs-profi-entruempelung-wien",
+      title:
+        "Container mieten vs. Profi-Entrümpelung Wien: Kostenvergleich, MA 48 & Fixpreis 2026",
+      description:
+        "Container vs. Profi-Entrümpelung Wien: ehrlicher Kostenvergleich, MA-48-Selbstanlieferung, Halteverbot MA 46. Wann Fixpreis günstiger ist – jetzt beraten lassen.",
+      excerpt:
+        "Container mieten oder Profi-Entrümpelung in Wien? Kostenvergleich, MA 48, Genehmigung, Halteverbot und wann der Fixpreis die bessere Wahl ist.",
+      publishedAt: "2026-06-23T23:01:00.000Z",
+      readingTimeMinutes: 11,
+      wordCount: 1687,
+      categories: ["Container", "Kostenvergleich", "Wien"],
+      tags: [
+        "Container mieten Wien",
+        "Entrümpelung Kosten",
+        "MA 48 Selbstanlieferung",
+        "Fixpreis",
+        "Halteverbot",
+        "Profi Entrümpelung",
+      ],
+      relatedSlugs: [
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "haushaltsaufloesung-preise-wien-2026",
+        "halteverbot-entruempelung-wien-ma-46",
+        "entruempelung-wien-5-fatale-fehler",
+      ],
+      serviceSlugs: [
+        "entsorgung-wien",
+        "haushaltsaufloesung",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "kellerraeumung",
+        "wohnungsaufloesung",
+      ],
+      faqPairs: [
+        {
+          question: "Wie viel kostet ein Abfallcontainer in Wien wirklich?",
+          answer:
+            "Die Container-Miete allein liegt oft bei 150–400 Euro; dazu kommen Stellgenehmigung, Transport, eigene Arbeitszeit und MA-48-Gebühren. Der Gesamtpreis nähert sich schnell einem Profi-Fixpreis.",
+        },
+        {
+          question: "Darf ich einen Container ohne Genehmigung auf der Straße abstellen?",
+          answer:
+            "Nein. Auf öffentlichem Grund in Wien brauchen Sie eine Bewilligung – oft über MA 46 Halteverbotszone. Wir übernehmen das im Full-Service.",
+        },
+        {
+          question: "Kann ich Container und MA-48-Selbstanlieferung kombinieren?",
+          answer:
+            "Ja. Leichten Hausrat fahren Sie selbst zum Mistplatz; schwere Stücke und Demontage übernehmen wir – Hybrid spart oft sinnvoll.",
+        },
+        {
+          question: "Ab wann lohnt sich ein Fixpreis mehr als der Container?",
+          answer:
+            "Ab mehr als einem Raum plus Nebenflächen, ohne Lift, oder wenn Zeitdruck herrscht – dann ist Full-Service meist günstiger und planbarer.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: ContainerMietenVsProfiEntruempelungWienArticle,
+  },
+  {
+    meta: {
+      slug: "demontage-einbaukueche-badezimmer-wien-entruempelung",
+      title:
+        "Demontage Einbauküche & Badezimmer Wien: Abbau bei Entrümpelung & Sanierung zum Fixpreis",
+      description:
+        "Einbauküche & Badezimmer demontieren Wien: Wasser abdrehen, Bauschutt trennen, MA 48. Fixpreis inkl. Abbau bei Haushaltsauflösung – jetzt anfragen.",
+      excerpt:
+        "Demontage von Einbauküche und Badezimmer in Wien: fachgerechter Abbau, Bauschutt-Trennung, MA 48 und Fixpreis bei Haushaltsauflösung oder Sanierung.",
+      publishedAt: "2026-06-23T23:00:00.000Z",
+      readingTimeMinutes: 11,
+      wordCount: 1800,
+      categories: ["Demontage", "Sanierung", "Wien"],
+      tags: [
+        "Einbauküche demontieren Wien",
+        "Badezimmer abbauen",
+        "Haushaltsauflösung Küche",
+        "Bauschutt",
+        "MA 48",
+        "Fixpreis",
+        "Sanierung",
+      ],
+      relatedSlugs: [
+        "raeumung-vor-sanierung-altbau-wien-2026",
+        "bauschutt-sperrmuell-wien-entsorgung",
+        "ma-48-mistplatz-wien-entsorgungs-guide-2026",
+        "entruempelung-altbau-ohne-lift-wien-fixpreis",
+      ],
+      serviceSlugs: [
+        "haushaltsaufloesung",
+        "wohnungsaufloesung",
+        "entsorgung-wien",
+        "entrumpelung-wien",
+        "raeumung-wien",
+        "kellerraeumung",
+      ],
+      faqPairs: [
+        {
+          question: "Ist die Küchen-Demontage im Fixpreis enthalten?",
+          answer:
+            "Ja, wenn sie bei der Besichtigung vereinbart wurde. Einbauküche, Arbeitsplatte und Geräte-Anschluss-Trennung sind im Leistungsumfang enthalten.",
+        },
+        {
+          question: "Was passiert mit Fliesen und Bauschutt aus dem Bad?",
+          answer:
+            "Fliesen und Keramik werden als Bauschutt getrennt und über MA 48 bzw. zertifizierte Deponien entsorgt – nicht als Sperrmüll gemischt.",
+        },
+        {
+          question: "Muss ich Wasser und Strom selbst abdrehen?",
+          answer:
+            "Idealerweise ja vor unserem Termin. Wir können auf Wunsch einen Installateur koordinieren, wenn Absperrventile defekt oder unzugänglich sind.",
+        },
+        {
+          question: "Kann die Demontage vor der Sanierung ohne Vollräumung erfolgen?",
+          answer:
+            "Ja. Küche-only oder Bad-only Demontage ist möglich – oft als Vorbereitung für Handwerker gemäß unserem Sanierungs-Leitfaden.",
+        },
+      ],
+      author: "Objekträumung",
+      featured: true,
+    },
+    Component: DemontageEinbaukuecheBadezimmerWienEntruempelungArticle,
+  },
   {
     meta: {
       slug: "airbnb-ferienwohnung-express-entruempelung-wien",
