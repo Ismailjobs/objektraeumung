@@ -28,7 +28,7 @@ export function HomePartnerRecommendation() {
             rel="noopener noreferrer"
             className={externalLinkClass}
           >
-            Sofort Entrümpelung
+            Entrümpelung Wien
           </a>{" "}
           mit seiner bewährten Fixpreis-Garantie. Für professionelle Umzüge, Transporte und logistische
           Unterstützung in ganz Österreich ist{" "}
