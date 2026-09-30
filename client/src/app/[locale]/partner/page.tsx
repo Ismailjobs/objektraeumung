@@ -8,7 +8,7 @@ import { buildSimpleContentPageGraph, canonicalToAbsolute } from "@/lib/schema";
 import { SITE_URL } from "@/lib/constants";
 
 const PARTNER_ENTRIES = [
-  { id: "sofort", url: "https://sofortentrumpelung.at" },
+  { id: "sofort", url: "https://sofortentrumpelung.at/entruempelung-wien-1010" },
   { id: "swift", url: "https://swiftumzug.at" },
   { id: "ooe", url: "https://entruempelung-ooe.at" },
   { id: "steiermark", url: "https://steirer-entruempler.at" },
