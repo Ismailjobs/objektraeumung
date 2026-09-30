@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/navigation";
 
-const SOFORT_URL = "https://sofortentrumpelung.at";
+const SOFORT_URL = "https://sofortentrumpelung.at/entruempelung-wien-1010";
 const SWIFT_URL = "https://swiftumzug.at";
 
 const externalLinkClass =
